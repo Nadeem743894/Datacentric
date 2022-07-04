@@ -23,9 +23,63 @@
 
 *Describe how to build the application and general settings. Any specific should be included in specific guides on the wiki / pages section. What is needed to build should be already be included in prerequisites*
 
-### Running the tests
+## Project Organization
 
-No tests are implemented for this project.
+    ├── README.md          <- The top-level README for developers using this project.
+    ├── data
+    │   ├── external       <- Data from third party sources.
+    │   ├── interim        <- Intermediate data that has been transformed.
+    │   ├── processed      <- The final, canonical data sets for modeling.
+    │   └── raw            <- The original, immutable data dump.
+    │
+    ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
+    │
+    ├── models             <- Trained and serialized models, model predictions, or model summaries
+    │
+    ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
+    │
+    ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
+    │   ├── figures        <- Generated graphics and figures to be used in reporting
+    │   │
+    │   └── Analytics-plan.md   <- Document for recording and peer reviewing the project analytics plan.
+    │
+    ├── requirements.txt        <- The requirements file for reproducing the analysis environment, e.g.
+    │                         generated with `pip freeze > requirements.txt`
+    │
+    ├── setup.py                <- makes project pip installable (pip install -e .) so src can be imported
+    │
+    │── python
+    │    ├── src                <- Source code for use in this project.
+    │    │   ├── __init__.py    <- Makes src a Python module
+    │    │   │
+    │    │   ├── data           <- Scripts to download or generate data
+    │    │   │   └── make_dataset.py
+    │    │   │
+    │    │   ├── features       <- Scripts to turn raw data into features for modeling
+    │    │   │   └── build_features.py
+    │    │   │
+    │    │   ├── models         <- Scripts to train models and then use trained models to make
+    │    │   │   │                 predictions
+    │    │   │   ├── predict_model.py
+    │    │   │   └── train_model.py
+    │    │   │
+    │    │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
+    │    │           └── visualize.py
+    │    │
+    │    └── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
+    │                         the creator's initials, and a short `-` delimited description, e.g.
+    │                         `1.0-jqp-initial-data-exploration`.
+    │
+    │── R
+    │    ├── src
+    │    │   ├── ...
+    │
+    │── MATLAB
+    │    ├── src
+    │    │   ├── ...
+    │
+    │
+    └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
 
 ### Coding Style
 
@@ -72,57 +126,5 @@ This project is funded under *name your project type*.
 *This markdown sheet is quite handy! [Link](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)*
 
 
-A template file structure for data science projects at AMRC
-
-Project Organization
-------------
-
-    ├── LICENSE
-    ├── Makefile           <- Makefile with commands like `make data` or `make train`
-    ├── README.md          <- The top-level README for developers using this project.
-    ├── data
-    │   ├── external       <- Data from third party sources.
-    │   ├── interim        <- Intermediate data that has been transformed.
-    │   ├── processed      <- The final, canonical data sets for modeling.
-    │   └── raw            <- The original, immutable data dump.
-    │
-    ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
-    │
-    ├── models             <- Trained and serialized models, model predictions, or model summaries
-    │
-    ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-    │                         the creator's initials, and a short `-` delimited description, e.g.
-    │                         `1.0-jqp-initial-data-exploration`.
-    │
-    ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
-    │
-    ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-    │   └── figures        <- Generated graphics and figures to be used in reporting
-    │
-    ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-    │                         generated with `pip freeze > requirements.txt`
-    │
-    ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
-    ├── src                <- Source code for use in this project.
-    │   ├── __init__.py    <- Makes src a Python module
-    │   │
-    │   ├── data           <- Scripts to download or generate data
-    │   │   └── make_dataset.py
-    │   │
-    │   ├── features       <- Scripts to turn raw data into features for modeling
-    │   │   └── build_features.py
-    │   │
-    │   ├── models         <- Scripts to train models and then use trained models to make
-    │   │   │                 predictions
-    │   │   ├── predict_model.py
-    │   │   └── train_model.py
-    │   │
-    │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
-    │       └── visualize.py
-    │
-    └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
-
-
---------
 
 <p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
