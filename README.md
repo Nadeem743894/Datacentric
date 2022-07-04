@@ -32,7 +32,7 @@
     │   ├── processed      <- The final, canonical data sets for modeling.
     │   └── raw            <- The original, immutable data dump.
     │
-    ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
+    ├── docs               <- Default docs generation guidance and advice, derived from the IMG Digital Template.
     │
     ├── models             <- Trained and serialized models, model predictions, or model summaries
     │
@@ -73,11 +73,14 @@
     │── R
     │    ├── src
     │    │   ├── ...
+    │    │
+    │    └── ...
     │
     │── MATLAB
     │    ├── src
     │    │   ├── ...
-    │
+    │    │
+    │    └── ...
     │
     └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
 
@@ -89,8 +92,8 @@ Coding style adheres to AMRC coding practices.
 | -- | -- |
 <!-- | Javascript | [AirBnB](https://github.com/airbnb/javascript) | -->
 | Python | [PEP-8](https://www.python.org/dev/peps/pep-0008/) |
-| R |  |
-| MATLAB |  |
+| R | [Google's R Style Guide](https://web.stanford.edu/class/cs109l/unrestricted/resources/google-style.html) |
+| MATLAB | N/A |
 
 *Delete as appropiate for the project and where required state additional languages.
 E.g. specific database technologises used and the standard being followed.*
