@@ -1,0 +1,13 @@
+version: "3.7"
+
+services:
+  app:
+    restart: unless-stopped
+    build: 
+      context: .
+    volumes:
+      - type: bind
+        source: ./logs
+        target: /var/log/app
+    env_file:
+      - ./.env
