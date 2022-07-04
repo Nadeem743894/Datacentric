@@ -6,5 +6,5 @@ setup(
     version='0.1.0',
     description='A template file structure for data science projects at AMRC',
     author='me1xxx',
-    license='MIT',
+    license='',
 )
