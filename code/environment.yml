@@ -1,0 +1,14 @@
+# name: null
+channels:
+  - defaults
+dependencies:
+  - python=3.8            # specify your desired python version
+  - dvc
+  # - ipython             # interactive python
+  # - ipykernel           # jupyter notebooks
+  # - matplotlib          # plotting
+  # - pandas              # data manipulation
+  # - scikit-learn        # machining learning
+  # - pip                 # installing any non-conda packages
+  # - pip:
+  #   - -r file:requirements.txt

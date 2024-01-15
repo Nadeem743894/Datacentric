@@ -1,5 +1,5 @@
 dash
-dash-daq
+# dash-daq
 dash-bootstrap-components
 dash-bootstrap-templates
 Pillow

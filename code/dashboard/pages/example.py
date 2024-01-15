@@ -9,7 +9,7 @@ from dash.dependencies import Input, Output
 import logging
 
 ### Import Dash Instance and Pages ###
-from app import app, colors
+from frontend import app, colors
 from navbar import generate_navbar
 import plotly.graph_objects as go
 import os
