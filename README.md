@@ -6,46 +6,62 @@
 
 ## Getting Started
 
-### Prerequisites
+- [ ] Fill out the Project Code/Name/Description above
+- [ ] Build an appropriate [programming environment](/docs/Guidance/GettingStarted.md)
 
-*What needs to be installed on your system before you install this repo. E.g.*
+## The Workflow
 
-* [Python 3](https://www.python.org/downloads/) - Python 3 (or above) interpreter
-* [Visual Studio 2017](https://visualstudio.microsoft.com/) - Code editor or equivelant
+<!-- replace [ ] with [x] when a workflow task has been completed -->
 
-### Setting up
+### Business Understanding
 
-#### Python (conda)
+- [ ] Fill out the project Charter document with input from the customer
 
-Resources are provided within this template to quickly set up your python virtual environment. The chosen package manager is conda - either Anaconda or Miniconda should work.
+### Data Acquisition and Preparation
 
-Edit the environment.yml file in the root directory with your environment name, python version and any specific package requirements for the project.
+- [ ] Develop [notebook code](./code/notebooks/DataAcquisition/) to get started
+- [ ] Don't Repeat Yourself! Move reusable code into a callable module in [this directory](./code/src/DataAcquisition/)
+- [ ] Map the data flow in the [Data Pipeline](/docs/Data%20Reports/Data%20Pipeline.txt)
+- [ ] Produce a [Data Report](/docs/Data%20Reports/DataSummaryReport.md) for each new dataset added to the project
+ 
+### Data Exploration
 
-In the terminal, run the following command to create the virtual enviroment:
+- [ ] Develop notebook code [here](./code/notebooks/DataExploration)
+- [ ] Define raw data sources in the [Data Definition](/docs/Data%20Reports/Data%20Defintion.md)
 
-conda env create --file environment.yml --prefix ./env
+### Feature Transformation
 
-This will create the new enviroment in a sub-directory /env of the project root directory. If you prefer to manage conda environments centrally, and activate them via the given name (environments stored in a local project directory will need to be activated by pointing to their absolute path, as opposed to the given name), remove the --prefix ./env tag:
+- [ ] Develop notebook code [here](./code/notebooks/FeatureTransformation)
+- [ ] Don't Repeat Yourself! Move reusable code into a callable module in [this directory](./code/src/FeatureTransformation/)
+- [ ] Define raw data sources in the [Data Definition](/docs/Data%20Reports/Data%20Defintion.md)
 
-conda env create --file environment.yml --prefix {path to your Anaconda/Miniconda installation, e.g. C:/Users/me1xxx/Anaconda3/envs/{name of your environment}
 
-If/when your package requirements change (for e.g., you've found a new package you want to use which wasn't included on first build), update the package requirements in environment.yml and run the following command to update the virtual enviroment:
+### Model Building
 
-conda env update --file environment.yml  --prune --prefix ./env
+- [ ] Develop notebook code [here](./code/notebooks/ModelBuilding)
+- [ ] Don't Repeat Yourself! Move reusable code into a callable module in [this directory](./code/src/ModelBuilding/)
 
-Updating packages this way, rather than installing new packages manually, allows you to track dependencies and manage version control much easier. You can also choose to recreate the enviroment from scratch for the same effect, with the command:
+### Evaluation and Reporting
 
-conda env create --file environment.yml --prefix ./env --force
+- [ ] Develop notebook code [here](./code/notebooks/EvaluationAndReporting)
+- [ ] Don't Repeat Yourself! Move reusable code into a callable module in [this directory](./code/src/EvaluationAndReporting/)
+- [ ] Build a dashboard with the [code utility](./code/dashboard/) and [guidance](/docs/Guidance/Dashboarding.md).
 
-To activate your local enviroment run:
+### Delivery, Deployment and Maintenance
 
-conda activate ./env
+- [ ] Develop notebook code [here](./code/notebooks/DeploymentAndMaintenance)
+- [ ] Don't Repeat Yourself! Move reusable code into a callable module in [this directory](./code/src/DeploymentAndMaintenance/)
+- [ ] Deploy a dockerised application with the [docker compose file](docker-compose.yml) and [guidance](/docs/Guidance/Docker.md).
 
-### Building
+## Other useful features
 
-*Describe how to build the application and general settings. Any specific should be included in specific guides on the wiki / pages section. What is needed to build should be already be included in prerequisites*
+- [ ] Update a conda envirinment via the [environment.yml file](/code/environment.yml) and [guidance](/docs/Guidance/GettingStarted.md)
 
-## Project Organization
+<!-- ### Building
+
+*Describe how to build the application and general settings. Any specific should be included in specific guides on the wiki / pages section. What is needed to build should be already be included in prerequisites* -->
+
+<!-- ## Project Organization
 
     ├── README.md          <- The top-level README for developers using this project.
     ├── data
@@ -91,26 +107,26 @@ conda activate ./env
     │                         the creator's initials, and a short `-` delimited description, e.g.
     │                         `1.0-jqp-initial-data-exploration`.
     │
-    └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
+    └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io -->
 
-### Coding Style
+<!-- ### Coding Style
 
 Coding style adheres to AMRC coding practices.
 
 | Language | Standard |
 | -- | -- |
-<!-- | Javascript | [AirBnB](https://github.com/airbnb/javascript) | -->
+| Javascript | [AirBnB](https://github.com/airbnb/javascript) |
 | Python | [PEP-8](https://www.python.org/dev/peps/pep-0008/) |
 | R | [Google's R Style Guide](https://web.stanford.edu/class/cs109l/unrestricted/resources/google-style.html) |
 | MATLAB | N/A |
 
 *Delete as appropiate for the project and where required state additional languages.
-E.g. specific database technologises used and the standard being followed.*
+E.g. specific database technologises used and the standard being followed.* -->
 
-## Deployment
+<!-- ## Deployment
 
-*Describe how you deploy the built application. Just an .exe that is run vs pointing to specific guides on the wiki / pages.*
-
+*Describe how you deploy the built application. Just an .exe that is run vs pointing to specific guides on the wiki / pages.* -->
+<!-- 
 ## Contributing
 
 Please only contribute if assigned to work on the project.
@@ -137,4 +153,4 @@ This project is funded under *name your project type*.
 
 *This markdown sheet is quite handy! [Link](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)*
 
-Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience
+Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience -->

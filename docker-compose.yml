@@ -1,26 +1,22 @@
-version: "3.7"
+version: "3.8"
+
 
 services:
 
 #################################################################
 
 # ## frontend - visualisation app with plotly dashboard
-  frontend:
+  dashboard:
     restart: unless-stopped
     build:
-      context: ./frontend
-    # network_mode: "host"
+      context: ./code/dashboard
     ports:
         - "8050:8050"
     volumes:
-      - type: volume
-        source: frontend
-        target: /var/frontend
-      - type: volume
-        source: data
-        target: /var/data
+      - ./code/dashboard:/app
+      - ./data:/data
     env_file:
-      - ./environment_variables/frontend.env
+      - ./code/environment_variables/dashboard.env
 
 #################################################################
 
@@ -39,7 +35,7 @@ services:
 #         target: /backend/environment_variables/backend.env
 #       - type: bind
 #         source: ./logs
-#         target: /var/log/scrims
+#         target: /var/log/app
 #       - type: volume
 #         source: data
 #         target: /var/data
@@ -73,6 +69,4 @@ services:
 volumes:
   influxdb-storage:
 #   influxdb-config:
-#   scratch:
-  frontend:
   data:

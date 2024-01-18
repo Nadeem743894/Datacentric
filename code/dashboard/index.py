@@ -10,7 +10,7 @@ import logging
 from dash import Dash, dcc, html, Input, Output, callback
 
 ### Import Dash Instance and Pages ###
-from dashboard import app, colors
+from app import app, colors
 from navbar import generate_navbar
 from pages import example
 import plotly.graph_objects as go
