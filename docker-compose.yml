@@ -1,13 +1,72 @@
-version: "3.7"
+version: "3.8"
+
 
 services:
-  app:
+
+#################################################################
+
+# ## frontend - visualisation app with plotly dashboard
+  dashboard:
     restart: unless-stopped
-    build: 
-      context: .
+    build:
+      context: ./code/dashboard
+    ports:
+        - "8050:8050"
     volumes:
-      - type: bind
-        source: ./logs
-        target: /var/log/app
+      - ./code/dashboard:/app
+      - ./data:/data
     env_file:
-      - ./.env
+      - ./code/environment_variables/dashboard.env
+
+#################################################################
+
+# # backend - python script for data science application
+#   backend:
+#     restart: unless-stopped
+#     build: 
+#       context: ./src
+#     privileged: true
+#     # depends_on:
+#     #   - "influxdb"
+#     network_mode: "host"
+#     volumes:
+#       - type: bind
+#         source: ./environment_variables/backend.env
+#         target: /backend/environment_variables/backend.env
+#       - type: bind
+#         source: ./logs
+#         target: /var/log/app
+#       - type: volume
+#         source: data
+#         target: /var/data
+#       - type: volume
+#         source: influxdb-storage
+#         target: /var/lib/influxdb2 
+#     env_file:
+#       - ./environment_variables/backend.env
+
+# #################################################################
+
+# ## InfluxDB - Time-series historian service
+#   influxdb:
+#     image: influxdb:latest
+#     restart: unless-stopped
+#     # network_mode: "host"
+#     ports:
+#       - "8086:8086"
+#     volumes:
+#       - type: volume
+#         source: influxdb-storage
+#         target: /var/lib/influxdb2
+#       - type: volume
+#         source: influxdb-config
+#         target: /etc/influxdb2
+#     env_file:
+#       - ./environment_variables/influxv2.env
+
+#################################################################
+
+volumes:
+  influxdb-storage:
+#   influxdb-config:
+  data:

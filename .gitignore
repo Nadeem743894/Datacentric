@@ -88,3 +88,7 @@ data/*/*
 
 # Mypy cache
 .mypy_cache/
+
+# *.env
+
+/draft/

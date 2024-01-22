@@ -6,24 +6,78 @@
 
 ## Getting Started
 
-### Prerequisites
+- [ ] Fill out the Project Code/Name/Description above
+- [ ] Initialise the git repository
+- [ ] Build an appropriate [programming environment](/docs/Guidance/GettingStarted.md)
 
-*What needs to be installed on your system before you install this repo. E.g.*
+## The Workflow
 
-* [Python 3](https://www.python.org/downloads/) - Python 3 (or above) interpreter
-* [Visual Studio 2017](https://visualstudio.microsoft.com/) - Code editor or equivelant
+<!-- replace [ ] with [x] when a workflow task has been completed -->
 
-### Installing
+### Business Understanding
 
-*How should they install the application. E.g. download the trunk and launch within the UnityEditor.*
+- [ ] Fill out the [Project Charter](/docs/Project/Charter.md) document with input from the customer
 
-*Include an image/animated GIF of what success looks like.*
+### Data Acquisition and Preparation
 
-### Building
+- [ ] Develop [notebook code](./code/notebooks/DataAcquisition/) to get started
+- [ ] Don't Repeat Yourself! Move reusable code into a callable module in [this directory](./code/src/DataAcquisition/)
+- [ ] Map the data flow in the [Data Pipeline](/docs/Data%20Reports/Data%20Pipeline.txt)
+- [ ] Produce a [Data Report](/docs/Data%20Reports/DataSummaryReport.md) for each new dataset added to the project
+- [ ] Initialise and use DVC with the [guidance](/docs/Guidance/DVC.md)
+- [ ] Define raw data sources in the [Data Definition](/docs/Data%20Reports/Data%20Defintion.md)
+- [ ] Define processed data sources in the [Data Definition](/docs/Data%20Reports/Data%20Defintion.md)
+- [ ] Populate the [Data Dictionary](/docs/Data%20Dictionaries/README.md) 
 
-*Describe how to build the application and general settings. Any specific should be included in specific guides on the wiki / pages section. What is needed to build should be already be included in prerequisites*
+### Data Exploration
 
-## Project Organization
+- [ ] Develop [notebook code](./code/notebooks/DataExploration)
+- [ ] Move reusable code into a callable module in [this directory](./code/src/DataExploration/)
+
+### Feature Transformation
+
+- [ ] Develop [notebook code](./code/notebooks/FeatureTransformation)
+- [ ] Move reusable code into a callable module in [this directory](./code/src/FeatureTransformation/)
+- [ ] Define feature sets in the [Data Definition](/docs/Data%20Reports/Data%20Defintion.md)
+- [ ] Log new features for version control with [DVC](/docs/Guidance/DVC.md)
+
+### Model Building
+
+- [ ] Develop [notebook code](./code/notebooks/ModelBuilding)
+- [ ] Move reusable code into a callable module in [this directory](./code/src/ModelBuilding/)
+- [ ] Track models and experiments with [DVC](/docs/Guidance/DVC.md)
+- [ ] Produce a [Baseline Report](/docs/Model/Baseline/Baseline%20Model.md) for the first model developed
+- [ ] Produce a [Model Report](/docs/Model/Model%201/Model%20Report.md) for each model iteration
+- [ ] Log new models for version control with [DVC](/docs/Guidance/DVC.md), stored in the [model directory](/models/README.md)
+- [ ] Track experiments with [DVC](/docs/Guidance/DVC.md)
+
+
+### Evaluation and Reporting
+
+- [ ] Develop [notebook code](./code/notebooks/EvaluationAndReporting)
+- [ ] Move reusable code into a callable module in [this directory](./code/src/EvaluationAndReporting/)
+- [ ] Build a dashboard with the [plotly templates](./code/dashboard/) and [guidance](/docs/Guidance/Dashboarding.md)
+- [ ] Complete a [Final Report](/docs/Model/Final%20Report.md) for the best model identified/evaluated on the hold-out test set
+- [ ] Complete the [Exit Report](/docs/Project/Exit%20Report.md)
+- [ ] Define the [System Architecture](/docs/Project/System%20Architecture.docx)
+- [ ] Extract required content from [docs folder](/docs/) for your agreed reporting format (AMRC technical report, presentation etc.)
+
+### Deployment and Maintenance
+
+- [ ] Develop [notebook code](./code/notebooks/DeploymentAndMaintenance)
+- [ ] Move reusable code into a callable module in [this directory](./code/src/DeploymentAndMaintenance/)
+- [ ] Deploy a dockerised application with the [docker compose file](docker-compose.yml) and [guidance](/docs/Guidance/Docker.md)
+
+## Other useful features
+
+- [ ] Update a conda envirinment via the [environment.yml file](/code/environment.yml) and [guidance](/docs/Guidance/GettingStarted.md)
+- [ ] Check the [cheatsheets](/docs/Guidance/Cheatsheets/Cheatsheets.md) relevant to this template
+- [ ] Manage [environment variables](/code/environment_variables/README.md) across your project
+<!-- ### Building
+
+*Describe how to build the application and general settings. Any specific should be included in specific guides on the wiki / pages section. What is needed to build should be already be included in prerequisites* -->
+
+<!-- ## Project Organization
 
     ├── README.md          <- The top-level README for developers using this project.
     ├── data
@@ -69,26 +123,26 @@
     │                         the creator's initials, and a short `-` delimited description, e.g.
     │                         `1.0-jqp-initial-data-exploration`.
     │
-    └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
+    └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io -->
 
-### Coding Style
+<!-- ### Coding Style
 
 Coding style adheres to AMRC coding practices.
 
 | Language | Standard |
 | -- | -- |
-<!-- | Javascript | [AirBnB](https://github.com/airbnb/javascript) | -->
+| Javascript | [AirBnB](https://github.com/airbnb/javascript) |
 | Python | [PEP-8](https://www.python.org/dev/peps/pep-0008/) |
 | R | [Google's R Style Guide](https://web.stanford.edu/class/cs109l/unrestricted/resources/google-style.html) |
 | MATLAB | N/A |
 
 *Delete as appropiate for the project and where required state additional languages.
-E.g. specific database technologises used and the standard being followed.*
+E.g. specific database technologises used and the standard being followed.* -->
 
-## Deployment
+<!-- ## Deployment
 
-*Describe how you deploy the built application. Just an .exe that is run vs pointing to specific guides on the wiki / pages.*
-
+*Describe how you deploy the built application. Just an .exe that is run vs pointing to specific guides on the wiki / pages.* -->
+<!-- 
 ## Contributing
 
 Please only contribute if assigned to work on the project.
@@ -115,4 +169,4 @@ This project is funded under *name your project type*.
 
 *This markdown sheet is quite handy! [Link](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)*
 
-Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience
+Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience -->
