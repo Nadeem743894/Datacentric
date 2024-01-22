@@ -71,23 +71,3 @@
     ├── docker-compose.yml              <- Docker compose file for deploying a containerised application.
     └── README.md                       <- The top-level README for analysts using this project,             
                                            outlining the workflow and useful features included in the template.
-
-## Top level only
-
-    ├── code      
-    │   └── ... 
-    │
-    ├── data
-    │   └── ... 
-    │
-    ├── docs
-    │   └── ... 
-    │
-    ├── models                          <- Trained and serialized models, model predictions, or model summaries, 
-    │   └── ...                            tracked with DVC.
-    │  
-    ├── docker-compose.yml              <- Docker compose file for deploying a containerised application.
-    └── README.md                       <- The top-level README for analysts using this project,             
-                                           outlining the workflow and useful features included in the template.
-
-
