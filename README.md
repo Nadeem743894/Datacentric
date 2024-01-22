@@ -9,6 +9,7 @@
 - [ ] Fill out the Project Code/Name/Description above
 - [ ] Initialise the git repository
 - [ ] Build an appropriate [programming environment](/docs/Guidance/GettingStarted.md)
+- [ ] open the [project workspace in VS code](/datascience-project-template.code-workspace)
 
 ## The Workflow
 
