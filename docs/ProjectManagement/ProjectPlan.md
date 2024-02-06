@@ -1,20 +1,8 @@
-# Project Charter
-
-## Business background
-
-* Who is the client?
-* What business domain the client is in.
-* What business problems are we trying to address?
-
-## Scope
-
-* What data science solutions are we trying to build?
-* What will we do?
-* How is it going to be consumed by the customer?
+# Project Plan
 
 ## Personnel
 
-* Who are on this project:
+* Who are on this project and what is their role:
   * Our team:
     * Project lead
     * PM
@@ -23,6 +11,11 @@
   * Client:
     * Data administrator
     * Business contact
+
+## Plan
+
+* Phases (milestones), timeline, short description of what will be done in each phase.
+
 
 ## Metrics
 
