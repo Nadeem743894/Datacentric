@@ -29,7 +29,8 @@ The aim of this document is to plan the technical aspects of a data project (inc
 
 > ### Data availability and readiness
 
-* What data is required for the project? 
+* What data is required for the project? How does it represent what you are trying to gain insights into? 
+
 * Is the project data: 
   1. available as is?
   2. available but needs processing for use in this project?
@@ -40,7 +41,7 @@ If there are different data types and sources then more than one case may apply 
 * ***Are there any resource or cost limitations associated with data collection and storage?***
 If yes, give details. 
 
-> ### Data acquisition 
+> ### Data acquisition and preparation
 
 #### Case 1: Data is available as is
 
@@ -60,11 +61,11 @@ If yes, give details.
 * What processing needs to be done to the data? 
   1. Processing step 1
   2. Processing step 2 
-  3. (Please delete as appropriate)
+  3. (Please add or delete as appropriate)
 * Where will the processed data be stored and how long does it need to be stored? 
   1. Processed data step 1
   2. Processed data step 2 
-  3. (Please delete as appropriate)
+  3. (Please add or delete as appropriate)
 > The data should be stored according the medallion structure depending on how much processing is required. Details are given in the ***Data Documentation*** when this stage of the project is reached and details confirmed.   
 
 #### Case 3: Data is not currently available
@@ -87,131 +88,111 @@ If yes, give details.
 * If the data requires further processing, what processing needs to be done to the data? 
   1. Processing step 1
   2. Processing step 2 
-  3. (Please delete as appropriate)
+  3. (Please add or delete as appropriate)
 * Where will the processed data be stored and how long does it need to be stored? 
   1. Processed data step 1
   2. Processed data step 2 
-  3. (Please delete as appropriate)
+  3. (Please add or delete as appropriate)
 > The data should be stored according the medallion structure depending on how much processing is required. Details are given in the ***Data Documentation*** when this stage of the project is reached and details confirmed.   
 
+> ### Data Quality and Integrity (further guidance can be given on these as there may be no clear answer at this stage)
+* How will you ensure the data is of suitable quality for the project? 
+* Is there a timescale for which the data must be kept?
+* How will you ensure that the data set contains enough metadata for future use?
+* How will access be gained to the data in the future?
+* How will you maintain the integrity of the data? 
+
+> ### Missing data
+It may not always be possible to collect the data that you require. In some cases this will means that the project is not viable, in other cases though the project can still go ahead as long as the implications of the missing data and the mitigation strategy are well understood in the context of the original problem. 
+* Is there missing data? 
+* What mitigation is in place if the project is to continue? 
+* What are the implications of the missing data? 
+
+> ### Synthetic data
+Where 'real' data is not available it may be possible to use synthetic data, although care should be taken to ensure this is representative of real-life data. 
+* Is synthetic data going to be used in this project? 
+* Will you collect the synthetic data? Give details if yes. 
+* Has someone else collected the synthetic data? Give details if yes.
+
+* Where will the synthetic data be kept, stored and how will it be accessed? 
+
+
+# Next steps 
+
+> The next steps will only be considered in brief detail for now in an effort to ensure the right tools and expertise and timings are in place once the project is in delivery. Further guidance and details can be found in the relevant docs sub-directory.
+
+## Step 3: Data Exploration (EDA)
+
+The aim of data exploration is three-fold: 1. To check that the file contains the data that you expect, 2. To check the quality of the data before committing to more comprehensive analysis and 3. to provide some basic information and visualisations to better understand the data. 
+
+* Who will carry out the data exploration?
+* What tools will be used to explore the data?
+  * Does this require a licence?
+  * Does anyone require training? 
+  * Have you identified the training - what are the timings and costs?
+* Who will need to see the results of the data exploration? 
+* How will EDA be presented? 
+
+
+## Step 4: Feature Transformation
+
+The aim of feature transformation is to ensure that only relevant bits of the data are used to build models and for further analysis. This may be annual averages, or principal components.
+
+* Who will carry out the feature engineering? 
+* What tools will be used for feature transformation?
+* Does anyone require training?
+  * Have you identified the training - what are the timings and costs?
+* Where will the features be kept? Do you have a planned feature store? (This may be the gold level in your chosen data storage option following the medallion structure)
+* How will EDA of the features be carried out?
+* Who will need to see the EDA of the features and how will it be presented to them? 
+
+## Step 5: Model building
+
+Here the word 'model' is representative of a statistical/machine learning or AI model. The aim of model building is to get further insights from the data and to understand the statistical significance of any identified patterns so far. 
+
+* Who will carry out the model building?
+* What tools will be required to carry out model building?
+  * Are licences required? Give details if yes.
+* What models do you expect to use? 
+* Is training required? 
+  * Have you identified training, what is the cost and timing of such training? 
+* Can you estimate the computer power required?
+  * Will you require high performance computing?
+  * Do you have access to the correct resources?
+
+## Step 6: Evaluation and reporting
+
+To understand the insights and limitations of any data science work requires a collective of expertise and so time should be spent sharing and disseminating results to different stakeholders for feedback and discussion. 
+
+* Who will be required to see the results of the analysis? 
+  * How many different types of stakeholder are they and will they require different presentation methods? 
+  * Do you need to write a report/give a presentation/etc? 
+  * Who will review outputs? 
+* Do outputs need marketing input? 
+  * Can you give an idea of the costs/time required from the marketing team? 
+* Do you have a plan/budget to publish the work if possible? 
+* How will success be measured? 
+
+## Step 7: Deployment and maintenance
+
+For successful projects there may be a request for any software or model to become operational. This requires an understanding of MLOps and may involve the commercial team. There may be no answers to this section in the scoping but it may be considered later in the project, or even after the end.  
+
+* Have you been made aware that this should produce operational software/models? 
+  * Who will be responsible for the software/models?
+  * Who will maintain the software/models? 
+* Can the data/software/models be monetised?
+  * If yes, give details. 
 
 
 
 
 
 
-> -------------------------------------------
-## Metrics
-
-* What are the qualitative objectives? (e.g. reduce user churn)
-* What is a quantifiable goal metric?  (e.g. reduce the fraction of users with 4-week inactivity)
-* Quantify what improvement in the values of the metrics are useful for the customer scenario (e.g. reduce the fraction of users with 4-week inactivity by 20%)
-* What is the baseline (current) value of the metric? (e.g. current fraction of users with 4-week inactivity = 60%)
-* How will we measure the metric? (e.g. A/B test on a specified subset for a specified period; comparison of performance after implementation to baseline)
 
 
 
-## Architecture
-
-* Data
-  * What data do we expect? Raw data in the customer data sources (e.g. on-prem files, SQL, etc.)
-* Data movement tools to move either:
-  * all the data,
-  * some data after pre-aggregation
-  * raw sampled data sufficient for modeling
-
-* What tools and data storage/analytics resources will be used in the solution?
-* How will the end solution (e.g. a dashboard or operationalized web service) be consumed in the business workflow of the customer? If applicable, write down pseudo code for the APIs of the web service calls.
-  * How will the customer use the model results to make decisions?
-  * Data movement pipeline in production
-  * Make a one-slide diagram showing the end to end data flow and decision architecture
-    * If there is a substantial change in the customer's business workflow, make a before/after diagram showing the data flow.
-
-## Communication
-
-* How will we keep in touch with each other and the client? Weekly meetings?
-* Who are the contact persons on both sides?
 
 
-<!-- ---------------------------------------------------------------------------------------------------- -->
-## Analytics Plan
-
-*Fill out this document before starting an analysis, and update periodically as and when circumstances change*
-*This should serve as a useful clarity tool for you, the analyst, as well as someone not familiar with the work as a quickstart semantic guide*
-*The aim of this document is to get you thinking about the whole data science process and help you to avoid some common pitfalls*
-*The plan should be reviewed by another data-experienced peer following the initial completion and and subsequent updates*
-
-### Research Question
-
-*What are you trying to answer?*
-*what is the objective of the analysis?*
-*Why is it important?*
-
-### Data
-
-*What does the data describe? What are the variables?*
-*What format is the data?*
-*How will it be ingested into the pipeline?*
-*How big/small is the dataset?*
-*Are the classes balanced/imbalanced?*
-
-### Exploration
-
-*How will you explore the data?*
-*What type of plots/analyses are most appropriate for this data?*
-*Will you use any specific tools to explore the data?*
-
-### Transformations/Feature Engineering
-
-*What transformations are applied during in the pipeline?*
-*Can you use a feature store or do you need to custom build your own features?*
-*What features will you engineer and how do they relate to the raw data and ouput?*
-
-### Modelling
-
-*What modelling approach will you take? Why?*
-*What package/s are you using for the modelling?*
-*What assumptions does your modelling method/algorithm depend on?*
-*Does your data/analysis meet the assumptions?*
-
-### Evaluation
-
-*How are you evaluating your model?*
-*What metric will you use?*
-*Is your metric appropriate? (considering the data, objective and class imbalance)*
-
-### Reporting/visualisation
-
-*How will you report this analysis - written tech report, journal paper, powerpoint pres, custom dashboard, proprietary dashboard etc.?*
-*Who are the stakeholders that will be consuming this report, what method is most appropriate for the audience?*
-*What tools will you use? (matplotlib, Dash, PowerBI etc)*
-
-### Deployment
-
-*Will this analysis be deployed in a production environment?* 
-*Have you considered model monitoring, concept drift & MLOps?*
-
-
-## Checklist
-*note - checkbox rendering in VS code requires the markdown-all-in-one extension (available on the marketplace)*
-
-Have you completed:
-*replace the [ ] with [x] for each item you have completed*
-
-### Project set up
-
-- [x] Research Plan
-- [ ] Data Dictionary
-- [ ] Initialised github repo
-- [ ] Initialised environment
-
-### Project delivery
-
-- [ ] Packaged environment
-- [ ] Tested notebooks
-- [ ] Tested scripts
-- [ ] Completed documentation
-- [ ] 
 
 
 
