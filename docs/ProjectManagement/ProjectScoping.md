@@ -158,7 +158,9 @@ Here the word 'model' is representative of a statistical/machine learning or AI 
   * Have you identified training, what is the cost and timing of such training? 
 * Can you estimate the computer power required?
   * Will you require high performance computing?
+  * Will you require cloud access?
   * Do you have access to the correct resources?
+    * If no, what are the estimated costs and timescales for the required access?
 
 ## Step 6: Evaluation and reporting
 
