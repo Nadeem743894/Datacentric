@@ -95,7 +95,7 @@ If yes, give details.
   3. (Please add or delete as appropriate)
 > The data should be stored according the medallion structure depending on how much processing is required. Details are given in the ***Data Documentation*** when this stage of the project is reached and details confirmed.   
 
-> ### Data Quality and Integrity (further guidance can be given on these as there may be no clear answer at this stage)
+### Data Quality and Integrity (further guidance can be given on these as there may be no clear answer at this stage)
 * How will you ensure the data is of suitable quality for the project? 
 * Is there a timescale for which the data must be kept?
 * How will you ensure that the data set contains enough metadata for future use?
