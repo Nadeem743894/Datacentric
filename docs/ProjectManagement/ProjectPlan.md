@@ -21,6 +21,9 @@ The project scoping plan can be used to fill in the project plan with resources,
 
 * Are licences required? Give details
 * Is training required? Give details 
+* Has machine been booked? Give details
+* Have the electrical team been booked? Give details
+* Have sensors been acquired and fitted? 
 
 ## Plan
 
@@ -30,5 +33,7 @@ The project scoping plan can be used to fill in the project plan with resources,
 
 * How will we keep in touch with each other and the partners? Weekly meetings?
 * Who are the contact persons on both sides?
+
+## Any other business
 
 *Page created by LL - Feb 2024*
