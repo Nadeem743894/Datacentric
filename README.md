@@ -6,8 +6,10 @@
 
 ## Getting Started
 
+The data science team will be able to provide guidance if needed. 
+
 - [ ] Fill out the Project Code/Name/Description above
-- [ ] Initialise the git repository
+- [ ] Initialise the git repository ***Need an instruction sheet for this***
 - [ ] Build an appropriate [programming environment](/docs/Guidance/GettingStarted.md)
 - [ ] open the [project workspace in VS code](/datascience-project-template.code-workspace)
 
@@ -17,7 +19,8 @@
 
 ### Business Understanding
 
-- [ ] Fill out the [Project Charter](/docs/Project/Charter.md) document with input from the customer
+- [ ] Fill out the [Project Scoping](/docs/Project/ProjectScoping.md) document as comprehensively as possible. Work with partners and seek guidance where necessary. This document will provide the foundation for the SoW, the project plan and the data strategy as well as helping to provide the specific project workflow. 
+- [ ] Fill out the [Project Plan](/docs/Project/ProjectPlan.md)
 
 ### Data Acquisition and Preparation
 

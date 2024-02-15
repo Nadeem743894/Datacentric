@@ -1,10 +1,10 @@
-# Folder for hosting project documents and reports for a Data Science Project
+# Folder for hosting project management documents and reports for a data-driven Project
 
-These could be:
+These include:
 
-* Project charter
-* Project management and planning documents
-* System architecture description and diagrams
-* Information obtained from a business owner or client about the project
-* Documents and presentations prepared to share information about the project
-* Final exit report at the conclusion of the project
+* [Project scoping](/docs/Project/ProjectScoping.md) document 
+* Project management and planning documents, such as the [Project Plan](/docs/Project/ProjectPlan.md)
+* System architecture description and diagrams  **What is this? I'm thinking it should be a specific project workflow in this folder?**
+* Project [deliverables](/docs/ProjectManagement/Deliverables/)
+* A [folder](/docs/ProjectManagement/SharedDocuments/) containing other documents and presentations prepared to share information about the project
+* [Closure report](/docs/ProjectManagement/ClosureReport.md) at the conclusion of the project
