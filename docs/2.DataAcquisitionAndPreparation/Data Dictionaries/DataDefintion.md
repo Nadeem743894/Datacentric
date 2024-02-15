@@ -6,7 +6,7 @@ For each data source, an individual report describing the data schema, the meani
 
 For each dataset, the links to the sample datasets in the _sample_data_ directory are also provided.
 
-## Raw Data Sources
+## Bronze data - raw data sources
 
 | Dataset Name | Original Location   | Destination Location  | Data Movement Tools / Scripts | Link to Report |
 | ---:| ---: | ---: | ---: | -----: |
@@ -16,7 +16,7 @@ For each dataset, the links to the sample datasets in the _sample_data_ director
 * Dataset 1 - [Give a brief summary of the dataset, including how to access the data.  More detailed information should be in the Dataset 1 Report]
 * Dataset 2 - [Give a brief summary of the dataset, including how to access the data.  More detailed information should be in the Dataset 2 Report]
 
-## Processed Data
+## Silver data - processed data
 
 | Processed Dataset Name | Input Dataset(s)   | Data Processing Tools/Scripts | Link to Report |
 | ---:| ---: | ---: | ---: |
@@ -26,7 +26,7 @@ For each dataset, the links to the sample datasets in the _sample_data_ director
 * Processed Dataset 1 - [Give a brief summary of the processed data, including why the data should be processed in this way.  More detailed information should be in the Processed Dataset 1 Report.]
 * Processed Dataset 2 - [Give a brief summary of the processed data, including why the data should be processed in this way.  More detailed information should be in the Processed Dataset 2 Report.]
 
-## Feature Sets
+## Gold data - Feature Sets
 
 | Feature Set Name | Input Dataset(s)   | Feature Engineering Tools/Scripts | Link to Report |
 | ---:| ---: | ---: | ---: |
