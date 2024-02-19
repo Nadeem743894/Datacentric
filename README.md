@@ -23,7 +23,7 @@ The data science team will be able to provide guidance if needed.
 Once the project has been approved the following should be filled in. 
 - [ ] Fill out the [Project Plan](/docs/ProjectManagement/ProjectPlan.md). This documents who will work on the project and any other key information that is needed for the project to run smoothly.
 - [ ] Fill out the [high-level business understanding](/docs/1.BusinessUnderstanding/High-levelBusinessUnderstanding.md). This should be suitable as a public description on the SoW. 
-- [ ] Fill out the [detailed business understanding](/docs/1.BusinessUnderstanding/DetailedBuisinessUnderstanding.md) with further information about the need for the project. This will be used to create the SoW and will also provide a solid foundation for an introduction in a report. 
+- [ ] Fill out the [detailed business understanding](/docs/1.BusinessUnderstanding/DetailedBusinessUnderstanding.md) with further information about the need for the project. This will be used to create the SoW and will also provide a solid foundation for an introduction in a report. 
 
 ### Data Acquisition and Preparation
 
