@@ -19,8 +19,8 @@ The data science team will be able to provide guidance if needed.
 
 ### Business Understanding
 
-- [ ] Fill out the [Project Scoping](/docs/Project/ProjectScoping.md) document as comprehensively as possible. Work with partners and seek guidance where necessary. This document will provide the foundation for the SoW, the project plan and the data strategy as well as helping to provide the specific project workflow. 
-- [ ] Fill out the [Project Plan](/docs/Project/ProjectPlan.md)
+- [ ] Fill out the [Project Scoping](/docs/Project/ProjectScoping.md) document as comprehensively as possible. Work with partners and seek guidance where necessary. This document will provide the foundation for the SoW, the project plan and the data strategy as well as providing the tailored project workflow. 
+- [ ] Fill out the [Project Plan](/docs/Project/ProjectPlan.md). This documents who will work on the project and any other key information that is needed for the project to run smoothly.
 
 ### Data Acquisition and Preparation
 
