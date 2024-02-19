@@ -17,10 +17,13 @@ The data science team will be able to provide guidance if needed.
 
 <!-- replace [ ] with [x] when a workflow task has been completed -->
 
-### Business Understanding
+### [Business Understanding](/docs/1.BusinessUnderstanding/README.md)
 
-- [ ] Fill out the [Project Scoping](/docs/Project/ProjectScoping.md) document as comprehensively as possible. Work with partners and seek guidance where necessary. This document will provide the foundation for the SoW, the project plan and the data strategy as well as providing the tailored project workflow. 
-- [ ] Fill out the [Project Plan](/docs/Project/ProjectPlan.md). This documents who will work on the project and any other key information that is needed for the project to run smoothly.
+- [ ] Fill out the [Project Scoping](/docs/ProjectManagement/ProjectScoping.md) document as comprehensively as possible. Work with partners and seek guidance where necessary. This document will provide the foundation for the SoW, the project plan and the data strategy as well as providing the tailored project workflow. 
+Once the project has been approved the following should be filled in. 
+- [ ] Fill out the [Project Plan](/docs/ProjectManagement/ProjectPlan.md). This documents who will work on the project and any other key information that is needed for the project to run smoothly.
+- [ ] Fill out the [high-level business understanding](/docs/1.BusinessUnderstanding/High-levelBusinessUnderstanding.md). This should be suitable as a public description on the SoW. 
+- [ ] Fill out the [detailed business understanding](/docs/1.BusinessUnderstanding/DetailedBuisinessUnderstanding.md) with further information about the need for the project. This will be used to create the SoW and will also provide a solid foundation for an introduction in a report. 
 
 ### Data Acquisition and Preparation
 

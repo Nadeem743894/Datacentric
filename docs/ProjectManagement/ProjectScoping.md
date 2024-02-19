@@ -3,10 +3,12 @@
 
 ### Aim of the document
 
-The aim of this document is to plan the technical aspects of a data project (including required resources) in the context of the business case and the planned end product. It is recommended that this document is filled in during project scoping (at this stage it may not be clear the project is viable or how much money/time/resource are required depending on data availability and storage options). The document is set out according to the AMRC Data-Centric Manufacturing Workflow for viable projects will provide a strong foundation for producing a Statement of Work.  Each bullet point should be considered and basic details given at the scoping stage. 
+The aim of this document is to plan the technical aspects of a data project (including required resources) in the context of the business case and the planned end product. It is recommended that this document is filled in during project scoping (at this stage it may not be clear the project is viable or how much money/time/resource are required depending on data availability and storage options). The document is set out according to the AMRC Data-Centric Manufacturing Workflow and for viable projects will provide a strong foundation for producing a Statement of Work as well as a tailored DCM workflow for the project team to follow.  Each bullet point should be considered and basic details given at the scoping stage. 
 
 * Project code: (if/when available)
 * Harbour link: (if/when available)
+
+* Which theme is leading this project? 
 
 ## Step 1: Business Understanding
 
