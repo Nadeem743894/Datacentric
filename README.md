@@ -17,7 +17,7 @@ The data science team will be able to provide further guidance if needed.
 
 <!-- replace [ ] with [x] when a workflow task has been completed -->
 
-### [Business Understanding](/docs/1.BusinessCase/)
+### [The Business Case](/docs/1.BusinessCase/)
 
 Documentation
 - [ ] Fill out the [Project Scoping](/docs/0.ProjectManagement/ProjectScoping.md) document as comprehensively as possible. Work with partners and seek guidance where necessary. This document will provide the foundation for the SoW, the project plan and the data strategy as well as providing the tailored project workflow. 
@@ -30,8 +30,8 @@ Once the project has been approved the following should be filled in.
 
 Documentation
 - [ ] Copy and paste the information from the [project scoping](/docs/0.ProjectManagement/ProjectScoping.md) document into the [data strategy](/docs/2.DataAcquisitionAndPreparation/DataStrategy.md) and update where necessary. Do not edit the scoping document. 
-- [ ] Define raw data sources in the [Data Definition](/docs/Data%20Reports/Data%20Defintion.md)
-- [ ] Define processed data sources in the [Data Definition](/docs/Data%20Reports/Data%20Defintion.md)
+- [ ] Define raw data sources in the [Data Definition](/docs/Data%20Reports/Data%20Definition.md)
+- [ ] Define interim data sources in the [Data Definition](/docs/Data%20Reports/Data%20Definition.md)
 - [ ] Map the data flow in the [Data Pipeline](/docs/Data%20Reports/Data%20Pipeline.txt)
 
 Code
@@ -41,14 +41,20 @@ Code
 Data
 - [ ] Initialise and use DVC with the [guidance](/docs/Guidance/DVC.md)
 - [ ] Populate the [Data Dictionary](/docs/Data%20Dictionaries/README.md) 
+- [ ] Clean the data ready for initial exploration creating the [silver-interim data](/data/interim-silver/)
 
 ### Data Exploration
 
+Code
 - [ ] Develop [notebook code](./code/notebooks/DataExploration)
 - [ ] Move reusable code into a callable module in [this directory](./code/src/DataExploration/)
-- [ ] Produce a [Data Report](/docs/Data%20Reports/DataSummaryReport.md) for each new dataset added to the project
+
+Documentation
+- [ ] Produce a [Data Report](/docs/Data%20Reports/DataSummaryReport.md) for each new dataset added to the project.
 - [ ] Review your [data strategy](/docs/2.DataAcquisitionAndPreparation/DataStrategy.md) and make changes where necessary.
 - [ ] Can the project continue? 
+
+- [ ] There are information sheets available to provide guidance on data exploration. 
 
 ### Feature Transformation
 
