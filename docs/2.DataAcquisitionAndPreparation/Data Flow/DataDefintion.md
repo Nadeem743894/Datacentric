@@ -4,7 +4,7 @@ Placeholders in this page allows the output to be shown in tables with links pro
 
 # Data and Feature Definitions
 
-This document provides a central hub for the raw data sources, the processed/transformed data, and feature sets. Exploration of each dataset is provided in the data summary report.
+This document provides a central hub for the raw data sources, the processed/transformed data, and feature sets. Exploration of each dataset is provided in the data summary report but these are not mandatory for the raw data as it may need to be processed before it can be used at all.  
 
 For each data source, an individual report describing the data schema, the meaning of each data field, and other information that is helpful for understanding the data is provided. If the dataset is the output of processing/transforming/feature engineering existing data set(s), the names of the input data sets, and the links to scripts that are used to conduct the operation are also provided.
 
@@ -31,7 +31,7 @@ For each data source, an individual report describing the data schema, the meani
 | Processed Dataset 1 | [Raw data location](link/to/input/data/storage) | [Processed Dataset 1 Location](link/to/processed/data/storage) | [The script used to process the data can be found here](link/to/python/script/file/in/Code) | [Processed Dataset 1 Exploration Report](link/to/processeddata1/report1)| Name of engineer | None or give details |
 | Processed Dataset 2 | [Raw data location](link/to/input/data/storage) | [Processed Dataset 2 Location](link/to/processed/data/storage) |[The script used to process the data can be found here](link/to/R/script/file/in/Code) | [Processed Dataset 2 Exploration Report](link/to/processeddata2/report2)| Name of engineer | None or give details |
 
-> The raw data location should match the destination location of the raw data. 
+> The raw data location should match the destination location of the raw data. If a dataset is processed using input from more than one dataset use a comma to separate the links to them. 
 
 
 ## Gold data - Feature Sets
@@ -44,6 +44,6 @@ For each data source, an individual report describing the data schema, the meani
 | Feature Set 1 | [Processed Dataset Location](link/to/processed/data/storage) |  [Feature 1 Dataset Location](link/to/processed/data/storage) | [The script used to process the data can be found here](link/to/R/script/file/in/Code) | [Feature Set 1 Exploration Report](link/to/report1)|  Name of engineer | None or give details |
 | Feature Set 2 |[Processed Dataset Location](link/to/processed/data/storage) |  [Feature 1 Dataset Location](link/to/processed/data/storage) | [The script used to process the data can be found here](link/to/sql/script/file/in/Code) | [Feature Set 2 Exploration Report](link/to/report2)|  Name of engineer | None or give details |
 
-
+>  If a dataset is processed using input from more than one dataset use a comma to separate the links to them.
 
  *Page created by LL - Feb 2024, based on Microsoft Team Data Science*
