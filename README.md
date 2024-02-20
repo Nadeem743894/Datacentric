@@ -6,7 +6,7 @@
 
 ## Getting Started
 
-The data science team will be able to provide guidance if needed. 
+The data science team will be able to provide further guidance if needed. 
 
 - [ ] Fill out the Project Code/Name/Description above
 - [ ] Initialise the git repository ***Need an instruction sheet for this***
@@ -17,29 +17,38 @@ The data science team will be able to provide guidance if needed.
 
 <!-- replace [ ] with [x] when a workflow task has been completed -->
 
-### [Business Understanding](/docs/1.BusinessUnderstanding/README.md)
+### [Business Understanding](/docs/1.BusinessUnderstanding/)
 
-- [ ] Fill out the [Project Scoping](/docs/ProjectManagement/ProjectScoping.md) document as comprehensively as possible. Work with partners and seek guidance where necessary. This document will provide the foundation for the SoW, the project plan and the data strategy as well as providing the tailored project workflow. 
+Documentation
+- [ ] Fill out the [Project Scoping](/docs/0.ProjectManagement/ProjectScoping.md) document as comprehensively as possible. Work with partners and seek guidance where necessary. This document will provide the foundation for the SoW, the project plan and the data strategy as well as providing the tailored project workflow. 
 Once the project has been approved the following should be filled in. 
-- [ ] Fill out the [Project Plan](/docs/ProjectManagement/ProjectPlan.md). This documents who will work on the project and any other key information that is needed for the project to run smoothly.
+- [ ] Fill out the [Project Plan](/docs/0.ProjectManagement/ProjectPlan.md). This documents who will work on the project and any other key information that is needed for the project to run smoothly.
 - [ ] Fill out the [high-level business understanding](/docs/1.BusinessUnderstanding/High-levelBusinessUnderstanding.md). This should be suitable as a public description on the SoW. 
 - [ ] Fill out the [detailed business understanding](/docs/1.BusinessUnderstanding/DetailedBusinessUnderstanding.md) with further information about the need for the project. This will be used to create the SoW and will also provide a solid foundation for an introduction in a report. 
 
-### Data Acquisition and Preparation
+### [Data Acquisition and Preparation](/docs/2.DataAcquisitionAndPreparation/)
 
-- [ ] Develop [notebook code](./code/notebooks/DataAcquisition/) to get started
-- [ ] Don't Repeat Yourself! Move reusable code into a callable module in [this directory](./code/src/DataAcquisition/)
-- [ ] Map the data flow in the [Data Pipeline](/docs/Data%20Reports/Data%20Pipeline.txt)
-- [ ] Produce a [Data Report](/docs/Data%20Reports/DataSummaryReport.md) for each new dataset added to the project
-- [ ] Initialise and use DVC with the [guidance](/docs/Guidance/DVC.md)
+Documentation
+- [ ] Copy and paste the information from the [project scoping](/docs/0.ProjectManagement/ProjectScoping.md) document into the [data strategy](/docs/2.DataAcquisitionAndPreparation/DataStrategy.md) and update where necessary. Do not edit the scoping document. 
 - [ ] Define raw data sources in the [Data Definition](/docs/Data%20Reports/Data%20Defintion.md)
 - [ ] Define processed data sources in the [Data Definition](/docs/Data%20Reports/Data%20Defintion.md)
+- [ ] Map the data flow in the [Data Pipeline](/docs/Data%20Reports/Data%20Pipeline.txt)
+
+Code
+- [ ] Develop [notebook code](./code/notebooks/DataAcquisition/) to get started
+- [ ] Don't Repeat Yourself! Move reusable code into a callable module in [this directory](./code/src/DataAcquisition/)
+
+Data
+- [ ] Initialise and use DVC with the [guidance](/docs/Guidance/DVC.md)
 - [ ] Populate the [Data Dictionary](/docs/Data%20Dictionaries/README.md) 
 
 ### Data Exploration
 
 - [ ] Develop [notebook code](./code/notebooks/DataExploration)
 - [ ] Move reusable code into a callable module in [this directory](./code/src/DataExploration/)
+- [ ] Produce a [Data Report](/docs/Data%20Reports/DataSummaryReport.md) for each new dataset added to the project
+- [ ] Review your [data strategy](/docs/2.DataAcquisitionAndPreparation/DataStrategy.md) and make changes where necessary.
+- [ ] Can the project continue? 
 
 ### Feature Transformation
 
@@ -47,6 +56,8 @@ Once the project has been approved the following should be filled in.
 - [ ] Move reusable code into a callable module in [this directory](./code/src/FeatureTransformation/)
 - [ ] Define feature sets in the [Data Definition](/docs/Data%20Reports/Data%20Defintion.md)
 - [ ] Log new features for version control with [DVC](/docs/Guidance/DVC.md)
+- [ ] Review your [data strategy](/docs/2.DataAcquisitionAndPreparation/DataStrategy.md) and make changes where necessary.
+- [ ] Can the project continue? 
 
 ### Model Building
 
@@ -57,7 +68,8 @@ Once the project has been approved the following should be filled in.
 - [ ] Produce a [Model Report](/docs/Model/Model%201/Model%20Report.md) for each model iteration
 - [ ] Log new models for version control with [DVC](/docs/Guidance/DVC.md), stored in the [model directory](/models/README.md)
 - [ ] Track experiments with [DVC](/docs/Guidance/DVC.md)
-
+- [ ] Review your [data strategy](/docs/2.DataAcquisitionAndPreparation/DataStrategy.md) and make changes where necessary.
+- [ ] Can the project continue? 
 
 ### Evaluation and Reporting
 
@@ -68,6 +80,7 @@ Once the project has been approved the following should be filled in.
 - [ ] Complete the [Exit Report](/docs/Project/Exit%20Report.md)
 - [ ] Define the [System Architecture](/docs/Project/System%20Architecture.docx)
 - [ ] Extract required content from [docs folder](/docs/) for your agreed reporting format (AMRC technical report, presentation etc.)
+- [ ] Review your [data strategy](/docs/2.DataAcquisitionAndPreparation/DataStrategy.md) and ensure it is an accurate reflection of the data used in the project.
 
 ### Deployment and Maintenance
 

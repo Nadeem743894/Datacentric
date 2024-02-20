@@ -163,6 +163,7 @@ Here the word 'model' is representative of a statistical/machine learning or AI 
   * Will you require cloud access?
   * Do you have access to the correct resources?
     * If no, what are the estimated costs and timescales for the required access?
+* Will data be created from the model building and analysis? 
 
 ## Step 6: Evaluation and reporting
 
