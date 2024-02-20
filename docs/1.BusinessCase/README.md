@@ -4,10 +4,10 @@ Understanding the business need is vital for the success of any data-driven proj
 
 These include:
 
-* A [document](/docs/1.BusinessUnderstanding/High-levelBusinessUnderstanding.md) containing the high-level business understanding suitable for a public description.
-* A [document](/docs/1.BusinessUnderstanding/DetailedBusinessUnderstanding.md) containing a more detailed insight to the business understanding. This document will help to prepare the SoW and provide a good foundation for an introduction to any report. 
-* A [folder](/docs/1.BusinessUnderstanding/PartnerRelatedDocuments/) to gather information obtained from project partners.
-* A [folder](/docs/1.BusinessUnderstanding/BusinessNeedEvidence/) to gather evidence related to the project.
+* A [document](/docs/1.BusinessCase/High-levelBusinessCase.md) containing the high-level business understanding suitable for a public description.
+* A [document](/docs/1.BusinessCase/DetailedBusinessCase.md) containing a more detailed insight to the business understanding. This document will help to prepare the SoW and provide a good foundation for an introduction to any report. 
+* A [folder](/docs/1.BusinessCase/PartnerRelatedDocuments/) to gather information obtained from project partners.
+* A [folder](/docs/1.BusinessCase/BusinessNeedEvidence/) to gather evidence related to the project.
 
 
  **Please do not store large files in GitHub. Provide Harbour or other relevant links instead.**

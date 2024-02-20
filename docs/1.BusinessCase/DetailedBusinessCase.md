@@ -1,4 +1,4 @@
-# This file should include further details about the business understanding. It should form the introduction to any written reports and provide the background to the business need. 
+# This file should include further details about the business case. It should form the introduction to any written reports and provide the background to the business need. 
 
 * How will this project benefit the AMRC? 
 
