@@ -27,7 +27,7 @@ For each data source, an individual report describing the data schema, the meani
 * Processed Dataset 2 - [Give a brief summary of the processed data, including why the data was processed in this way.  More detailed information is available in the Processed Dataset 2 Report.]
 
 | Processed Dataset Name | Input Dataset(s) | Destination Dataset | Data Processing Tools/Scripts | Link to Report | Data Processed by | Access Restrictions |
-| ---:| ---: | ---: | ---: | ---: | ---: |
+| ---:| ---: | ---: | ---: | ---: | ---: | ---: |
 | Processed Dataset 1 | [Raw data location](link/to/input/data/storage) | [Processed Dataset 1 Location](link/to/processed/data/storage) | [The script used to process the data can be found here](link/to/python/script/file/in/Code) | [Processed Dataset 1 Exploration Report](link/to/processeddata1/report1)| Name of engineer | None or give details |
 | Processed Dataset 2 | [Raw data location](link/to/input/data/storage) | [Processed Dataset 2 Location](link/to/processed/data/storage) |[The script used to process the data can be found here](link/to/R/script/file/in/Code) | [Processed Dataset 2 Exploration Report](link/to/processeddata2/report2)| Name of engineer | None or give details |
 
@@ -39,7 +39,7 @@ For each data source, an individual report describing the data schema, the meani
 * Feature Set 1 - [Give a description of the feature set, such as the meaning of each feature.  More detailed information is available in the Feature Set 1 Report.]
 * Feature Set 2 - [Give a description of the feature set, such as the meaning of each feature.  More detailed information is available in the Feature Set 2 Report.]
 
-| Feature Set Name | Input Dataset(s) | Input Dataset(s) | Feature Store | Feature Engineering Tools/Scripts | Link to Report | Data Processed by | Access Restrictions |
+| Feature Set Name | Input Dataset(s) | Feature Store | Feature Engineering Tools/Scripts | Link to Report | Data Processed by | Access Restrictions |
 | ---:| ---: | ---: | ---: | ---: | ---: | ---: |
 | Feature Set 1 | [Processed Dataset Location](link/to/processed/data/storage) |  [Feature 1 Dataset Location](link/to/processed/data/storage) | [The script used to process the data can be found here](link/to/R/script/file/in/Code) | [Feature Set 1 Exploration Report](link/to/report1)|  Name of engineer | None or give details |
 | Feature Set 2 |[Processed Dataset Location](link/to/processed/data/storage) |  [Feature 1 Dataset Location](link/to/processed/data/storage) | [The script used to process the data can be found here](link/to/sql/script/file/in/Code) | [Feature Set 2 Exploration Report](link/to/report2)|  Name of engineer | None or give details |
