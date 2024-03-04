@@ -1,9 +1,10 @@
 # name: null
 channels:
+  # - conda-forge
   - defaults
 dependencies:
   - python=3.8            # specify your desired python version
-  - dvc
+  # - dvc=3.4.0                 # Data Version Control, requires python v3.8 or higher
   # - ipython             # interactive python
   # - ipykernel           # jupyter notebooks
   # - matplotlib          # plotting
@@ -11,4 +12,4 @@ dependencies:
   # - scikit-learn        # machining learning
   # - pip                 # installing any non-conda packages
   # - pip:
-  #   - -r file:requirements.txt
+  #   - -r file:code/requirements.txt
