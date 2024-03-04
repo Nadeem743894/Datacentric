@@ -25,6 +25,7 @@ Once the project has been approved the following should be filled in.
 - [ ] Fill out the [Project Plan](/docs/0.ProjectManagement/ProjectPlan.md). This documents who will work on the project and any other key information that is needed for the project to run smoothly.
 - [ ] Fill out the [high-level business understanding](/docs/1.BusinessCase/High-levelBusinessCase.md). This should be suitable as a public description on the SoW. 
 - [ ] Fill out the [detailed business understanding](/docs/1.BusinessCase/DetailedBusinessCase.md) with further information about the need for the project. This will be used to create the SoW and will also provide a solid foundation for an introduction in a report. 
+- [ ] Is the project viable. If not, complete the [closure form](/docs/0.ProjectManagement/ClosureReport.md).
 
 ### [Data Acquisition and Preparation](/docs/2.DataAcquisitionAndPreparation/)
 
@@ -52,7 +53,7 @@ Code
 Documentation
 - [ ] Produce a [Data Report](/docs/Data%20Reports/DataSummaryReport.md) for each new dataset added to the project.
 - [ ] Review your [data strategy](/docs/2.DataAcquisitionAndPreparation/DataStrategy.md) and make changes where necessary.
-- [ ] Can the project continue? 
+- [ ] Can the project continue? If not, complete the [closure form](/docs/0.ProjectManagement/ClosureReport.md)
 
 - [ ] There are information sheets available to provide guidance on data exploration. 
 
@@ -63,7 +64,7 @@ Documentation
 - [ ] Define feature sets in the [Data Definition](/docs/Data%20Reports/Data%20Defintion.md)
 - [ ] Log new features for version control with [DVC](/docs/Guidance/DVC.md)
 - [ ] Review your [data strategy](/docs/2.DataAcquisitionAndPreparation/DataStrategy.md) and make changes where necessary.
-- [ ] Can the project continue? 
+- [ ] Can the project continue? If not, complete the [closure form](/docs/0.ProjectManagement/ClosureReport.md).
 
 ### Model Building
 
@@ -75,7 +76,7 @@ Documentation
 - [ ] Log new models for version control with [DVC](/docs/Guidance/DVC.md), stored in the [model directory](/models/README.md)
 - [ ] Track experiments with [DVC](/docs/Guidance/DVC.md)
 - [ ] Review your [data strategy](/docs/2.DataAcquisitionAndPreparation/DataStrategy.md) and make changes where necessary.
-- [ ] Can the project continue? 
+- [ ] Can the project continue? If not, complete the [closure form](/docs/0.ProjectManagement/ClosureReport.md).
 
 ### Evaluation and Reporting
 
@@ -93,6 +94,10 @@ Documentation
 - [ ] Develop [notebook code](./code/notebooks/DeploymentAndMaintenance)
 - [ ] Move reusable code into a callable module in [this directory](./code/src/DeploymentAndMaintenance/)
 - [ ] Deploy a dockerised application with the [docker compose file](docker-compose.yml) and [guidance](/docs/Guidance/Docker.md)
+
+### Guidance and cheat sheets 
+
+* [Possible impacts of data representation.](/docs/Guidance/MissingData.md)
 
 ## Other useful features
 
