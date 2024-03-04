@@ -25,10 +25,6 @@ You will only need to do this once and DVC should be available for all your proj
 To use DVC as a [Python library](https://dvc.org/doc/api-reference), you can install it with conda or with pip (below). -->
 
 See [Running DVC on Windows](https://dvc.org/doc/user-guide/how-to/run-dvc-on-windows) for important tips to improve your experience on Windows.
-
-
-
-
 <!-- 
 ### Install with conda
 
@@ -73,9 +69,45 @@ Now you're ready to DVC!
 
 ## Tracking data
 
-Working inside an initialized project directory, let's pick a piece of data to work with. We'll use an example `data.xml` file, though any text or binary file (or directory) will do. Start by running:
+Working inside an initialized project directory, let's pick a piece of data to work with. We'll use an `example_data.txt` file, though any text or binary file (or directory) will do. Use `dvc add` to start tracking the dataset file:
+
+`dvc add data/external/example_data.txt`
+
+DVC stores information about the added file in a special `.dvc` file named `data/external/example_data.txt.dvc`. This small, human-readable metadata file acts as a placeholder for the original data for the purpose of Git tracking. 
+
+## Storing and sharing
+
+You can upload DVC-tracked data to a variety of storage systems (remote or local) referred to as [remotes](https://dvc.org/doc/user-guide/data-management/remote-storage).
+
+Configure a directory to act as your storage remote using the following command:
 
 ```
-dvc get https://github.com/iterative/dataset-registry \
-          get-started/data.xml -o /data/external/data.xml
+dvc remote add -d [name] [path]
 ```
+
+For example, lets say we want to create a remote called `data-science-template` and have it hosted on the ``K:Drive``, run:
+
+```
+dvc remote add -d data-science-template K:/Data-Science/Template
+
+>> Setting 'data-science-template' as a default remote.
+```
+
+### Uploading data
+
+We can now upload data to the storage remote with [`dvc push`](https://dvc.org/doc/command-reference/push):
+
+```
+dvc push
+```
+
+### Retreiving data
+
+Once DVC-tracked data and models are stored remotely, they can be downloaded with [`dvc pull`](https://dvc.org/doc/command-reference/pull) when needed (e.g. in other copies of this project). Usually, we run it after `git pull` or `git clone`.
+
+```
+dvc pull
+```
+
+## Making local changes
+
