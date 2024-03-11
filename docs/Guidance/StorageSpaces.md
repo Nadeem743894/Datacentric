@@ -1,5 +1,6 @@
 # Storage options - locations
 
-<!--- <img src="assets/img/StorageSpaces.png" alt="Storage space options" style="height: 100px; width:100px;"/> --->
+Below are some options for where you may store data along with some pros and cons for each option. The favoured option will depend upon a number of factors including the size of the data, the required access and the sensitivity of the data. 
 
-![Storage locations](assets/img/StorageSpaces.png "Storage locations")
+
+![Storage locations](assets/img/StorageLocations.png "Storage locations")
