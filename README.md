@@ -40,8 +40,8 @@ Once the project has been approved the following should be filled in.
 - [ ] Don't Repeat Yourself! Move reusable code into a callable module in [this directory](./code/src/DataAcquisition/)
 
 Guidance is available on: 
-[Storage locations](/docs/Guidance/StorageSpaces.md)
-[Storage formats](/docs/Guidance/StorageFormats.md)
+- [Storage locations](/docs/Guidance/StorageSpaces.md)
+- [Storage formats](/docs/Guidance/StorageFormats.md)
 
 ### [Data Exploration](/docs/3.DataExploration/)
 
@@ -54,9 +54,9 @@ Guidance is available on:
 - [ ] Can the project continue? If not, complete the [closure form](/docs/0.ProjectManagement/ClosureReport.md)
 
 Guidance is available on:
-[Statistical summaries](/docs/Guidance/StatisticalSummaries.md)
-[An EDA workflow](/docs/Guidance/EDAWorkflow.md)
-[The questions to ask during an EDA](/docs/Guidance/EDAQuestions.md)
+- [Statistical summaries](/docs/Guidance/StatisticalSummaries.md)
+- [An EDA workflow](/docs/Guidance/EDAWorkflow.md)
+- [The questions to ask during an EDA](/docs/Guidance/EDAQuestions.md)
 
 ### Feature Transformation
 
