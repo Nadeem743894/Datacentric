@@ -19,7 +19,6 @@ The data science team will be able to provide further guidance if needed.
 
 ### [The Business Case](/docs/1.BusinessCase/)
 
-Documentation
 - [ ] Fill out the [Project Scoping](/docs/0.ProjectManagement/ProjectScoping.md) document as comprehensively as possible. Work with partners and seek guidance where necessary. This document will provide the foundation for the SoW, the project plan and the data strategy as well as providing the tailored project workflow. 
 Once the project has been approved the following should be filled in. 
 - [ ] Fill out the [Project Plan](/docs/0.ProjectManagement/ProjectPlan.md). This documents who will work on the project and any other key information that is needed for the project to run smoothly.
@@ -29,33 +28,35 @@ Once the project has been approved the following should be filled in.
 
 ### [Data Acquisition and Preparation](/docs/2.DataAcquisitionAndPreparation/)
 
-Documentation
 - [ ] Copy and paste the information from the [project scoping](/docs/0.ProjectManagement/ProjectScoping.md) document into the [data strategy](/docs/2.DataAcquisitionAndPreparation/DataStrategy.md) and update where necessary. Do not edit the scoping document. 
-- [ ] Define raw data sources in the [Data Definition](/docs/Data%20Reports/Data%20Definition.md)
-- [ ] Define interim data sources in the [Data Definition](/docs/Data%20Reports/Data%20Definition.md)
-- [ ] Map the data flow in the [Data Pipeline](/docs/Data%20Reports/Data%20Pipeline.txt)
-
-Code
 - [ ] Develop [notebook code](./code/notebooks/DataAcquisition/) to get started
+- [ ] Map the data flow in the [Data Pipeline](/docs/2.DataAcquisitionAndPreparation/Data%20Pipeline/DataPipeline.txt)
+- [ ] Initialise and use DVC with the [guidance](/docs/Guidance/DVC.md)
+- [ ] Populate the [Data Dictionary](/docs/2.DataAcquisitionAndPreparation/Data%20Dictionaries/README.md) 
+- [ ] Define raw data sources in the [Data Definition](/docs/2.DataAcquisitionAndPreparation/Data%20Pipeline/DataDefinition.md)
+- [ ] Clean the data ready for initial exploration creating the [silver-interim data](/data/interim-silver/)
+- [ ] Define interim data sources in the [Data Definition](/docs/2.DataAcquisitionAndPreparation/Data%20Pipeline/DataDefinition.md)
+
 - [ ] Don't Repeat Yourself! Move reusable code into a callable module in [this directory](./code/src/DataAcquisition/)
 
-Data
-- [ ] Initialise and use DVC with the [guidance](/docs/Guidance/DVC.md)
-- [ ] Populate the [Data Dictionary](/docs/Data%20Dictionaries/README.md) 
-- [ ] Clean the data ready for initial exploration creating the [silver-interim data](/data/interim-silver/)
+Guidance is available on: 
+[Storage locations](/docs/Guidance/StorageSpaces.md)
+[Storage formats](/docs/Guidance/StorageFormats.md)
 
-### Data Exploration
+### [Data Exploration](/docs/3.DataExploration/)
 
-Code
 - [ ] Develop [notebook code](./code/notebooks/DataExploration)
-- [ ] Move reusable code into a callable module in [this directory](./code/src/DataExploration/)
-
-Documentation
 - [ ] Produce a [Data Report](/docs/Data%20Reports/DataSummaryReport.md) for each new dataset added to the project.
 - [ ] Review your [data strategy](/docs/2.DataAcquisitionAndPreparation/DataStrategy.md) and make changes where necessary.
+- [ ] Do you need to review your analysis plan? 
+- [ ] Move reusable code into a callable module in [this directory](./code/src/DataExploration/)
+
 - [ ] Can the project continue? If not, complete the [closure form](/docs/0.ProjectManagement/ClosureReport.md)
 
-- [ ] There are information sheets available to provide guidance on data exploration. 
+Guidance is available on:
+[Statistical summaries](/docs/Guidance/StatisticalSummaries.md)
+[An EDA workflow](/docs/Guidance/EDAWorkflow.md)
+[The questions to ask during an EDA](/docs/Guidance/EDAQuestions.md)
 
 ### Feature Transformation
 
