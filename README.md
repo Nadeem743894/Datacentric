@@ -39,7 +39,7 @@ Once the project has been approved the following should be filled in.
 
 - [ ] Don't Repeat Yourself! Move reusable code into a callable module in [this directory](./code/src/DataAcquisition/)
 
-> Guidance is available on:
+> **Guidance is available on:**
 - [Storage locations](/docs/Guidance/StorageSpaces.md)
 - [Storage formats](/docs/Guidance/StorageFormats.md)
 
@@ -53,7 +53,7 @@ Once the project has been approved the following should be filled in.
 
 - [ ] Can the project continue? If not, complete the [closure form](/docs/0.ProjectManagement/ClosureReport.md)
 
-> Guidance is available on:
+> **Guidance is available on:**
 - [Statistical summaries](/docs/Guidance/StatisticalSummaries.md)
 - [EDA plots](/docs/Guidance/EDAplots.md)
 - [An EDA workflow](/docs/Guidance/EDAWorkflow.md)
