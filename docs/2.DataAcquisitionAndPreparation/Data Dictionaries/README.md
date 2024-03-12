@@ -1,14 +1,21 @@
 # Data Dictionaries
 
-_Place to put data description documents, typically received from a client_
-This is typically a field-level description of data files received.
+The data dictionaries describe the contents of a data set, usually with an Excel sheet or with details on a data schema (for database management systems). It may also take the form of a data ontology. There should be a data dictionary for each different data set or database but may contain links between them.
 
-This document provides the descriptions of the data that is provided by the client. If the client is providing data dictionaries in text (in emails or text files), directly copy them here, or have a snapshot of the text, and add it here as an image. If the client is providing data dictionaries in Excel worksheets, directly put the Excel files in this directory, and add a link to this Excel file.
+In most cases, it is expected that the data dictionary will be an Excel sheet. It may be supplied by our partners, or created with the partners when data is acquired or created as part of the project. 
 
-If the client is providing you the data from a database-like data management system, you can also copy and paste the data schema (snapshot) here. If necessary, please also provide brief description of each column after the snapshot image, if such image does not have such information.
+The data dictionary should contain a description of each column (data stream) in the dataset (database), including what the data stream is, a short description, type of data, some key values such as minimum or maximum. Any information that is required to understand the data set should be included while remaining concise. 
 
-## [Dataset 1 Name (Excel data dictionary)]
+If a database is being used the schema can be described here or in a separate document with a link. If an ontology is being used you should link to it here. 
 
-### _Example image of data schema when data is from a sql server_
+The data dictionary can help to define a common data language for any data created and a translator for analysis when different data sources have different variable names. It will also provide information on any transformations that are necessary when data is provided in different units. 
 
-[Dataset 1 with Excel dictionary link](./Raw-Data-Dictionary.csv)
+
+## [Dataset 1 Name]
+
+### _Example image of dataset or data schema_
+
+[Dataset 1 with storage link](./Raw-Data-Dictionary.csv)
+
+
+*Page created by LL - Mar 2024*

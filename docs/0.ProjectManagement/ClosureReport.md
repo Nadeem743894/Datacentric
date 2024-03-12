@@ -1,4 +1,16 @@
 # Exit Report of ms-tdsp-template for AMRC
+# Not yet finished editing. 
+
+Project status (*please delete as required*):
+* Complete
+* Not viable
+* Withdrawn
+
+For each status please complete the closure report. 
+
+
+
+the challenge addressed, what kind of AI work was done, the lessons learnt from the project and the outcome
 
 Instructions: Template for exit criteria for data science projects. This is concise document that includes an overview of the entire project, including details of each stage and learning. If a section isn't applicable (e.g. project didn't include a ML model), simply mark that section as "Not applicable". Suggested length between 5-20 pages. Code should mostly be within a code repository (not in this document).
 

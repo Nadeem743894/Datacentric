@@ -17,38 +17,47 @@ The data science team will be able to provide further guidance if needed.
 
 <!-- replace [ ] with [x] when a workflow task has been completed -->
 
-### [Business Understanding](/docs/1.BusinessCase/)
+### [The Business Case](/docs/1.BusinessCase/)
 
-Documentation
 - [ ] Fill out the [Project Scoping](/docs/0.ProjectManagement/ProjectScoping.md) document as comprehensively as possible. Work with partners and seek guidance where necessary. This document will provide the foundation for the SoW, the project plan and the data strategy as well as providing the tailored project workflow. 
 Once the project has been approved the following should be filled in. 
 - [ ] Fill out the [Project Plan](/docs/0.ProjectManagement/ProjectPlan.md). This documents who will work on the project and any other key information that is needed for the project to run smoothly.
 - [ ] Fill out the [high-level business understanding](/docs/1.BusinessCase/High-levelBusinessCase.md). This should be suitable as a public description on the SoW. 
 - [ ] Fill out the [detailed business understanding](/docs/1.BusinessCase/DetailedBusinessCase.md) with further information about the need for the project. This will be used to create the SoW and will also provide a solid foundation for an introduction in a report. 
+- [ ] Is the project viable? If not, complete the [closure form](/docs/0.ProjectManagement/ClosureReport.md).
 
 ### [Data Acquisition and Preparation](/docs/2.DataAcquisitionAndPreparation/)
 
-Documentation
 - [ ] Copy and paste the information from the [project scoping](/docs/0.ProjectManagement/ProjectScoping.md) document into the [data strategy](/docs/2.DataAcquisitionAndPreparation/DataStrategy.md) and update where necessary. Do not edit the scoping document. 
-- [ ] Define raw data sources in the [Data Definition](/docs/Data%20Reports/Data%20Defintion.md)
-- [ ] Define processed data sources in the [Data Definition](/docs/Data%20Reports/Data%20Defintion.md)
-- [ ] Map the data flow in the [Data Pipeline](/docs/Data%20Reports/Data%20Pipeline.txt)
-
-Code
 - [ ] Develop [notebook code](./code/notebooks/DataAcquisition/) to get started
+- [ ] Map the data flow in the [Data Pipeline](/docs/2.DataAcquisitionAndPreparation/Data%20Pipeline/DataPipeline.txt)
+- [ ] Initialise and use DVC with the [guidance](/docs/Guidance/DVC.md)
+- [ ] Populate the [Data Dictionary](/docs/2.DataAcquisitionAndPreparation/Data%20Dictionaries/README.md) 
+- [ ] Define raw data sources in the [Data Definition](/docs/2.DataAcquisitionAndPreparation/Data%20Pipeline/DataDefinition.md)
+- [ ] Clean the data ready for initial exploration creating the [silver-interim data](/data/interim-silver/)
+- [ ] Define interim data sources in the [Data Definition](/docs/2.DataAcquisitionAndPreparation/Data%20Pipeline/DataDefinition.md)
+
 - [ ] Don't Repeat Yourself! Move reusable code into a callable module in [this directory](./code/src/DataAcquisition/)
 
-Data
-- [ ] Initialise and use DVC with the [guidance](/docs/Guidance/DVC.md)
-- [ ] Populate the [Data Dictionary](/docs/Data%20Dictionaries/README.md) 
+> **Guidance is available on:**
+- [Storage locations](/docs/Guidance/StorageSpaces.md)
+- [Storage formats](/docs/Guidance/StorageFormats.md)
 
-### Data Exploration
+### [Data Exploration](/docs/3.DataExploration/)
 
 - [ ] Develop [notebook code](./code/notebooks/DataExploration)
-- [ ] Move reusable code into a callable module in [this directory](./code/src/DataExploration/)
-- [ ] Produce a [Data Report](/docs/Data%20Reports/DataSummaryReport.md) for each new dataset added to the project
+- [ ] Produce a [Data Report](/docs/Data%20Reports/DataSummaryReport.md) for each new dataset added to the project.
 - [ ] Review your [data strategy](/docs/2.DataAcquisitionAndPreparation/DataStrategy.md) and make changes where necessary.
-- [ ] Can the project continue? 
+- [ ] Do you need to review your analysis plan? 
+- [ ] Move reusable code into a callable module in [this directory](./code/src/DataExploration/)
+
+- [ ] Can the project continue? If not, complete the [closure form](/docs/0.ProjectManagement/ClosureReport.md)
+
+> **Guidance is available on:**
+- [Statistical summaries](/docs/Guidance/StatisticalSummaries.md)
+- [EDA plots](/docs/Guidance/EDAplots.md)
+- [An EDA workflow](/docs/Guidance/EDAWorkflow.md)
+- [The questions to ask during an EDA](/docs/Guidance/EDAQuestions.md)
 
 ### Feature Transformation
 
@@ -57,7 +66,7 @@ Data
 - [ ] Define feature sets in the [Data Definition](/docs/Data%20Reports/Data%20Defintion.md)
 - [ ] Log new features for version control with [DVC](/docs/Guidance/DVC.md)
 - [ ] Review your [data strategy](/docs/2.DataAcquisitionAndPreparation/DataStrategy.md) and make changes where necessary.
-- [ ] Can the project continue? 
+- [ ] Can the project continue? If not, complete the [closure form](/docs/0.ProjectManagement/ClosureReport.md).
 
 ### Model Building
 
@@ -69,7 +78,7 @@ Data
 - [ ] Log new models for version control with [DVC](/docs/Guidance/DVC.md), stored in the [model directory](/models/README.md)
 - [ ] Track experiments with [DVC](/docs/Guidance/DVC.md)
 - [ ] Review your [data strategy](/docs/2.DataAcquisitionAndPreparation/DataStrategy.md) and make changes where necessary.
-- [ ] Can the project continue? 
+- [ ] Can the project continue? If not, complete the [closure form](/docs/0.ProjectManagement/ClosureReport.md).
 
 ### Evaluation and Reporting
 
@@ -87,6 +96,10 @@ Data
 - [ ] Develop [notebook code](./code/notebooks/DeploymentAndMaintenance)
 - [ ] Move reusable code into a callable module in [this directory](./code/src/DeploymentAndMaintenance/)
 - [ ] Deploy a dockerised application with the [docker compose file](docker-compose.yml) and [guidance](/docs/Guidance/Docker.md)
+
+### Guidance and cheat sheets 
+
+* [Possible impacts of data representation.](/docs/Guidance/MissingData.md)
 
 ## Other useful features
 
