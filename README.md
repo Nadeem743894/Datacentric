@@ -55,7 +55,7 @@ Guidance is available on:
 
 Guidance is available on:
 - [Statistical summaries](/docs/Guidance/StatisticalSummaries.md)
-- [EDA plots] 
+- [EDA plots](/docs/Guidance/EDAplots.md)
 - [An EDA workflow](/docs/Guidance/EDAWorkflow.md)
 - [The questions to ask during an EDA](/docs/Guidance/EDAQuestions.md)
 
