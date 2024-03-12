@@ -24,7 +24,7 @@ Once the project has been approved the following should be filled in.
 - [ ] Fill out the [Project Plan](/docs/0.ProjectManagement/ProjectPlan.md). This documents who will work on the project and any other key information that is needed for the project to run smoothly.
 - [ ] Fill out the [high-level business understanding](/docs/1.BusinessCase/High-levelBusinessCase.md). This should be suitable as a public description on the SoW. 
 - [ ] Fill out the [detailed business understanding](/docs/1.BusinessCase/DetailedBusinessCase.md) with further information about the need for the project. This will be used to create the SoW and will also provide a solid foundation for an introduction in a report. 
-- [ ] Is the project viable. If not, complete the [closure form](/docs/0.ProjectManagement/ClosureReport.md).
+- [ ] Is the project viable? If not, complete the [closure form](/docs/0.ProjectManagement/ClosureReport.md).
 
 ### [Data Acquisition and Preparation](/docs/2.DataAcquisitionAndPreparation/)
 
@@ -39,7 +39,7 @@ Once the project has been approved the following should be filled in.
 
 - [ ] Don't Repeat Yourself! Move reusable code into a callable module in [this directory](./code/src/DataAcquisition/)
 
-Guidance is available on: 
+> Guidance is available on:
 - [Storage locations](/docs/Guidance/StorageSpaces.md)
 - [Storage formats](/docs/Guidance/StorageFormats.md)
 
@@ -53,7 +53,7 @@ Guidance is available on:
 
 - [ ] Can the project continue? If not, complete the [closure form](/docs/0.ProjectManagement/ClosureReport.md)
 
-Guidance is available on:
+> Guidance is available on:
 - [Statistical summaries](/docs/Guidance/StatisticalSummaries.md)
 - [EDA plots](/docs/Guidance/EDAplots.md)
 - [An EDA workflow](/docs/Guidance/EDAWorkflow.md)
