@@ -39,3 +39,5 @@ The following images show approximate 95% intervals for a symmetric distribution
 ## Calculating the summary statistics
 
 Open-source packages such as pandas profiling in Python – utilised in Databricks’ AutoML EDA notebook - allow for automated summarisation of key statistics and characteristics. The summary() command in R also provides some key statistical values.
+
+ *Page created by LL - Mar 2024*

@@ -56,6 +56,7 @@ Once the project has been approved the following should be filled in.
 > **Guidance is available on:**
 - [Statistical summaries](/docs/Guidance/StatisticalSummaries.md)
 - [EDA plots](/docs/Guidance/EDAplots.md)
+- [Correlation Analysis](/docs/Guidance/correlationanalysis.md)
 - [An EDA workflow](/docs/Guidance/EDAWorkflow.md)
 - [The questions to ask during an EDA](/docs/Guidance/EDAQuestions.md)
 
