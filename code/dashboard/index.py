@@ -18,11 +18,11 @@ import os
 import plotly.express as px
 import pandas as pd
 from datetime import datetime, timedelta
+
 # config = configparser.ConfigParser()
 
 
-
-markdown_text = '''
+markdown_text = """
 ### Dash and Markdown
 
 Dash apps can be written in Markdown.
@@ -32,7 +32,7 @@ Check out their [60 Second Markdown Tutorial](http://commonmark.org/help/)
 if this is your first introduction to Markdown!
 
 #### Use this space to provide a brief overview of the project, the dashboard, demonstrator or whatever details you want to convey to the customer.
-'''
+"""
 
 ### Page container ###
 page_container = html.Div(
@@ -63,7 +63,7 @@ index_layout = html.Div(
     [
         navbar,
         html.Br(),
-        dcc.Markdown(children=markdown_text),     
+        dcc.Markdown(children=markdown_text),
         dbc.Row(
             [
                 html.Img(
@@ -86,6 +86,8 @@ pages.append(example.layout)
 pages.append(page_container)
 
 app.validation_layout = html.Div(children=pages)
+
+
 ### Update Page Container ###
 @app.callback(
     Output(
