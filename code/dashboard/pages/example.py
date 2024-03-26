@@ -1,15 +1,11 @@
 #########################################################################
-### Import Packages ###
+### Imports 
 from re import M
 from venv import create
-import dash
 from dash import dcc
 import dash_bootstrap_components as dbc
 from dash import html
 from dash.dependencies import Input, Output
-import logging
-
-### Import Dash Instance and Pages ###
 from app import app, colors
 from navbar import generate_navbar
 import plotly.graph_objects as go
@@ -17,12 +13,15 @@ import plotly.express as px
 import pandas as pd
 import numpy as np
 
-index_style = {
-    "height": "40%",
-    "width": "100%",
-    "display": "inline-block",
-    "vertical-align": "top",
-}
+#########################################################################
+### Initialisation
+
+# index_style = {
+#     "height": "40%",
+#     "width": "100%",
+#     "display": "inline-block",
+#     "vertical-align": "top",
+# }
 
 # defining a static signal dataframe, which executes once when the page is opened
 df_static = pd.DataFrame()
@@ -130,15 +129,6 @@ layout = html.Div(
         html.Br(),
         ###############
         ### Components added straight to the layout
-        html.Div(
-            [
-                html.H4("GPS location"),
-                dcc.Graph(
-                    id="live-update-graph",
-                    figure=px.scatter_geo(pd.DataFrame(), title="GPS location"),
-                ),
-            ]
-        ),
         html.Br(),  # line break between components
         # insert more content rows,
         html.Br(),
@@ -150,9 +140,9 @@ layout = html.Div(
 ### https://dash.plotly.com/advanced-callbacks
 ### Callbacks are functions you can define to update the graphs interactively
 ### They take Inputs
+### Multiple components can update everytime interval gets fired.
 
-
-# Multiple components can update everytime interval gets fired.
+# Callback example 1
 # This callback takes 2 inputs (number of button clicks, regular increasing button component) and returns one output (Figure to line-2)
 @app.callback(
     Output("line-2", "figure"),
@@ -169,7 +159,7 @@ def update_graph_live(n_clicks, n_intervals):
     return fig
 
 
-# Multiple components can update everytime interval gets fired.
+# Callback example 2
 # This callback takes 1 input (regular increasing button component) and returns 2 outputs (Figures to scatter-1 and scatter-2)
 @app.callback(
     Output("scatter-1", "figure"),
@@ -197,15 +187,3 @@ def update_graph_live(n_intervals):
     )
 
     return fig["scatter-1"], fig["scatter-2"]
-
-
-# Multiple components can update everytime interval gets fired.
-# This callback takes 1 input (regular increasing button component) and returns one output (Figure to live-update-graph)
-@app.callback(
-    Output("live-update-graph", "figure"), Input("interval-component", "n_intervals")
-)
-def update_graph_live(n_intervals):
-
-    fig = px.scatter_geo()
-
-    return fig
