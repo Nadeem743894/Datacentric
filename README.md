@@ -33,9 +33,9 @@ Once the project has been approved the following should be filled in.
 - [ ] Map the data flow in the [Data Pipeline](/docs/2.DataAcquisitionAndPreparation/Data%20Pipeline/DataPipeline.txt)
 - [ ] Initialise and use DVC with the [guidance](/docs/Guidance/DVC.md)
 - [ ] Populate the [Data Dictionary](/docs/2.DataAcquisitionAndPreparation/Data%20Dictionaries/README.md) 
-- [ ] Define raw data sources in the [Data Definition](/docs/2.DataAcquisitionAndPreparation/Data%20Pipeline/DataDefinition.md)
+- [ ] Define raw data sources in the [Data Definitions](/docs/2.DataAcquisitionAndPreparation/Data%20Pipeline/DataDefinition.md)
 - [ ] Clean the data ready for initial exploration creating the [silver-interim data](/data/interim-silver/)
-- [ ] Define interim data sources in the [Data Definition](/docs/2.DataAcquisitionAndPreparation/Data%20Pipeline/DataDefinition.md)
+- [ ] Define interim data sources in the [Data Definitions](/docs/2.DataAcquisitionAndPreparation/Data%20Pipeline/DataDefinition.md)
 
 - [ ] Don't Repeat Yourself! Move reusable code into a callable module in [this directory](./code/src/DataAcquisition/)
 
@@ -60,14 +60,23 @@ Once the project has been approved the following should be filled in.
 - [An EDA workflow](/docs/Guidance/EDAWorkflow.md)
 - [The questions to ask during an EDA](/docs/Guidance/EDAQuestions.md)
 
-### Feature Transformation
+### [Feature Transformation](/docs/4.FeatureTransformation/README.md)
 
-- [ ] Develop [notebook code](./code/notebooks/FeatureTransformation)
+- [ ] Are you creating features from the data? If yes, define feature sets in the [Data Definitions](/docs/Data%20Reports/Data%20Defintion.md)
+- [ ] Develop [notebook code](./code/notebooks/FeatureTransformation) to create your features.
 - [ ] Move reusable code into a callable module in [this directory](./code/src/FeatureTransformation/)
-- [ ] Define feature sets in the [Data Definition](/docs/Data%20Reports/Data%20Defintion.md)
+- [ ] Create a feature data dictionary using the [template](/docs/2.DataAcquisitionAndPreparation/Data%20Dictionaries/amrc-data-dictionary.xlsx)
+- [ ] Summarise how the features will help meet the business objectives in a [short report](/docs/4.FeatureTransformation/FeatureSummaryReport.md).
 - [ ] Log new features for version control with [DVC](/docs/Guidance/DVC.md)
+
 - [ ] Review your [data strategy](/docs/2.DataAcquisitionAndPreparation/DataStrategy.md) and make changes where necessary.
 - [ ] Can the project continue? If not, complete the [closure form](/docs/0.ProjectManagement/ClosureReport.md).
+
+**Guidance is available on:**
+- [Common features](/docs/Guidance/CommonFeatures.md)
+- [Dimension reduction](/docs/Guidance/DimensionReduction.md) 
+- [Signal processing](/docs/Guidance/SignalProcessing.md)
+
 
 ### Model Building
 
