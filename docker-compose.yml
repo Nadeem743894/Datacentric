@@ -4,7 +4,7 @@ services:
 
 #################################################################
 
-# ## frontend - visualisation app with plotly dashboard
+# ## dashboard - visualisation app with plotly dashboard
   dashboard:
     restart: unless-stopped
     build:
@@ -12,56 +12,56 @@ services:
     ports:
         - "8050:8050"
     volumes:
-      - ./code/dashboard:/app
+      - ./code/dashboard:/dashboard
       - ./data:/data
     env_file:
       - ./code/environment_variables/dashboard.env
 
 #################################################################
 
-# python-app - python script for data science application
-  python-app:
-    restart: unless-stopped
-    build: 
-      context: ./src
-    privileged: true
-    # depends_on:
-    #   - "influxdb"
-    network_mode: "host"
-    volumes:
-      - type: bind
-        source: ./environment_variables/python-app.env
-        target: /python-app/environment_variables/python-app.env
-      - type: bind
-        source: ./logs
-        target: /var/log/app
-      - type: volume
-        source: data
-        target: /var/data
-      - type: volume
-        source: influxdb-storage
-        target: /var/lib/influxdb2 
-    env_file:
-      - ./environment_variables/python-app.env
+# # python-app - python script for data science application
+#   python-app:
+#     restart: unless-stopped
+#     build: 
+#       context: ./src
+#     privileged: true
+#     # depends_on:
+#     #   - "influxdb"
+#     network_mode: "host"
+#     volumes:
+#       - type: bind
+#         source: ./environment_variables/python-app.env
+#         target: /python-app/environment_variables/python-app.env
+#       - type: bind
+#         source: ./logs
+#         target: /var/log/app
+#       - type: volume
+#         source: data
+#         target: /var/data
+#       - type: volume
+#         source: influxdb-storage
+#         target: /var/lib/influxdb2 
+#     env_file:
+#       - ./environment_variables/python-app.env
 
 # #################################################################
 
 ## InfluxDB - Time-series historian service
-  influxdb:
-    image: influxdb:latest
-    restart: unless-stopped
-    # network_mode: "host"
-    ports:
-      - "8086:8086"
-    volumes:
-      - type: volume
-        source: influxdb-storage
-        target: /var/lib/influxdb2
-      - type: volume
-        source: influxdb-config
-        target: /etc/influxdb2
-    env_file:
-      - ./environment_variables/influxv2.env
+  # influxdb:
+  #   image: influxdb:latest
+  #   restart: unless-stopped
+  #   # network_mode: "host"
+  #   ports:
+  #     - "8086:8086"
+  #   volumes:
+  #     - type: volume
+  #       source: influxdb-storage
+  #       target: /var/lib/influxdb2
+  #     - type: volume
+  #       source: influxdb-config
+  #       target: /etc/influxdb2
+  #   env_file:
+  #     - ./environment_variables/influxv2.env
 
 #################################################################
 
