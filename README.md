@@ -40,7 +40,7 @@ Once the project has been approved the following should be filled in.
 - [ ] Don't Repeat Yourself! Move reusable code into a callable module in [this directory](./code/src/DataAcquisition/)
 
 > **Guidance is available on:**
-- [Storage locations](https://amrcwikijs.shef.ac.uk/e/en/AMRCDS/Guidance/DataAcquisitionandPreparation/DataStorage)
+- [Storage locations](https://amrcwikijs.shef.ac.uk/en/AMRCDS/Guidance/DataAcquisitionandPreparation/DataStorage){:target="_blank"}
 - [Storage formats](/docs/Guidance/StorageFormats.md)
 
 ### [Data Exploration](/docs/3.DataExploration/)
