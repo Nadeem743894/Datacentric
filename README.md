@@ -40,8 +40,8 @@ Once the project has been approved the following should be filled in.
 - [ ] Don't Repeat Yourself! Move reusable code into a callable module in [this directory](./code/src/DataAcquisition/)
 
 > **Guidance is available on:**
-- [Storage locations](https://amrcwikijs.shef.ac.uk/en/AMRCDS/Guidance/DataAcquisitionandPreparation/DataStorage){:target="_blank"}
-- [Storage formats](/docs/Guidance/StorageFormats.md)
+- [Storage location and formats](https://amrcwikijs.shef.ac.uk/en/AMRCDS/Guidance/DataAcquisitionandPreparation/DataStorage)
+
 
 ### [Data Exploration](/docs/3.DataExploration/)
 
@@ -54,7 +54,7 @@ Once the project has been approved the following should be filled in.
 - [ ] Can the project continue? If not, complete the [closure form](/docs/0.ProjectManagement/ClosureReport.md)
 
 > **Guidance is available on:**
-- [Statistical summaries](/docs/Guidance/StatisticalSummaries.md)
+- [Statistical summaries](https://amrcwikijs.shef.ac.uk/en/AMRCDS/Guidance/DataExploration/StatisticalSummaries)
 - [EDA plots](/docs/Guidance/EDAplots.md)
 - [Correlation Analysis](/docs/Guidance/correlationanalysis.md)
 - [An EDA workflow](/docs/Guidance/EDAWorkflow.md)
