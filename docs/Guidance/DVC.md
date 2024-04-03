@@ -69,11 +69,11 @@ Now you're ready to DVC!
 
 ## Tracking data
 
-Working inside an initialized project directory, let's pick a piece of data to work with. We'll use an `example_data.txt` file, though any text or binary file (or directory) will do. Use `dvc add` to start tracking the dataset file:
+Working inside an initialized project directory, let's pick a piece of data to work with. We'll use an `example_data.csv` file, though any text or binary file (or directory) will do. Use `dvc add` to start tracking the dataset file:
 
-`dvc add data/external/example_data.txt`
+`dvc add data/external/example_data.csv`
 
-DVC stores information about the added file in a special `.dvc` file named `data/external/example_data.txt.dvc`. This small, human-readable metadata file acts as a placeholder for the original data for the purpose of Git tracking. 
+DVC stores information about the added file in a special `.dvc` file named `data/external/example_data.csv.dvc`. This small, human-readable metadata file acts as a placeholder for the original data for the purpose of Git tracking. 
 
 ## Storing and sharing
 
@@ -109,5 +109,5 @@ Once DVC-tracked data and models are stored remotely, they can be downloaded wit
 dvc pull
 ```
 
-## Making local changes
+<!-- ## Making local changes -->
 

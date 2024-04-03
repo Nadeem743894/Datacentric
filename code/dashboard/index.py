@@ -1,7 +1,4 @@
 ### Import Packages ###
-from re import M
-from venv import create
-import dash
 from dash import dcc
 import dash_bootstrap_components as dbc
 from dash import html
@@ -12,15 +9,16 @@ from dash import Dash, dcc, html, Input, Output, callback
 ### Import Dash Instance and Pages ###
 from app import app, colors
 from navbar import generate_navbar
-from pages import example
-import plotly.graph_objects as go
 import os
-import plotly.express as px
-import pandas as pd
-from datetime import datetime, timedelta
 
-# config = configparser.ConfigParser()
+import pages as pg
+import inspect 
 
+### organise imported into a dict to iterate
+pages = {}
+for name, module in inspect.getmembers(pg, predicate=inspect.ismodule):
+    if name in pg.__all__:
+        pages[name] = module
 
 markdown_text = """
 ### Dash and Markdown
@@ -68,7 +66,10 @@ index_layout = html.Div(
             [
                 html.Img(
                     src=app.get_asset_url(f"front_page/{front_page_img}"),
-                    style={"height": "60vh", "object-fit": "cover"},
+                    style={
+                        "height": "30vh", 
+                        "object-fit": "cover"
+                        },
                 ),
             ],
             align="center",
@@ -81,12 +82,10 @@ index_layout = html.Div(
 app.layout = page_container
 
 ### Assemble all layouts ###
-pages = []
-pages.append(example.layout)
-pages.append(page_container)
+layouts = [pages[name].layout for name in pages.keys()]
+layouts.append(page_container)
 
-app.validation_layout = html.Div(children=pages)
-
+app.validation_layout = html.Div(children=layouts)
 
 ### Update Page Container ###
 @app.callback(
@@ -102,9 +101,18 @@ app.validation_layout = html.Div(children=pages)
     ],
 )
 def display_page(pathname):
+    """
+    Function to display a page based on the corresponding URL entered (or clicked via navbar)
+    Args: 
+        pathname (str) - the URL of the page entered (after localhost:8050/)
+    Returns:
+        layout (obj) or '404' (str) - the Dash layout of the new page, or a 404 error message
+    """
+
+    for name in pages.keys():
+        if pathname == f'/{name}':
+            return pages[name].layout
     if pathname == "/":
         return index_layout
-    elif pathname == "/example":
-        return example.layout
     else:
-        return "404"
+        return '404'

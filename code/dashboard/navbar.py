@@ -1,34 +1,33 @@
 ### Import Packages ###
-import dash
 from dash import html, dcc, Input, Output, ctx
-
-# from dash.dependencies import Input, Output#, ctx
-import plotly.graph_objects as go
 import dash_bootstrap_components as dbc
-import os
-
-### AMRC branding overrides ###
-colors = {
-    "amrc-blue-light": "#6BBEFF",
-    "amrc-blue": "#0053A1",
-    "amrc-blue-hover": "#004A8F",
-    "amrc-blue-dark": "#00203D",
-}
-
+from app import colors
 
 def generate_navbar(brand):
+    """
+    Function to update the navbar at the top of each page.
 
-    navbar = dbc.NavbarSimple(
-        children=[
-            dbc.NavItem(dbc.NavLink("Home", href="/")),
-            dbc.NavItem(dbc.NavLink("Example", href="/example")),
-            dbc.NavItem(
+    Args: 
+        brand (str) - the title for the page 
+    Returns:
+        navbar (dbc) - dash bootstrap component defining the navbar
+    """
+
+    children = [dbc.NavItem(dbc.NavLink("Home", href="/"))]
+
+    ### add new pages manually here with this syntax
+    children.append(dbc.NavItem(dbc.NavLink("Example", href="/example")))
+    # children.append(dbc.NavItem(dbc.NavLink("Example 2", href="/example_2"))) # uncomment this line to add the example_2 page to the navbar
+
+    children.append(dbc.NavItem(
                 html.Img(src="assets/thumbnails/amrc-logo-white.png", height="50px")
-            ),
-        ],
+            ))
+    
+    navbar = dbc.NavbarSimple(
+        children=children,
         brand=brand,
         brand_href="/",
-        color=colors["amrc-blue"],
+        color=colors["amrc-teal"],
         dark=True,
         fluid=True,
     )
