@@ -4,3 +4,6 @@ There are a number of different formats in which the data can be stored, listed 
 
 ![Storage options 1](assets/img/Databases1.png "Databases")
 ![Storage options 2](assets/img/Databases2.png "Databases")
+
+
+ *Page created by LL - Mar 2024, image created by TR - Feb 2024*

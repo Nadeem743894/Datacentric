@@ -4,3 +4,5 @@ Below are some options for where you may store data along with some pros and con
 
 
 ![Storage locations](assets/img/StorageLocations.png "Storage locations")
+
+ *Page created by LL - Mar 2024, image created by TR - Feb 2024*

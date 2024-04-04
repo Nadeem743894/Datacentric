@@ -1,5 +1,13 @@
-### Transformations/Feature Engineering
+# Feature transformation reports.
 
-*What transformations are applied during in the pipeline?*
-*Can you use a feature store or do you need to custom build your own features?*
-*What features will you engineer and how do they relate to the raw data and ouput?*
+In this folder you will keep a report of the features used to perform analysis in Step 5, showing how they relate to the original business case:
+
+[Feature Summary Report](/docs/4.FeatureTransformation/FeatureSummaryReport.md)
+
+The feature store should be kept in the [gold data folder](/data/processed-gold/).
+
+The details of the feature datasets and their processing should be kept in [Data Definitions](/docs/2.DataAcquisitionAndPreparation/Data%20Pipeline/DataDefinition.md). This file contains links to the codes used and access requirements, as well as links to the original data and the feature data. 
+
+
+
+ *Page created by LL - Mar 2024*

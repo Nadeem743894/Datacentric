@@ -9,6 +9,7 @@ The aim of this document is to plan the technical aspects of a data project (inc
 * Harbour link: (if/when available)
 
 * Which theme is leading this project? 
+* Have you engaged a PM? Please do this before preparing the SoW. 
 
 ## Step 1: Business Understanding
 

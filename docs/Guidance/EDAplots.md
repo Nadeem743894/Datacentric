@@ -72,3 +72,5 @@ signal changes before/during/after a machining operation, to identify unusual pa
 excessive cutting tool wear.
 
 ![Spectrogram](assets/img/spectrogram.png "Spectrogram")
+
+ *Page created by LL - Mar 2024*
