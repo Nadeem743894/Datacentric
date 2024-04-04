@@ -37,7 +37,7 @@ layout = html.Div(
         dbc.Row(
             [
                 html.Img(
-                    src=app.get_asset_url(f"front_page/{home_page_img}"),
+                    src=app.get_asset_url(f"home_page/{home_page_img}"),
                     style={
                         "height": "60vh", 
                         "object-fit": "cover"
