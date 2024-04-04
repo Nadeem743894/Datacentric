@@ -8,20 +8,9 @@ Project status (*please delete as required*):
 
 For each status please complete the closure report. 
 
+Customer: 
 
 
-the challenge addressed, what kind of AI work was done, the lessons learnt from the project and the outcome
-
-Instructions: Template for exit criteria for data science projects. This is concise document that includes an overview of the entire project, including details of each stage and learning. If a section isn't applicable (e.g. project didn't include a ML model), simply mark that section as "Not applicable". Suggested length between 5-20 pages. Code should mostly be within a code repository (not in this document).
-
-Customer: AMRC
-
-Team Members:
-
-* Team member 1 - Team Lead
-* Team member 2 - Data Scientist
-* Team member 3 - Account Team
-* Team member 4 - Business Stakeholder
 
 ## Overview
 
@@ -59,25 +48,10 @@ Team Members:
 
 ## Learnings
 
-### Project Execution
+Please complete this document(/docs/6.InterpretationAndReporting/LessonsLearned.md).
 
-<Learnings around the customer engagement process\>
+If the project results in actionable insights please complete this [document](/docs/6.InterpretationAndReporting/ActionsAndInsights.md).
 
-### Data science and Engineering
-
-<Learnings related to data science and engineering, tips and tricks, etc\>
-
-### Domain
-
-<Learnings around the business domain \>
-
-### Product
-
-<Learnings around the products and services utilized in the solution \>
-
-### What were specific or unique challenges during this project?
-
-<Specific issues or setup, unique things, specific challenges that had to be addressed during the engagement and how that was accomplished\>
 
 ## Links
 

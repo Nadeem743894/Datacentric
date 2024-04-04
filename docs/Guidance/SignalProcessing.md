@@ -1,4 +1,0 @@
-## Signal processing 
-
-
-TBD.

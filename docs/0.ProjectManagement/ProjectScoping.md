@@ -3,7 +3,7 @@
 
 ### Aim of the document
 
-The aim of this document is to plan the technical aspects of a data project (including required resources) in the context of the business case and the planned end product. It is recommended that this document is filled in during project scoping (at this stage it may not be clear the project is viable or how much money/time/resource are required depending on data availability and storage options). The document is set out according to the AMRC Data-Centric Manufacturing Workflow and for viable projects will provide a strong foundation for producing a Statement of Work as well as a tailored DCM workflow for the project team to follow.  Each bullet point should be considered and basic details given at the scoping stage. 
+The aim of this document is to plan the technical aspects of a data project (including required resources) in the context of the business case and the planned end product. It is recommended that this document is filled in during project scoping (at this stage it may not be clear the project is viable or how much money/time/resource are required depending on data availability and storage options). The document is set out according to the AMRC Data-Centric Manufacturing Workflow and for viable projects will provide a strong foundation for producing a Statement of Work as well as a tailored DCM workflow for the project team to follow. This document is also inline with the TMG [pre-registration](https://amrcwikijs.shef.ac.uk/en/AMRC/TMG/Data_Centric_Manufacturing/Experimental_Planning/Preregistration) document and can be used to provide the information for the Lockdown and Readiness gates.  Each bullet point should be considered and basic details given at the scoping stage. 
 
 * Project code: (if/when available)
 * Harbour link: (if/when available)
@@ -84,9 +84,14 @@ If yes, give details.
 * What machines/sensors/tools are required to collect the data? 
 
   * If the data collection tools are available, how will they be set-up to collect the correct data?
-  * If the data colleciton tools are not available, how will they be acquired and set-up to collect the data? 
+  * If the data collection tools are not available, how will they be acquired and set-up to collect the data? 
   * How long will it take to set-up tools to collect the data?
- 
+
+* Do you need to prepare an experimental design?  
+ * For TMG projects, [guidance](https://amrcwikijs.shef.ac.uk/en/AMRC/TMG/Data_Centric_Manufacturing/Experimental_Planning/Design_of_Experiments) has been developed inline with the pre-registration.
+ * Further guidance on design of experiments is available [here](https://amrcwikijs.shef.ac.uk/en/AMRCDS/Guidance/DataAcquisitionandPreparation/DesignOfExperiments).
+
+
 * Where will the raw data be kept, stored and accessed?
 * If the data requires further processing, what processing needs to be done to the data? 
   1. Processing step 1

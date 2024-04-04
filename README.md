@@ -4,102 +4,125 @@
 
 *Include a graphic for an overview of the project to help understand what the application is if possible. This should be broad concept only and not any specific details. GIF is best if possible.*
 
+This repository contains all the documents and code/data directories that we expect you to require through your data-driven project. The aim is to provide a template for documentation/code/data that includes all the working links to allow full transparency and traceability, and therefore improve the quality and trust in AMRC data-driven projects, as well as increasing the accessibility to data science tools and skills whilst maintaining best practice. The development of this Github site is the result of collaboration between the [core team](/docs/0.ProjectManagement/CoreTeam.md) in IMG and TMG. The team will be able to provide further guidance to using the template if needed. The IMG data science team will be regularly updating the guidance and information on our [data science wiki page](https://amrcwikijs.shef.ac.uk/en/AMRCDS) with community feedback. TMG also have developed a wiki for information on [machining data-driven projects](https://amrcwikijs.shef.ac.uk/en/AMRC/TMG/Data_Centric_Manufacturing). If your own group has a relevant wiki page you can link to it [here](/link/to/your/wiki). 
+
+
 ## Getting Started
 
-The data science team will be able to provide further guidance if needed. 
+**To view the documentation homepage, go to https://amrcgithub.shef.ac.uk/pages/IMG/datascience-project-template/. When cloning this project, you will need to enable github pages in the repository settings where you will be given the new URL to access them. You can also view and edit the output in a suitable markdown editor, such as VS code.**
 
-- [ ] Fill out the Project Code/Name/Description above
-- [ ] Initialise the git repository ***Need an instruction sheet for this***
-- [ ] Build an appropriate [programming environment](/docs/Guidance/GettingStarted.md)
-- [ ] open the [project workspace in VS code](/datascience-project-template.code-workspace)
+- [ ] Fill out the Project Code/Name/Description above as they become available.
+- [ ] Initialise the git repository. A beginners guide to using Github is given [here](https://docs.github.com/en/get-started/start-your-journey/hello-world) although please note the repository has already been created here for you. Training is also available for AMRC staff via the UoS Research Software Engineering group and you can sign up [here](https://rse.shef.ac.uk/training/).
+- [ ] Build an appropriate [programming environment](/docs/Guidance/GettingStarted.md).
+- [ ] open the [project workspace in VS code](/datascience-project-template.code-workspace).
 
 ## The Workflow
 
 <!-- replace [ ] with [x] when a workflow task has been completed -->
 
-### [The Business Case](/docs/1.BusinessCase/)
+### [The Business Case](/docs/1.BusinessCase/README.md)
 
-- [ ] Fill out the [Project Scoping](/docs/0.ProjectManagement/ProjectScoping.md) document as comprehensively as possible. Work with partners and seek guidance where necessary. This document will provide the foundation for the SoW, the project plan and the data strategy as well as providing the tailored project workflow. 
+- [ ] Fill out the [project scoping](/docs/0.ProjectManagement/ProjectScoping.md) document as comprehensively as possible. Work with partners and seek guidance where necessary. This document will provide the foundation for the SoW, the project plan and the data strategy as well as providing the tailored project workflow. It will also provide the information required for the TMG Lockdown Gate.
 Once the project has been approved the following should be filled in. 
-- [ ] Fill out the [Project Plan](/docs/0.ProjectManagement/ProjectPlan.md). This documents who will work on the project and any other key information that is needed for the project to run smoothly.
+- [ ] Fill out the [project plan](/docs/0.ProjectManagement/ProjectPlan.md). This documents who will work on the project and any other key information that is needed for the project to run smoothly.
 - [ ] Fill out the [high-level business understanding](/docs/1.BusinessCase/High-levelBusinessCase.md). This should be suitable as a public description on the SoW. 
 - [ ] Fill out the [detailed business understanding](/docs/1.BusinessCase/DetailedBusinessCase.md) with further information about the need for the project. This will be used to create the SoW and will also provide a solid foundation for an introduction in a report. 
 - [ ] Is the project viable? If not, complete the [closure form](/docs/0.ProjectManagement/ClosureReport.md).
 
-### [Data Acquisition and Preparation](/docs/2.DataAcquisitionAndPreparation/)
+### [Data Acquisition and Preparation](/docs/2.DataAcquisitionAndPreparation/README.md)
 
+- [ ] Develop [notebook code](./code/notebooks/DataAcquisition/) to get started.
 - [ ] Copy and paste the information from the [project scoping](/docs/0.ProjectManagement/ProjectScoping.md) document into the [data strategy](/docs/2.DataAcquisitionAndPreparation/DataStrategy.md) and update where necessary. Do not edit the scoping document. 
-- [ ] Develop [notebook code](./code/notebooks/DataAcquisition/) to get started
-- [ ] Map the data flow in the [Data Pipeline](/docs/2.DataAcquisitionAndPreparation/Data%20Pipeline/DataPipeline.txt)
-- [ ] Initialise and use DVC with the [guidance](/docs/Guidance/DVC.md)
-- [ ] Populate the [Data Dictionary](/docs/2.DataAcquisitionAndPreparation/Data%20Dictionaries/README.md) 
-- [ ] Define raw data sources in the [Data Definitions](/docs/2.DataAcquisitionAndPreparation/Data%20Pipeline/DataDefinition.md)
-- [ ] Clean the data ready for initial exploration creating the [silver-interim data](/data/interim-silver/)
-- [ ] Define interim data sources in the [Data Definitions](/docs/2.DataAcquisitionAndPreparation/Data%20Pipeline/DataDefinition.md)
+- [ ] Ensure that the [data strategy](/docs/2.DataAcquisitionAndPreparation/DataStrategy.md) contains the complete list of expected data that will be collected and produced as part of this project. 
+- [ ] If required, produce an [experimental design](/docs/2.DataAcquisitionAndPreparation/ExperimentalDesign.md).
+- [ ] Map the data flow in the [data pipeline](/docs/2.DataAcquisitionAndPreparation/Data%20Pipeline/DataPipeline.txt).
+- [ ] Initialise and use DVC with the [guidance](/docs/Guidance/DVC.md).
+- [ ] If there is no ontology-based reference library, you should create a common dictionary of terms and naming conventions to be followed throughout and populate the [data dictionary](/docs/2.DataAcquisitionAndPreparation/Data%20Dictionaries/README.md), otherwise link to the ontology. 
+- [ ] If required, complete the TMG Readiness Gate. 
+- [ ] Begin data collection. 
+- [ ] Define raw data sources in the [data overview](/docs/2.DataAcquisitionAndPreparation/Data%20Pipeline/DataOverview.md).
+- [ ] Clean the data ready for initial exploration creating the [silver-interim data](/data/interim-silver/).
+- [ ] Define interim data sources in the [data overview](/docs/2.DataAcquisitionAndPreparation/Data%20Pipeline/DataOverview.md).
 
-- [ ] Don't Repeat Yourself! Move reusable code into a callable module in [this directory](./code/src/DataAcquisition/)
+
+- [ ] Don't Repeat Yourself! Move reusable code into a callable module in [this directory](./code/src/DataAcquisition/).
 
 > **Guidance is available on:**
 - [Storage location and formats](https://amrcwikijs.shef.ac.uk/en/AMRCDS/Guidance/DataAcquisitionandPreparation/DataStorage)
+- [Design of experiments](https://amrcwikijs.shef.ac.uk/en/AMRCDS/Guidance/DataAcquisitionandPreparation/DesignOfExperiments)
+- [TMG naming conventions](https://amrcwikijs.shef.ac.uk/en/AMRC/TMG/Data_Centric_Manufacturing/Data_Capture_and_Management/Data_Structure/Naming_Conventions)
+- [The impacts of limitations in data acquisition](https://amrcwikijs.shef.ac.uk/en/AMRCDS/Guidance/DataAcquisitionandPreparation/RepresentativeData).
 
+### [Data Exploration](/docs/3.DataExploration/README.md)
 
-### [Data Exploration](/docs/3.DataExploration/)
-
-- [ ] Develop [notebook code](./code/notebooks/DataExploration)
-- [ ] Produce a [Data Report](/docs/Data%20Reports/DataSummaryReport.md) for each new dataset added to the project.
+- [ ] Develop [notebook code](./code/notebooks/DataExploration) to carry out the data exploration. 
+- [ ] Produce an [exploratory data Report](/docs/Data%20Reports/DataSummaryReport.md) for each new dataset added to the project.
 - [ ] Review your [data strategy](/docs/2.DataAcquisitionAndPreparation/DataStrategy.md) and make changes where necessary.
 - [ ] Do you need to review your analysis plan? 
-- [ ] Move reusable code into a callable module in [this directory](./code/src/DataExploration/)
+- [ ] Move reusable code into a callable module in [this directory](./code/src/DataExploration/).
 
-- [ ] Can the project continue? If not, complete the [closure form](/docs/0.ProjectManagement/ClosureReport.md)
+- [ ] Can the project continue? If not, complete the [closure form](/docs/0.ProjectManagement/ClosureReport.md).
 
 > **Guidance is available on:**
 - [Statistical summaries](https://amrcwikijs.shef.ac.uk/en/AMRCDS/Guidance/DataExploration/StatisticalSummaries)
-- [EDA plots](/docs/Guidance/EDAplots.md)
-- [Correlation Analysis](/docs/Guidance/correlationanalysis.md)
-- [An EDA workflow](/docs/Guidance/EDAWorkflow.md)
-- [The questions to ask during an EDA](/docs/Guidance/EDAQuestions.md)
+- [EDA plots](https://amrcwikijs.shef.ac.uk/en/AMRCDS/Guidance/DataExploration/EDAPlots)
+- [Correlation Analysis](https://amrcwikijs.shef.ac.uk/en/AMRCDS/Guidance/DataExploration/CorrelationAnalysis)
+- [An EDA workflow](https://amrcwikijs.shef.ac.uk/en/AMRCDS/Guidance/DataExploration/EDAWorkflow)
+- [The questions to ask during an EDA](https://amrcwikijs.shef.ac.uk/en/AMRCDS/Guidance/DataExploration/EDAQuestions)
 
 ### [Feature Transformation](/docs/4.FeatureTransformation/README.md)
 
-- [ ] Are you creating features from the data? If yes, define feature sets in the [Data Definitions](/docs/Data%20Reports/Data%20Defintion.md)
+- [ ] Are you creating features from the data? If yes, define feature sets in the [data overview](/docs/Data%20Reports/DataOverview.md).
 - [ ] Develop [notebook code](./code/notebooks/FeatureTransformation) to create your features.
-- [ ] Move reusable code into a callable module in [this directory](./code/src/FeatureTransformation/)
-- [ ] Create a feature data dictionary using the [template](/docs/2.DataAcquisitionAndPreparation/Data%20Dictionaries/amrc-data-dictionary.xlsx)
+- [ ] Move reusable code into a callable module in [this directory](./code/src/FeatureTransformation/).
+- [ ] Create a feature data dictionary using the [template](/docs/2.DataAcquisitionAndPreparation/Data%20Dictionaries/amrc-data-dictionary.xlsx).
 - [ ] Summarise how the features will help meet the business objectives in a [short report](/docs/4.FeatureTransformation/FeatureSummaryReport.md).
-- [ ] Log new features for version control with [DVC](/docs/Guidance/DVC.md)
+- [ ] Log new features for version control with [DVC](/docs/Guidance/DVC.md).
 
 - [ ] Review your [data strategy](/docs/2.DataAcquisitionAndPreparation/DataStrategy.md) and make changes where necessary.
 - [ ] Can the project continue? If not, complete the [closure form](/docs/0.ProjectManagement/ClosureReport.md).
 
 **Guidance is available on:**
-- [Common features](/docs/Guidance/CommonFeatures.md)
-- [Dimension reduction](/docs/Guidance/DimensionReduction.md) 
-- [Signal processing](/docs/Guidance/SignalProcessing.md)
+- [Common features](https://amrcwikijs.shef.ac.uk/en/AMRCDS/Guidance/FeatureTransformation/CommonFeatures)
+- [Dimension reduction](https://amrcwikijs.shef.ac.uk/en/AMRCDS/Guidance/FeatureTransformation/DimensionReduction) 
+- [Signal processing](https://amrcwikijs.shef.ac.uk/en/AMRCDS/Guidance/FeatureTransformation/SignalProcessing)
 
 
-### Model Building
+### [Model Building](/docs/5.ModelBuilding/README.md) 
 
-- [ ] Develop [notebook code](./code/notebooks/ModelBuilding)
-- [ ] Move reusable code into a callable module in [this directory](./code/src/ModelBuilding/)
-- [ ] Track models and experiments with [DVC](/docs/Guidance/DVC.md)
-- [ ] Produce a [Baseline Report](/docs/Model/Baseline/Baseline%20Model.md) for the first model developed
-- [ ] Produce a [Model Report](/docs/Model/Model%201/Model%20Report.md) for each model iteration
-- [ ] Log new models for version control with [DVC](/docs/Guidance/DVC.md), stored in the [model directory](/models/README.md)
-- [ ] Track experiments with [DVC](/docs/Guidance/DVC.md)
+- [ ] Develop [notebook code](./code/notebooks/ModelBuilding) for model building.
+- [ ] Remember to move reusable code into a callable module in [this directory](./code/src/ModelBuilding/) as you develop the model code.
+- [ ] Track models and experiments with [DVC](/docs/Guidance/DVC.md).
+- [ ] Describe the [modelling strategy](/docs/5.ModelBuilding/ModellingStrategy.md). Some of this information can be copied from the [project scoping](/docs/0.ProjectManagement/ProjectScoping.md) document.
+- [ ] Produce a [baseline report](/docs/Model/Baseline/Baseline%20Model.md) for the first model developed.
+- [ ] Produce a [model report](/docs/Model/Model%201/Model%20Report.md) for each model iteration. This should contain information on the changes to the model and the reasoning. 
+- [ ] Complete a [Final Report](/docs/Model/Final%20Report.md) for the best model identified/evaluated on the hold-out test set.
+- [ ] Log new models for version control with [DVC](/docs/Guidance/DVC.md), stored in the [model directory](/models/README.md).
+- [ ] Track experiments with [DVC](/docs/Guidance/DVC.md).
 - [ ] Review your [data strategy](/docs/2.DataAcquisitionAndPreparation/DataStrategy.md) and make changes where necessary.
 - [ ] Can the project continue? If not, complete the [closure form](/docs/0.ProjectManagement/ClosureReport.md).
 
+**Guidance is available on:**
+- [DVC](/docs/Guidance/DVC.md)
+- [Overview of analysis tools](https://amrcwikijs.shef.ac.uk/en/AMRCDS/Guidance/ModelBuilding/OverviewOfAnalysisMethods), including links to more in-depth descriptions of the methods and how to assess them. 
+- [Descriptive vs predictive analysis](https://amrcwikijs.shef.ac.uk/en/AMRCDS/Guidance/ModelBuilding/DescriptiveVPredictive) 
+- [Introduction to statistics and probability for DMC](https://amrcwikijs.shef.ac.uk/en/AMRCDS/StatisticsAndProbability)
+
 ### Evaluation and Reporting
 
-- [ ] Develop [notebook code](./code/notebooks/EvaluationAndReporting)
-- [ ] Move reusable code into a callable module in [this directory](./code/src/EvaluationAndReporting/)
-- [ ] Build a dashboard with the [plotly templates](./code/dashboard/) and [guidance](/docs/Guidance/Dashboarding.md)
-- [ ] Complete a [Final Report](/docs/Model/Final%20Report.md) for the best model identified/evaluated on the hold-out test set
-- [ ] Complete the [Exit Report](/docs/Project/Exit%20Report.md)
-- [ ] Define the [System Architecture](/docs/Project/System%20Architecture.docx)
-- [ ] Extract required content from [docs folder](/docs/) for your agreed reporting format (AMRC technical report, presentation etc.)
+- [ ] Develop [notebook code](./code/notebooks/EvaluationAndReporting) for evaluation and reporting.
+- [ ] Move reusable code into a callable module in [this directory](./code/src/EvaluationAndReporting/).
+- [ ] Identify stakeholders and the required reports and dashboards. 
+- [ ] Build a dashboard with the [plotly templates](./code/dashboard/) and [guidance](/docs/Guidance/Dashboarding.md).
+- [ ] Extract required content from [docs folder](/docs/) for your agreed reporting format (AMRC technical report, presentation etc.).
 - [ ] Review your [data strategy](/docs/2.DataAcquisitionAndPreparation/DataStrategy.md) and ensure it is an accurate reflection of the data used in the project.
+- [ ] Have you successfully met the business objectives? Document the [insights and actions](/docs/6.InterpretationAndReporting/ActionsAndInsights.md) that can result from this work.
+- [ ] What are the [lessons learned](/docs/6.InterpretationAndReporting/LessonsLearned.md) from this work. 
+- [ ] If there is no deployment required, complete the [closure form](/docs/0.ProjectManagement/ClosureReport.md).
+
+**Guidance is available on:**
+- [Dashboarding](/docs/Guidance/Dashboarding.md)
+- AMRC final project report guidelines are available on Harbour. 
 
 ### Deployment and Maintenance
 
@@ -107,15 +130,12 @@ Once the project has been approved the following should be filled in.
 - [ ] Move reusable code into a callable module in [this directory](./code/src/DeploymentAndMaintenance/)
 - [ ] Deploy a dockerised application with the [docker compose file](docker-compose.yml) and [guidance](/docs/Guidance/Docker.md)
 
-### Guidance and cheat sheets 
-
-* [Possible impacts of data representation.](/docs/Guidance/MissingData.md)
-
 ## Other useful features
 
-- [ ] Update a conda envirinment via the [environment.yml file](/code/environment.yml) and [guidance](/docs/Guidance/GettingStarted.md)
-- [ ] Check the [cheatsheets](/docs/Guidance/Cheatsheets/Cheatsheets.md) relevant to this template
-- [ ] Manage [environment variables](/code/environment_variables/README.md) across your project
+- [ ] Update a conda environment via the [environment.yml file](/code/environment.yml) and [guidance](/docs/Guidance/GettingStarted.md).
+- [ ] [IMG DCM wiki](https://amrcwikijs.shef.ac.uk/en/AMRCDS) and [TMG DCM wiki](https://amrcwikijs.shef.ac.uk/en/AMRC/TMG/Data_Centric_Manufacturing) information portals. 
+- [ ] Check the [cheatsheets](/docs/Guidance/Cheatsheets/Cheatsheets.md) relevant to this template.
+- [ ] Manage [environment variables](/code/environment_variables/README.md) across your project.
 <!-- ### Building
 
 *Describe how to build the application and general settings. Any specific should be included in specific guides on the wiki / pages section. What is needed to build should be already be included in prerequisites* -->
