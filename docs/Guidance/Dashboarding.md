@@ -52,7 +52,7 @@ The dashboard should now be accessible in the browser on [localhost:8050](http:/
 
 ![alt text](image-2.png)
 
-The first page to open is the main page, the content and layout of which is defined in [index.py](/code/dashboard/index.py). Two buttons on the Navbar (defined in [navbar.py](/code/dashboard/navbar.py)) are included by default (top right), linking to pages [Home](localhost:8050) and [Example](localhost:8050/example). Clicking on [Example](localhost:8050/example) takes you to another default page, with various example graphs and features to get you started:
+The first page to open is the Home page, the content and layout of which is defined in [home.py](/code/dashboard/pages/home.py). Two buttons on the Navbar (defined in [navbar.py](/code/dashboard/navbar.py)) are included by default (top right), linking to pages [Home](localhost:8050) and [Example](localhost:8050/example). Clicking on [Example](localhost:8050/example) takes you to another default page, with various example graphs and features to get you started:
 
 ![alt text](image-3.png)
 
@@ -69,13 +69,14 @@ The Python files for creating the dashboard are organised in the [dashboard dire
     │   │   │   └── ...
     │   │   │   
     │   │   ├── pages               <- Directory for scripts which generate pages on the dashboard.
+    │   │   │   ├── home.py         <- Script to generate the home page.
     │   │   │   ├── example.py      <- Example script to generate a new page.
     │   │   │   └── ...             <- Copy/rename the example script in here to create a new custom page.
     │   │   
     │   │   ├── __init.py__         <- Allows the code in the dashboard directory to be imported as a package.
     │   │   ├── app.py              <- Creates the Dash app, and controls the colour scheme.
     │   │   ├── Dockerfile          <- Script required to run the app in Docker.
-    │   │   ├── index.py            <- Script to control the layout and contents of the front (index) page.
+    │   │   ├── index.py            <- Script to assemble all the page layouts and make them accessible by the user.
     │   │   ├── navbar.py           <- Script to control the contents of the navigation bar, at the top of the app.
     │   │   ├── requirements.txt    <- File to specify the packages required to be imported when running with docker.
     │   │   └── run.py              <- Script to control the host IP address, port number, debug mode and run the app.
@@ -104,9 +105,15 @@ Setting `Debug=True` in [`run.py`](/code/dashboard/run.py) will give you access 
 
 Setting `Debug=False` will remove these features, but provide a cleaner/more stable experience for displaying the dashboard.
 
-### The Example Page
+### Updating the Home page
 
-The [example.py](/code/dashboard/pages/example.py) script controls what you see on the [Example](localhost:8050/example) page of the web app. Start by experimenting with this page to understand the components and what happens when you make changes in the code (you can always `Discard Changes` in your git source control if you break it and can't get it back to workging again). This should give you a good starting point for 
+The Home page is defined in the script [home.py](/code/dashboard/pages/home.py); this is the first page a user will see when opening [localhost:8050](http://localhost:8050/). The default template supports a [`dcc.Markdown`](https://www.markdownguide.org/) component which you can use to provide an overview of the project or the contents of the dashboard. There is also a `html.Img` component, which reads an image from the directory at [assets/home_page](/code/dashboard/assets/home_page/) and displays it. To display your own project specific image, **remove the [default image of Factory 2050](/code/dashboard/assets/home_page/image.jfif) and replace it** with your chosen image. The default template code will only read one image from the folder, and it should be able to read any of the standard image formats.
+
+You can of course add more images, text components, buttons/links, graphs etc. by modifying the `layout` object in the script.
+
+### Modifying the Example page
+
+The [example.py](/code/dashboard/pages/example.py) script controls what you see on the [Example](localhost:8050/example) page of the dashboard app. Start by experimenting with this page to understand the components and what happens when you make changes in the code (you can always `Discard Changes` in your git source control if you break it and can't get it back to workging again). This should give you a good starting point for building your own custom dashboard app, whilst maintaining a degree of standardisation across other AMRC projects.
 
 Comprehensive documentation on Dash callbacks can be found [here](https://dash.plotly.com/basic-callbacks) and [here](https://dash.plotly.com/advanced-callbacks).
 

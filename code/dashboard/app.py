@@ -26,6 +26,13 @@ colors = {
     "amrc-peach": "#FF9664",
 }
 
+index_style = {
+    "height": "40%",
+    "width": "100%",
+    "display": "inline-block",
+    "vertical-align": "top",
+}
+
 #### Dash instance ###
 external_stylesheets = [dbc.themes.DARKLY]
 load_figure_template("darkly")
