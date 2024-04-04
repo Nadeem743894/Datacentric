@@ -1,14 +1,11 @@
 #########################################################################
 ### Imports 
-from re import M
-from venv import create
 from dash import dcc
 import dash_bootstrap_components as dbc
 from dash import html
 from dash.dependencies import Input, Output
 from app import app, colors
 from navbar import generate_navbar
-import plotly.graph_objects as go
 import plotly.express as px
 import pandas as pd
 import numpy as np
@@ -23,9 +20,8 @@ import numpy as np
 #     "vertical-align": "top",
 # }
 
-# defining a static signal dataframe, which executes once when the page is opened
-df_static = pd.DataFrame()
-df_static["Static Signal"] = np.random.randint(0, 100, 100 - 1)
+# load a static signal from the /data/external folder in the template, which executes once when the page is opened
+df_static = pd.read_csv('../data/external/example_data.csv')
 
 navbar = generate_navbar(brand="Project - Example")
 
@@ -53,7 +49,7 @@ layout = html.Div(
                     n_clicks=5,
                     style={
                         "font-size": "24px",
-                        "backgroundColor": "green",
+                        "backgroundColor": colors['amrc-deep-violet'],
                         "color": "white",
                     },
                 ),
@@ -73,7 +69,8 @@ layout = html.Div(
                             figure=px.line(
                                 df_static,
                                 y="Static Signal",
-                                title="Line 1 - Static Signal",  # Scatter plot docs: https://plotly.com/python/line-and-scatter/
+                                color_discrete_sequence=[colors['amrc-powder-blue']],
+                                title="Line 1 - Static Signal, loaded from /data/external/example_data.csv",  # Scatter plot docs: https://plotly.com/python/line-and-scatter/
                             ),
                         )
                     ),
@@ -150,11 +147,26 @@ layout = html.Div(
     Input("interval-component", "n_intervals"),
 )
 def update_graph_live(n_clicks, n_intervals):
+    """
+    Function to update the line graph in component line-2.
+
+    Args: 
+        n_clicks (int) - the number of times the button 'button-click' has been clicked
+        n_intervals (int) - the number of of seconds counted by the 'interval-component' since the app started 
+    Returns:
+        fig (obj) - the updated figure object, to 'line-2'
+    """
+
     df = pd.DataFrame()
     df["Random Signal"] = pd.DataFrame(
         np.random.randint(0, n_intervals, size=(n_clicks * 20, 1))
     )
-    fig = px.line(df, y="Random Signal", title="Line 2 - Random signal")
+    fig = px.line(
+        df, 
+        y="Random Signal", 
+        title="Line 2 - Random signal",
+        color_discrete_sequence=[colors['amrc-powder-blue']]
+        )
 
     return fig
 
@@ -167,6 +179,16 @@ def update_graph_live(n_clicks, n_intervals):
     Input("interval-component", "n_intervals"),
 )
 def update_graph_live(n_intervals):
+    """
+    Function to update the scatter graphs in components scatter-1 and scatter-2.
+
+    Args: 
+        n_intervals (int) - the number of of seconds counted by the 'interval-component' since the app started 
+    Returns:
+        fig['scatter-1'] (obj) - the updated figure for component 'scatter-1'
+        fig['scatter-2'] (obj) - the updated figure for component 'scatter-2'
+    """
+
     fig = {}
     df = pd.DataFrame()
     df["Random Signal"] = np.random.randint(0, n_intervals, n_intervals - 1)
@@ -176,6 +198,7 @@ def update_graph_live(n_intervals):
         df,
         y="Random Signal",
         color="Increasing Signal",
+        color_continuous_scale=[colors['amrc-deep-violet'], colors['amrc-peach']],
         title="Scatter 1 - Random Signal",
     )
 
@@ -183,6 +206,7 @@ def update_graph_live(n_intervals):
         df,
         y="Increasing Signal",
         color="Increasing Signal",
+        color_continuous_scale=[colors['amrc-deep-violet'], colors['amrc-peach']],
         title="Scatter 2 - Increasing Signal",
     )
 
