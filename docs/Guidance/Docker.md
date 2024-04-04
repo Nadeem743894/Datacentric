@@ -57,11 +57,20 @@ A  generic, managed template for building dashboards with [Plotly Dash](https://
     restart: unless-stopped
     build:
       context: ./code/dashboard
+    # network_mode: "host"
+    # expose port 8050 to access the dashboard on localhost:8050
     ports:
         - "8050:8050"
     volumes:
-      - ./code/dashboard:/app
-      - ./data:/data
+      # bind mount the 'dashboard' working directory to update scripts without needing to re-run docker compose build
+      - type: bind
+        source: ./code/dashboard
+        target: /dashboard
+      # bind mount the data directory to read + write to stored data on the host (your PC) 
+      - type: bind
+        source: ./data
+        target: /data
+    # add the environment variable file to the container
     env_file:
       - ./code/environment_variables/dashboard.env
 ```
@@ -71,30 +80,32 @@ A  generic, managed template for building dashboards with [Plotly Dash](https://
 A template for deploying your main python application. Edit or add to the [code directory](/code/) to customise to your project. By default, the container will run the [`main.py`](/code/main.py) script. Environment variables are stored and can be configured [here](/code/environment_variables/python-app.env).
 
 ```
-# python-app - python script for data science application
+# # python-app - python script for data science application
   python-app:
     restart: unless-stopped
     build: 
-      context: ./src
-    privileged: true
-    # depends_on:
-    #   - "influxdb"
-    network_mode: "host"
+      context: ./code
+    # network_mode: "host"
     volumes:
+      # bind mount the 'code' working directory to update scripts without needing to re-run docker compose build
       - type: bind
-        source: ./environment_variables/python-app.env
-        target: /python-app/environment_variables/python-app.env
+        source: ./code
+        target: /python-app
+      # bind mount the logs directory to monitor operation + debug
       - type: bind
-        source: ./logs
-        target: /var/log/app
-      - type: volume
-        source: data
-        target: /var/data
-      - type: volume
-        source: influxdb-storage
-        target: /var/lib/influxdb2 
+        source: ./code/logs
+        target: /python-app/logs
+      # bind mount the data directory to read + write to stored data on the host (your PC) 
+      - type: bind            
+        source: ./data
+        target: /data
+      ## if you'd prefer to use a docker volume to manage data, you can use this syntax to mount it in place of the bind mount
+      # - type: volume        
+      #   source: data
+      #   target: /var/data
+    # add the environment variable file to the container
     env_file:
-      - ./environment_variables/python-app.env
+      - ./code/environment_variables/python-app.env
 ```
 
 #### influxdb
@@ -107,17 +118,21 @@ A template for deplying a local instance of [InfluxDB](https://www.influxdata.co
     image: influxdb:latest
     restart: unless-stopped
     # network_mode: "host"
+    # expose port 8086 to access the influxdb dashboard on localhost:8086
     ports:
       - "8086:8086"
     volumes:
+      # mount the influxdb-storage volume to persist data in the container 
       - type: volume
         source: influxdb-storage
         target: /var/lib/influxdb2
+      # mount the influxdb-config volume to persist configurations in the container 
       - type: volume
         source: influxdb-config
         target: /etc/influxdb2
+    # add the environment variable file to the container
     env_file:
-      - ./environment_variables/influxv2.env
+      - ./code/environment_variables/influxv2.env
 ```
 
 #### Running the services

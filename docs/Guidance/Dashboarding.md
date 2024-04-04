@@ -17,11 +17,20 @@ The primary method for running the application is via the [`docker-compose.yml`]
     restart: unless-stopped
     build:
       context: ./code/dashboard
+    # network_mode: "host"
+    # expose port 8050 to access the dashboard on localhost:8050
     ports:
         - "8050:8050"
     volumes:
-      - ./code/dashboard:/app
-      - ./data:/data
+      # bind mount the 'dashboard' working directory to update scripts without needing to re-run docker compose build
+      - type: bind
+        source: ./code/dashboard
+        target: /dashboard
+      # bind mount the data directory to read + write to stored data on the host (your PC) 
+      - type: bind
+        source: ./data
+        target: /data
+    # add the environment variable file to the container
     env_file:
       - ./code/environment_variables/dashboard.env
 ```
@@ -178,9 +187,17 @@ Output("scatter-2", "figure"),              <- Updates the figure property of co
 In the [docker-compose.yml](/docker-compose.yml) file, we used [bind mounts](https://docs.docker.com/storage/bind-mounts/) to mount two directories from the host machine (your laptop) into the dashboard container. This means that any changes you make in these directories in your local working directory will be mirrored in the running docker container, allowing you to easily update the code or add data. Note that [volumes](https://docs.docker.com/storage/volumes/) are the preferred method for persisting data in Docker containers over bind mounts, but for the likely use cases of this template bind mounts are simpler and most likely sufficient (feedback requested!).
 
 ```
+
     volumes:
-      - ./code/dashboard:/dashboard
-      - ./data:/data
+      # bind mount the 'dashboard' working directory to update scripts without needing to re-run docker compose build
+      - type: bind
+        source: ./code/dashboard
+        target: /dashboard
+      # bind mount the data directory to read + write to stored data on the host (your PC) 
+      - type: bind
+        source: ./data
+        target: /data
+    # add the environment variable file to the container
 ```
 
 Mounting `./code/dashboard`  to `/dashboard` allows us to edit the code without needing to re-build the docker container after every change. `/dashboard` is the working directory in the container.
