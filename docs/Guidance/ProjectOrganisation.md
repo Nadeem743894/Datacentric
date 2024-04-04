@@ -1,4 +1,8 @@
 
+# Project Organisation
+
+    ├── .github                     <- Bug report/feature request/pull request templates.
+    │   └── ... 
     ├── code      
     │   ├── dashboard               <- Utility for creating a Plotly dashboard.
     │   │   └── ...
@@ -6,13 +10,13 @@
     │   │   └── ...
     │   ├── logs                    <- Directory for storing software logs.
     │   │   └── ...
-    │   │── notebooks           <- Jupyter notebooks. Naming convention is a number (for ordering),
-    │   │   └── ...               the creator's initials, and a short `-` delimited description, e.g.
-    │   │                         `1.0-jqp-initial-data-exploration`. Sub-directories provided to 
-    │   │                         organise notebooks by the workflow steps.
+    │   │── notebooks               <- Jupyter notebooks. Naming convention is a number (for ordering),
+    │   │   └── ...                 the creator's initials, and a short `-` delimited description, e.g.
+    │   │                           `1.0-jqp-initial-data-exploration`. Sub-directories provided to 
+    │   │                           organise notebooks by the workflow steps.
     │   │
-    │   ├── src                 <- Source code for use in this project, organised with conformance to the workflow. 
-    │   │   └── ...                Includes an __init__.py to make it a Python Module.
+    │   ├── src                     <- Source code for use in this project, organised with conformance to the workflow. 
+    │   │   └── ...                 Includes an __init__.py to make it a Python Module.
     │   │                         
     │   ├── Dockerfile          <- Dockerfile for creating a containerised application.
     │   ├── environment.yml     <- YAML file for managing a virtual environment with conda.
@@ -71,5 +75,3 @@
     ├── docker-compose.yml              <- Docker compose file for deploying a containerised application.
     └── README.md                       <- The top-level README for analysts using this project,             
                                            outlining the workflow and useful features included in the template.
-
-

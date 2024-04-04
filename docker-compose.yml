@@ -1,11 +1,10 @@
 version: "3.8"
 
-
 services:
 
 #################################################################
 
-# ## frontend - visualisation app with plotly dashboard
+# ## dashboard - visualisation app with plotly dashboard
   dashboard:
     restart: unless-stopped
     build:
@@ -13,15 +12,15 @@ services:
     ports:
         - "8050:8050"
     volumes:
-      - ./code/dashboard:/app
+      - ./code/dashboard:/dashboard
       - ./data:/data
     env_file:
       - ./code/environment_variables/dashboard.env
 
 #################################################################
 
-# # backend - python script for data science application
-#   backend:
+# # python-app - python script for data science application
+#   python-app:
 #     restart: unless-stopped
 #     build: 
 #       context: ./src
@@ -31,8 +30,8 @@ services:
 #     network_mode: "host"
 #     volumes:
 #       - type: bind
-#         source: ./environment_variables/backend.env
-#         target: /backend/environment_variables/backend.env
+#         source: ./environment_variables/python-app.env
+#         target: /python-app/environment_variables/python-app.env
 #       - type: bind
 #         source: ./logs
 #         target: /var/log/app
@@ -43,26 +42,26 @@ services:
 #         source: influxdb-storage
 #         target: /var/lib/influxdb2 
 #     env_file:
-#       - ./environment_variables/backend.env
+#       - ./environment_variables/python-app.env
 
 # #################################################################
 
-# ## InfluxDB - Time-series historian service
-#   influxdb:
-#     image: influxdb:latest
-#     restart: unless-stopped
-#     # network_mode: "host"
-#     ports:
-#       - "8086:8086"
-#     volumes:
-#       - type: volume
-#         source: influxdb-storage
-#         target: /var/lib/influxdb2
-#       - type: volume
-#         source: influxdb-config
-#         target: /etc/influxdb2
-#     env_file:
-#       - ./environment_variables/influxv2.env
+## InfluxDB - Time-series historian service
+  # influxdb:
+  #   image: influxdb:latest
+  #   restart: unless-stopped
+  #   # network_mode: "host"
+  #   ports:
+  #     - "8086:8086"
+  #   volumes:
+  #     - type: volume
+  #       source: influxdb-storage
+  #       target: /var/lib/influxdb2
+  #     - type: volume
+  #       source: influxdb-config
+  #       target: /etc/influxdb2
+  #   env_file:
+  #     - ./environment_variables/influxv2.env
 
 #################################################################
 

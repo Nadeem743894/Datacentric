@@ -18,7 +18,21 @@ import os
 import plotly.express as px
 import pandas as pd
 from datetime import datetime, timedelta
+
 # config = configparser.ConfigParser()
+
+
+markdown_text = """
+### Dash and Markdown
+
+Dash apps can be written in Markdown.
+Dash uses the [CommonMark](http://commonmark.org/)
+specification of Markdown.
+Check out their [60 Second Markdown Tutorial](http://commonmark.org/help/)
+if this is your first introduction to Markdown!
+
+#### Use this space to provide a brief overview of the project, the dashboard, demonstrator or whatever details you want to convey to the customer.
+"""
 
 ### Page container ###
 page_container = html.Div(
@@ -40,7 +54,7 @@ index_style = {
     "vertical-align": "top",
 }
 
-navbar = generate_navbar(brand="")
+navbar = generate_navbar(brand="Project Code - Project Title")
 
 for item in os.listdir(f"assets/front_page"):
     front_page_img = item
@@ -49,6 +63,7 @@ index_layout = html.Div(
     [
         navbar,
         html.Br(),
+        dcc.Markdown(children=markdown_text),
         dbc.Row(
             [
                 html.Img(
@@ -59,49 +74,6 @@ index_layout = html.Div(
             align="center",
             justify="center",
         ),
-        dbc.Row(
-            [
-                dbc.Col(
-                    html.Div(
-                        dcc.Graph(
-                            id="line-1",
-                            figure=px.line(
-                                pd.Series(),
-                                title="Line 1",
-                            ),
-                        )
-                    )
-                ),
-                dbc.Col(
-                    html.Div(
-                        dcc.Graph(
-                            id="line-2",
-                            figure=px.line(
-                                pd.Series(),
-                                title="Line 2",
-                            ),
-                        )
-                    )
-                ),
-            ],
-            align="center",
-            justify="center",
-        ),
-        html.Div([
-        html.H4('GPS location'),
-        dcc.Graph(
-            id='live-update-graph',
-            figure=px.scatter_geo(
-                pd.DataFrame(),
-                title="GPS location"
-                )
-            ),
-        dcc.Interval(
-            id='interval-component',
-            interval=1*1000, # in milliseconds
-            n_intervals=0
-        )
-    ])
     ]
 )
 
@@ -111,19 +83,11 @@ app.layout = page_container
 ### Assemble all layouts ###
 pages = []
 pages.append(example.layout)
-# pages.append(page_container)
-
-# Multiple components can update everytime interval gets fired.
-@app.callback(Output('live-update-graph', 'figure'),
-              Input('interval-component', 'n_intervals'))
-def update_graph_live(n):
-
-    fig = px.scatter_geo(
-        ) 
-
-    return fig
+pages.append(page_container)
 
 app.validation_layout = html.Div(children=pages)
+
+
 ### Update Page Container ###
 @app.callback(
     Output(

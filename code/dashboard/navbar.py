@@ -15,6 +15,7 @@ colors = {
     "amrc-blue-dark": "#00203D",
 }
 
+
 def generate_navbar(brand):
 
     navbar = dbc.NavbarSimple(
