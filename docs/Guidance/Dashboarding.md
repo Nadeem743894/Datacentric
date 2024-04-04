@@ -50,11 +50,11 @@ Note: once you've built the dashboard once (with `docker compose build`) you don
 
 The dashboard should now be accessible in the browser on [localhost:8050](http://localhost:8050/):
 
-![alt text](image-2.png)
+![alt text](images/dashboard-home-page.png)
 
 The first page to open is the Home page, the content and layout of which is defined in [home.py](/code/dashboard/pages/home.py). Two buttons on the Navbar (defined in [navbar.py](/code/dashboard/navbar.py)) are included by default (top right), linking to pages [Home](localhost:8050) and [Example](localhost:8050/example). Clicking on [Example](localhost:8050/example) takes you to another default page, with various example graphs and features to get you started:
 
-![alt text](image-3.png)
+![alt text](images/dashboard-example-page.png)
 
 The following sections will now go into more detail on the code used to generate these pages, and how you can adapt or build from them for your own application.
 
