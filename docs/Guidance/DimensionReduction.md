@@ -1,5 +1,0 @@
-## Dimension reduction
-
-Dimension reduction can be a very useful tool for determining a new, normally smaller, set of independent features in the presence of correlated explanatory variables. The new features are a linear combination of the original features and often provide a new interpretation of the original set of variables Algorithms such as Principal Component Analysis, Independent Component Analysis or t-distributed Stochastic Neighbour Embedding. In a machine learning setting, dimension reduction is used to reduce the number of features by reducing the noise and correlation in the data helping to build simpler models with less model variance. The way in which the reduced feature set is found depends on the algorithm, but the general aim is to describe the relationships in order of reducing the largest variance in the remaining dimensions. 
-
-### Principal component analysis 
