@@ -1,66 +1,50 @@
-# Exit Report of ms-tdsp-template for AMRC
-# Not yet finished editing. 
+# Project closure form
 
 Project status (*please delete as required*):
 * Complete
 * Not viable
 * Withdrawn
 
-For each status please complete the closure report. 
+For each status please complete the closure report. The aim of this report is to ensure all documentation, codes and data are accessible and linked such that all decisions and insights can be traced and analysis repeated if needed. 
 
-Customer: 
-
-
+Harbour Link: 
 
 ## Overview
 
-<Executive summary of entire solution, brief non-technical overview\>
+What was the high-level result of the project? Is the [public description](/docs/1.BusinessCase/High-levelBusinessCase.md) still an accurate overview of the project?  
 
-## Business Domain
+## The Business Case
 
-<Industry, business domain of customer\>
+Considering the more detailed project plan in the [project scoping](/docs/0.ProjectManagement/ProjectScoping.md) document and the [detailed business case](/docs/1.BusinessCase/DetailedBusinessCase.md) were the original objectives met and what solutions were provided? 
 
-## Business Problem
+## Data Acquisition and Preparation
 
-<Business problem and exact use case(s), why it matters\>
+Was the relevant data found and collected? Ensure all details are available in the [data documents](/docs/2.DataAcquisitionAndPreparation/) and the links exist to the correct [data files](/data/) and [code](/code/notebooks/2.DataAcquisitionAndPreparation/).
 
-## Data Processing
+## Data Exploration 
 
-<Schema of original datasets, how data was processed, final input data schema for model\>
+Do the relevant data sets have an [exploration summary report](/docs/3.DataExploration/)? Is all the [exploration code](/code/notebooks/3.DataExploration/) available?
 
-## Modeling, Validation
+## Feature Transformation
 
-<Modeling techniques used, validation results, details of how validation conducted\>
+Are the features taken forward for modelling [well documented](/docs/4.FeatureTransformation/FeatureSummaryReport.md) and the [processing code](/code/notebooks/4.FeatureTransformation/) available? Can the final [feature set](/data/processed-gold/) be accessed? If more than one feature set exists, ensure the link to the correct modelling task is in place. 
 
-## Solution Architecture
+## Model Building
 
-<Architecture of the solution, describe clearly whether this was actually implemented or a proposed architecture. Include diagram and relevant details for reproducing similar architecture. Include details of why this architecture was chosen versus other architectures that were considered, if relevant\>
+Is the [modelling strategy](/docs/5.ModelBuilding/ModellingStrategy.md) an accurate description of how modelling was carried out? Do all models have a [summary report](/docs/5.ModelBuilding/Model/) and supporting [code](/code/notebooks/5.ModelBuilding/)? Are the [final model](/docs/5.ModelBuilding/Model/FinalModelReport.md) and it's results well documented?   
 
-## Benefits
+## Intepretation and Reporting 
 
-### Company Benefit (internal only. Double check if you want to share this with your customer)
+Have the model results been interpreted and reported for the relevant audiences? Please provide links to the outputs. 
 
-<What did our company gain from this engagement? ROI, revenue, etc\>
+If the project resulted in actionable insights please complete this [document](/docs/6.InterpretationAndReporting/ActionsAndInsights.md).
 
-### Customer Benefit
+Please complete the lessons learned in this [document](/docs/6.InterpretationAndReporting/LessonsLearned.md).
 
-<What is the benefit (ROI, savings, productivity gains etc) for the customer? If it is just a POC, what is estimated ROI? If exact metrics are not available, why does it have impact for the customer?\>
+## Deployment and Maintenance
 
-## Learnings
-
-Please complete this document(/docs/6.InterpretationAndReporting/LessonsLearned.md).
-
-If the project results in actionable insights please complete this [document](/docs/6.InterpretationAndReporting/ActionsAndInsights.md).
+Is the solution to be deployed? Are the [MLOps](/docs/7.DeploymentAndMaintenance/DeploymentStrategy.md) well documented? 
+How will the solution be [maintained](/docs/7.DeploymentAndMaintenance/MaintenanceStrategy.md)? 
 
 
-## Links
-
-<Links to published case studies, etc.; Link to git repository where all code sits\>
-
-## Next Steps
-
-<Next steps. These should include milestones for follow-ups and who owns this action. E.g. Post- Proof of Concept check-in on status on 12/1/2016 by X, monthly check-in meeting by Y, etc.\>
-
-## Appendix
-
-<Other materials that seem relevant – try to keep the rest of the exit report under 20 pages, but more details can be included in appendix if needed.\>
+*Page created by LL - Mar 2024*

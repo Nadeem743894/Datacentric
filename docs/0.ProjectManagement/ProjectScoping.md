@@ -33,6 +33,7 @@ The aim of this document is to plan the technical aspects of a data project (inc
 > ### Data availability and readiness
 
 * What data is required for the project? How does it represent what you are trying to gain insights into? 
+* Is a data ontology available? If yes, give details. 
 
 * Is the project data: 
   1. available as is?
@@ -75,6 +76,7 @@ If yes, give details.
 
 * Data type
 * How will the data be acquired? 
+* Are the Factory+ team required? Please reach out to them for resource estimates and advice.
 * What processes are required to run for data collection? 
 
   * Is machine time required?
@@ -106,7 +108,7 @@ If yes, give details.
 ### Data Quality and Integrity (further guidance can be given on these as there may be no clear answer at this stage)
 * How will you ensure the data is of suitable quality for the project? 
 * Is there a timescale for which the data must be kept?
-* How will you ensure that the data set contains enough metadata for future use?
+* How will you ensure that the data set contains enough metadata/contextual information for future use?
 * How will access be gained to the data in the future?
 * How will you maintain the integrity of the data? 
 
@@ -144,7 +146,7 @@ The aim of data exploration is three-fold: 1. To check that the file contains th
 
 ## Step 4: Feature Transformation
 
-The aim of feature transformation is to ensure that only relevant bits of the data are used to build models and for further analysis. This may be annual averages, or principal components.
+The aim of feature transformation is to ensure that only relevant bits of the data are used to build models and for further analysis. This may be annual averages, or principal components, or some other technique to reduce the amount of data whilst maintaining the relevant information.
 
 * Who will carry out the feature engineering? 
 * What tools will be used for feature transformation?
@@ -158,6 +160,7 @@ The aim of feature transformation is to ensure that only relevant bits of the da
 
 Here the word 'model' is representative of a statistical/machine learning or AI model. The aim of model building is to get further insights from the data and to understand the statistical significance of any identified patterns so far. 
 
+* Will the models aim to describe what exists or predict? The modelling strategy will depend on this. 
 * Who will carry out the model building?
 * What tools will be required to carry out model building?
   * Are licences required? Give details if yes.

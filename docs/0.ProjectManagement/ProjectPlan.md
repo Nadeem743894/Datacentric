@@ -23,6 +23,7 @@ The project scoping plan can be used to fill in the project plan with resources,
 * Is training required? Give details.
 * Has machine been booked? Give details.
 * Have the electrical team been booked? Give details.
+* Have the Factory+ team been resourced? Give details. 
 * Have sensors been acquired and fitted? 
 * Are there any data security or ethical issues?  Give details and links to relevant information. 
 
