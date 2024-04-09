@@ -1,4 +1,4 @@
-*This repository contains all the documents and code/data directories that we expect you to require through your data-driven project. The aim is to provide a template for documentation/code/data that includes all the working links to allow full transparency and traceability, and therefore improve the quality and trust in AMRC data-driven projects, as well as increasing the accessibility to data science tools and skills whilst maintaining best practice. The development of this Github site is the result of collaboration between the [core team](/docs/0.ProjectManagement/CoreDCMTeam.md) in IMG and TMG. The team will be able to provide further guidance to using the template if needed. The IMG data science team will be regularly updating the guidance and information on our [data science wiki page](https://amrcwikijs.shef.ac.uk/en/AMRCDS) with community feedback. TMG also have developed a wiki for information on [machining data-driven projects](https://amrcwikijs.shef.ac.uk/en/AMRC/TMG/Data_Centric_Manufacturing). If your own group has a relevant wiki page you can link to it [here](/link/to/your/wiki).*
+*This repository contains all the documents and code/data directories that we expect you to require through your data-driven project. The aim is to provide a template for documentation/code/data that includes all the working links to allow full transparency and traceability, and therefore improve the quality and trust in AMRC data-driven projects, as well as increasing the accessibility to data science tools and skills whilst maintaining best practice. The development of this Github site is the result of collaboration between the [core team](/docs/0.ProjectManagement/CoreDCMTeam.md) in IMG and TMG. The team will be able to provide further guidance to using the template if needed. The IMG data science team will be regularly updating the guidance and information on our [data science wiki page](https://amrcwikijs.shef.ac.uk/en/AMRCDS) with community feedback. TMG have also developed a wiki for information on [machining data-driven projects](https://amrcwikijs.shef.ac.uk/en/AMRC/TMG/Data_Centric_Manufacturing). If your own group has a relevant wiki page you can link to it [here](/link/to/your/wiki).*
 
 # PROJECT CODE NUMBER - PROJECT NAME
 
@@ -11,9 +11,9 @@
 **To view the documentation homepage, go to https://amrcgithub.shef.ac.uk/pages/IMG/datascience-project-template/. When cloning this project, you will need to enable github pages in the repository settings where you will be given the new URL to access them. You can also view and edit the output in a suitable markdown editor, such as VS code.**
 
 - [ ] Fill out the Project Code/Name/Description above as they become available.
-- [ ] Initialise the git repository. A beginners guide to using Github is given [here](https://docs.github.com/en/get-started/start-your-journey/hello-world) although please note the repository has already been created here for you. Training is also available for AMRC staff via the UoS Research Software Engineering group and you can sign up [here](https://rse.shef.ac.uk/training/).
+- [ ] Initialise the git repository. A beginners guide to using Github is given [here](https://docs.github.com/en/get-started/start-your-journey/hello-world) although please note the repository has already been created here for you. Training is also available for AMRC staff via the UoS Research Software Engineering group.
 - [ ] Build an appropriate [programming environment](/docs/Guidance/GettingStarted.md).
-- [ ] open the [project workspace in VS code](/datascience-project-template.code-workspace).
+- [ ] Open the [project workspace in VS code](/datascience-project-template.code-workspace).
 
 ## The Workflow
 
@@ -21,13 +21,14 @@
 
 ### [The Business Case](/docs/1.BusinessCase/README.md)
 
-- [ ] Fill out the [project scoping](/docs/0.ProjectManagement/ProjectScoping.md) document as comprehensively as possible. Work with partners and seek guidance where necessary. This document will provide the foundation for the SoW, the project plan and the data strategy as well as providing the tailored project workflow. It will also provide the information required for the TMG Lockdown Gate.
+- [ ] Fill out the [project scoping](/docs/0.ProjectManagement/ProjectScoping.md) document as comprehensively as possible. Work with partners and seek guidance where necessary. This document will provide the foundation for the SoW, the project plan and the data strategy as well as providing the tailored project workflow. It will also provide the information required for the TMG Scoping gate. 
 Once the project has been approved the following should be filled in. 
-- [ ] Fill out the [project plan](/docs/0.ProjectManagement/ProjectPlan.md). This documents who will work on the project and any other key information that is needed for the project to run smoothly.
+- [ ] Fill out the [project plan](/docs/0.ProjectManagement/ProjectPlan.md). This documents who will work on the project and any other key information that is needed for the project to run smoothly. This will provide the information for the TMG Launch gate.
 - [ ] Fill out the [high-level business understanding](/docs/1.BusinessCase/High-levelBusinessCase.md). This should be suitable as a public description on the SoW. 
 - [ ] Fill out the [detailed business understanding](/docs/1.BusinessCase/DetailedBusinessCase.md) with further information about the need for the project. This will be used to create the SoW and will also provide a solid foundation for an introduction in a report. 
 
 - [ ] Is the project viable? If not, complete the [closure form](/docs/0.ProjectManagement/ClosureReport.md).
+- [ ] If the project is viable and if required, complete the TMG Lockdown gate. 
 
 ### [Data Acquisition and Preparation](/docs/2.DataAcquisitionAndPreparation/README.md)
 
@@ -41,6 +42,7 @@ Once the project has been approved the following should be filled in.
 - [ ] If required, complete the TMG Readiness Gate. 
 - [ ] Begin data collection. 
 - [ ] Define raw data sources in the [data overview](/docs/2.DataAcquisitionAndPreparation/Data%20Pipeline/DataOverview.md).
+- [ ] For collection of large data sets you should choose a suitable point early on to check the data is being collected correctly. If necessary, complete the TMG Data Collection and Review gate. 
 - [ ] Clean the data ready for initial exploration creating the [silver-interim data](/data/interim-silver/).
 - [ ] Define interim data sources in the [data overview](/docs/2.DataAcquisitionAndPreparation/Data%20Pipeline/DataOverview.md).
 
@@ -53,7 +55,7 @@ Once the project has been approved the following should be filled in.
 ### [Data Exploration](/docs/3.DataExploration/README.md)
 
 - [ ] Develop [notebook code](/code/notebooks/3.DataExploration) to carry out the data exploration. 
-- [ ] Produce an [exploratory data Report](/docs/3.DataExploration/DataSummaryTemplate.md) for each new dataset added to the project.
+- [ ] Produce an [exploratory data report](/docs/3.DataExploration/DataSummaryTemplate.md) for each new dataset added to the project.
 - [ ] Review your [data strategy](/docs/2.DataAcquisitionAndPreparation/DataStrategy.md) and make changes where necessary.
 - [ ] Do you need to review your analysis plan? 
 - [ ] Move reusable code into a callable module in [this directory](/code/src/DataExploration/).
@@ -88,7 +90,7 @@ Once the project has been approved the following should be filled in.
 - [ ] Describe the [modelling strategy](/docs/5.ModelBuilding/ModellingStrategy.md). Some of this information can be copied from the [project scoping](/docs/0.ProjectManagement/ProjectScoping.md) document.
 - [ ] Produce a [baseline report](/docs/5.ModelBuilding/Model/Baseline/Baseline%20Model.md) for the first model developed.
 - [ ] Produce a [model report](/docs/5.ModelBuilding/Model/Model%201/ModelReport.md) for each model iteration. This should contain information on the changes to the model and the reasoning. 
-- [ ] Complete a [Final Report](/docs/5.ModelBuilding/Model/FinalModelReport.md) for the best model identified/evaluated on the hold-out test set.
+- [ ] Complete a [final report](/docs/5.ModelBuilding/Model/FinalModelReport.md) for the best model identified/evaluated on the hold-out test set.
 - [ ] Log new models for version control with [DVC](/docs/Guidance/DVC.md), stored in the [model directory](/models/README.md).
 - [ ] Track experiments with [DVC](/docs/Guidance/DVC.md).
 
@@ -111,6 +113,7 @@ Once the project has been approved the following should be filled in.
 - [ ] Have you successfully met the business objectives? Document the [insights and actions](/docs/6.InterpretationAndReporting/ActionsAndInsights.md) that can result from this work.
 - [ ] What are the [lessons learned](/docs/6.InterpretationAndReporting/LessonsLearned.md) from this work. 
 - [ ] If there is no deployment required, complete the [closure form](/docs/0.ProjectManagement/ClosureReport.md).
+- [ ] If required, complete the TMG Project Completion Gate. 
 
 **Further guidance is available on the wiki, including: visualisation best practice, the importance of knowing the audience**
 - [IMG - Data science guidance](https://amrcwikijs.shef.ac.uk/en/AMRCDS/Guidance/ModelBuilding).

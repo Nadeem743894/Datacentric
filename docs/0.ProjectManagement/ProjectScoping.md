@@ -20,12 +20,14 @@ The aim of this document is to plan the technical aspects of a data project (inc
 * What is the project aiming to achieve? 
 * What benefit will it bring to the AMRC? 
 * Are any partners involved? Who, and what is the benefit for them? 
+* Is an NDA required?
 * Which sector will the project be centred on? 
 
 ### What does the end product look like? Headlines
 
 * What is the planned solution and what does it look like? 
 * How will the solution be achieved?
+* Will IP be generated? Fill in the IP register. 
 
 
 ## Step 2: Data Acquisition and Preparation
