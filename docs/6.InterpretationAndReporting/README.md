@@ -1,9 +1,9 @@
+# Interpretation and reporting
 
-### Reporting/visualisation
+This folder contains key documents to report the final outputs of the project.  This includes: 
 
-*How will you report this analysis - written tech report, journal paper, powerpoint pres, custom dashboard, proprietary dashboard etc.?*
-*Who are the stakeholders that will be consuming this report, what method is most appropriate for the audience?*
-*What tools will you use? (matplotlib, Dash, PowerBI etc)*
-
+- The [actions and insights](/docs/6.InterpretationAndReporting/ActionsAndInsights.md) that have resulted from the project.
+- The [lessons learned](/docs/6.InterpretationAndReporting/LessonsLearned.md) from the project. This includes lessons related to the project itself and the use of this template. 
+- A list of the [stakeholders and the outputs](/docs/6.InterpretationAndReporting/Stakeholders.md) produced for them. 
 
  *Page created by LL - Mar 2024*

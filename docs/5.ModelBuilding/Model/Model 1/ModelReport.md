@@ -1,39 +1,42 @@
-# Model Report
+# Model *n* Report
 
-A report to provide details on a specific model or experiment.
+The report for subsequent models. This document needs editing to ensure that it links to the correct model. You may not know which is the final model but in this case the answers to points below can be copied into the final model report.  
 
-## Analytic Approach
+The corresponding model can be found [here](/models/).
 
-* What is target definition?
+## Data preparation
+
+* Do you have all the data required to complete the modelling exercise?
+  * Have you kept a hold-out test set, give details. 
+
+## Modelling assumptions
+
+* What modelling technique is used? 
+* What assumptions does the chosen modelling technique rely on? 
+  * Are these assumptions met, please give details. 
+
+## Model set-up
+
+* What is the target output?
 * What are the inputs?
-* What kind of model was built?
+* How will hyperparameters be tracked?
+* How has the model been updated since the previous model?  
 
-## Model Description
+## Model evaluation
+* How will the model be evaluated?  
+  * Does the model have any standard metrics/plots that can help assess model fit and performance?
+  * What metrics are appropriate? Consider the amount of data and particularly any imbalance as well as the modelling objectives. 
+  * What metrics and plots have been produced and what do they say about model fit and performance? 
+  * Is overfitting a problem? 
 
-* Models and Parameters
+## Model interpretation
+* Do model results make sense and can they be interpreted? 
+  * Do you understand how the model has come to its results? 
+* What visualisations can be used to help interpret the model results? 
+* What insights can be gained from the model? 
+* Are there any concerns about limitations to this modelling approach? If yes, give details. 
 
-  * Description or images of data flow graph
-  * What learner(s) were used?
-  * Learner hyper-parameters
-  * Git SHA hash and/or tag for version-controlled models
+## Next steps
+* Will you build another model? If yes, provide the link to the [next report](/docs/5.ModelBuilding/Model/Model%201/ModelReport.md). 
 
-## Results (Model Performance)
-
-* ROC/Lift charts, AUC, R^2, MAPE as appropriate
-* Performance graphs for parameters sweeps if applicable
-
-## Model Understanding
-
-* Variable importance and significance
-
-* Insights derived from the model
-
-## Conclusion and Discussions for Next Steps
-
-* Feasibility assessment
-
-* Discussion on overfitting, if applicable
-
-* What other features can be generated from the current data?
-
-* What other relevant data sources are available to help the modeling
+*Page created by LL - Mar 24*

@@ -1,39 +1,42 @@
 # Final Model Report
 
-A report describing the final model to be delivered.
+This report contains information on the final model that is used to provide insights in relation to the original objectives and aid business-related decision making. 
 
-## Analytic Approach
+The final model can be found [here](/models/).
 
-* What is target definition?
+## Data preparation
+
+* Do you have all the data required to complete the modelling exercise?
+  * Have you kept a hold-out test set, give details. 
+
+## Modelling assumptions
+
+* What modelling technique is used? 
+* What assumptions does the chosen modelling technique rely on? 
+  * Are these assumptions met, please give details. 
+
+## Model set-up
+
+* What is the target output?
 * What are the inputs?
-* What kind of model was built?
+* How will hyperparameters be tracked? 
+* How has the final model been updated from the previous model? 
 
-## Solution Description
+## Model evaluation
+* How will the model be evaluated?  
+  * Does the model have any standard metrics/plots that can help assess model fit and performance?
+  * What metrics are appropriate? Consider the amount of data and particularly any imbalance as well as the modelling objectives. 
+  * What metrics and plots have been produced and what do they say about model fit and performance? 
+  * Is overfitting a problem? 
 
-* Simple solution architecture (Data sources, solution components, data flow)
-* What are the output(s)?
+## Model interpretation
+* Do model results make sense and can they be interpreted? 
+  * Do you understand how the model has come to its results? 
+* What visualisations can be used to help interpret the model results? 
+* What insights can be gained from the model? 
+* Are there any concerns about limitations to this modelling approach? If yes, give details. 
 
-## Data
+## Next step
+* Move onto the [interpretation and reporting](/docs/6.InterpretationAndReporting/) if you are satisfied that the final model is sufficient to meet the original objectives. 
 
-* Source
-* Data Schema
-* Sampling
-* Selection (dates, segments)
-* Summary Statistics (counts)
-
-## Features
-
-* List of raw and derived features
-* Importance ranking
-
-## Algorithm
-
-* Description or images of data flow graph
-* What learner(s) were used?
-* Learner hyper-parameters
-* Git SHA hash and/or tag for version-controlled models
-
-## Results
-
-* ROC/Lift charts, AUC, R^2, MAPE as appropriate
-* Performance graphs for parameters sweeps if applicable
+*Page created by LL - Mar 24*
