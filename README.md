@@ -8,8 +8,13 @@
 
 ## Getting Started
 
-**To view the documentation homepage, go to https://amrcgithub.shef.ac.uk/pages/IMG/datascience-project-template/. When cloning this project, you will need to enable github pages in the repository settings where you will be given the new URL to access them. You can also view and edit the output in a suitable markdown editor, such as VS code.**
+**To view the documentation homepage, go to https://amrcgithub.shef.ac.uk/pages/IMG/datascience-project-template/. This page is best viewed in an Integrated Developmment Environment (IDE), which will enable all the links to directly open the guidance documents, directories and example scripts for you to edit seamlessly. We recommend [VS code](https://code.visualstudio.com/, but alternatives which support both coding and markdown - such as [Jetbrains PyCharm](https://www.jetbrains.com/pycharm/?var=1) - should also work fine, if you prefer.**
 
+**Alternatively, you can view the the documentation as a [GitHub pages website](https://pages.github.com/); to enable this, when cloning this project, you will need to enable github pages in the repository settings where you will be given the new URL to access them.**
+
+To tick off the boxes on this page as you progress through the workflow, replace [ ] with [x] (in the README.md source file) when a task has been completed.
+
+- [ ] In VS code, use `CTRL + SHIFT + P` to access the command pallette and search for `Markdown: Open Preview to Side` to view the formatted markdown pages.
 - [ ] Fill out the Project Code/Name/Description above as they become available.
 - [ ] Initialise the git repository. A beginners guide to using Github is given [here](https://docs.github.com/en/get-started/start-your-journey/hello-world) although please note the repository has already been created here for you. Training is also available for AMRC staff via the UoS Research Software Engineering group.
 - [ ] Build an appropriate [programming environment](/docs/Guidance/GettingStarted.md).
@@ -17,15 +22,14 @@
 
 ## The Workflow
 
-<!-- replace [ ] with [x] when a workflow task has been completed -->
 
 ### [The Business Case](/docs/1.BusinessCase/README.md)
 
-- [ ] Fill out the [project scoping](/docs/0.ProjectManagement/ProjectScoping.md) document as comprehensively as possible. Work with partners and seek guidance where necessary. This document will provide the foundation for the SoW, the project plan and the data strategy as well as providing the tailored project workflow. It will also provide the information required for the TMG Scoping gate. 
-Once the project has been approved the following should be filled in. 
+- [ ] Fill out the [project scoping](/docs/0.ProjectManagement/ProjectScoping.md) document as comprehensively as possible. Work with partners and seek guidance where necessary. This document will provide the foundation for the SoW, the project plan and the data strategy as well as providing the tailored project workflow. It will also provide the information required for the TMG Scoping gate.
+Once the project has been approved the following should be filled in.
 - [ ] Fill out the [project plan](/docs/0.ProjectManagement/ProjectPlan.md). This documents who will work on the project and any other key information that is needed for the project to run smoothly. This will provide the information for the TMG Launch gate.
-- [ ] Fill out the [high-level business understanding](/docs/1.BusinessCase/High-levelBusinessCase.md). This should be suitable as a public description on the SoW. 
-- [ ] Fill out the [detailed business understanding](/docs/1.BusinessCase/DetailedBusinessCase.md) with further information about the need for the project. This will be used to create the SoW and will also provide a solid foundation for an introduction in a report. 
+- [ ] Fill out the [high-level business understanding](/docs/1.BusinessCase/High-levelBusinessCase.md). This should be suitable as a public description on the SoW.
+- [ ] Fill out the [detailed business understanding](/docs/1.BusinessCase/DetailedBusinessCase.md) with further information about the need for the project. This will be used to create the SoW and will also provide a solid foundation for an introduction in a report.
 
 - [ ] Is the project viable? If not, complete the [closure form](/docs/0.ProjectManagement/ClosureReport.md).
 - [ ] If the project is viable and if required, complete the TMG Lockdown gate. 
