@@ -162,7 +162,7 @@ Input("interval-component", "n_intervals")  <- Takes the property n_intervals fr
 Runs the function and returns one output:
 
 ```
-Output("line-2", "figure")                  <- Updates the figure property of component line-2
+Output("line-2", "figure")                  <- Updates the figure property of compnent line-2
 ```
 
 ##### Callback 2
