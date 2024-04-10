@@ -9,8 +9,8 @@ l.lee@amrc.co.uk, preferred communication method: SLACK
 #### Dr Tim Rooker 
 t.j.rooker@amrc.co.uk, preferred communication method: SLACK
 
-#### Matt Moxon
-
+#### Matt Moxon, PM
+m.moxon@amrc.co.uk
 
 ### TMG 
 
@@ -25,4 +25,5 @@ j.dominguez-caballero@amrc.co.uk, Preferred communications method: SLACK
 erica.smith@amrc.co.uk, preferred communication method: SLACK
 
 
-#### Rachel Yeung
+#### Rachel Yeung, PM 
+r.yeung@amrc.co.uk

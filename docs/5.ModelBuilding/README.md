@@ -8,6 +8,7 @@ Before starting to build models you should re-address the questions in the proje
 
 Here the word 'model' is representative of a statistical/machine learning or AI model. The aim of model building is to get further insights from the data and to understand the statistical significance of any identified patterns or relationships. 
 
+* Will the models aim to describe what exists or predict? The modelling strategy will depend on this. 
 * Who will carry out the model building?
 * What tools will be required to carry out model building?
   * Are licences required? Give details if yes.

@@ -6,7 +6,7 @@ In this folder you will keep a report of the features used to perform analysis i
 
 The feature store should be kept in the [gold data folder](/data/processed-gold/).
 
-The details of the feature datasets and their processing should be kept in [Data Definitions](/docs/2.DataAcquisitionAndPreparation/Data%20Pipeline/DataDefinition.md). This file contains links to the codes used and access requirements, as well as links to the original data and the feature data. 
+The details of the feature datasets and their processing should be kept in [Data overview](/docs/2.DataAcquisitionAndPreparation/Data%20Pipeline/DataOverview.md). This file contains links to the codes used and access requirements, as well as links to the original data and the feature data. 
 
 
 

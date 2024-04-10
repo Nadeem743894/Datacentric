@@ -1,14 +1,11 @@
 
 # DataReport Folder
 
-Location to place documents describing results of data exploration.
+Location to place documents describing [results of data exploration](/docs/3.DataExploration/DataSummaryTemplate.md). 
 
+For each new data set the summary template should be copied and renamed to reflect the data it represents.
 
-### Exploration
-
-*How will you explore the data?*
-*What type of plots/analyses are most appropriate for this data?*
-*Will you use any specific tools to explore the data?*
-
-
- *Page created by LL - Feb 2024*
+Guidance is available to help you decide how to explore the data suitably for your project: https://amrcwikijs.shef.ac.uk/en/AMRCDS/Guidance/DataExploration
+ 
+ 
+*Page created by LL - Feb 2024*

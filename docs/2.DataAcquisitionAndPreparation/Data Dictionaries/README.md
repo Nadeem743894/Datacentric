@@ -15,7 +15,7 @@ The data dictionary can help to define a common data language for any data creat
 
 ### _Example image of dataset or data schema_
 
-[Dataset 1 with storage link](./Raw-Data-Dictionary.csv)
+[Dataset dictionary 1](./Raw-Data-Dictionary.csv) with [storage link](/data/raw-bronze/).
 
 
 *Page created by LL - Mar 2024*
