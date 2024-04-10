@@ -8,7 +8,7 @@
 
 ## Getting Started
 
-**To view the documentation homepage, go to https://amrcgithub.shef.ac.uk/pages/IMG/datascience-project-template/. This page is best viewed in an Integrated Developmment Environment (IDE), which will enable all the links to directly open the guidance documents, directories and example scripts for you to edit seamlessly. We recommend [VS code](https://code.visualstudio.com/, but alternatives which support both coding and markdown - such as [Jetbrains PyCharm](https://www.jetbrains.com/pycharm/?var=1) - should also work fine, if you prefer.**
+**To view the documentation homepage, go to https://amrcgithub.shef.ac.uk/pages/IMG/datascience-project-template/. This page is best viewed in an Integrated Developmment Environment (IDE), which will enable all the links to directly open the guidance documents, directories and example scripts for you to edit seamlessly. We recommend [VS code](https://code.visualstudio.com/), but alternatives which support both coding and markdown - such as [Jetbrains PyCharm](https://www.jetbrains.com/pycharm/?var=1) - should also work fine, if you prefer.**
 
 **Alternatively, you can view the the documentation as a [GitHub pages website](https://pages.github.com/); to enable this, when cloning this project, you will need to enable github pages in the repository settings where you will be given the new URL to access them.**
 
