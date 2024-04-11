@@ -34,3 +34,5 @@ Updating packages this way, rather than installing new packages manually, allows
 To activate your local enviroment run:
 
     conda activate ./env
+
+*Page created by TR - Mar 24*

@@ -186,3 +186,5 @@ docker compose down
 ```
 
 Congratulations, you (hopefully) have just deployed your first app with Docker! There is a substantial degree of complex functionality and control that you can get into, but the core content provided here should be enough to extract real benefits easily for most use cases.
+
+*Page created by TR - Mar 24*

@@ -11,7 +11,7 @@
 # ipython             # interactive python
 # ipykernel           # jupyter notebooks
 # matplotlib          # plotting
-pandas              # data manipulation
+# pandas              # data manipulation
 # scikit-learn        # machining learning
 # pip                 # installing any non-conda packages
 # pip:
