@@ -35,7 +35,7 @@ Once the project has been approved the following should be filled in.
 
 ### [Data Acquisition and Preparation](/docs/2.DataAcquisitionAndPreparation/README.md)
 
-- [ ] Develop [notebook code](/code/notebooks/2.DataAcquisitionAndPreparation/) to get started. Name each notebook with the following format:
+- [ ] Develop [notebook code](/code/notebooks/2.DataAcquisitionAndPreparation/2.1-me1xxx-data-acquisition-example.ipynb) to get started. Name each notebook with the following format:
   
   `<step>-<me1xxx>-<description>.ipynb`, e.g. `2.1-me1tjr-data-cleaning.ipynb`
 
@@ -61,7 +61,7 @@ Once the project has been approved the following should be filled in.
 
 ### [Data Exploration](/docs/3.DataExploration/README.md)
 
-- [ ] Develop [notebook code](/code/notebooks/3.DataExploration) to carry out the data exploration. Name each notebook with the following format:
+- [ ] Develop [notebook code](/code/notebooks/3.DataExploration/3.1-me1xxx-data-exploration-example.ipynb) to carry out the data exploration. Name each notebook with the following format:
   
   `<step>-<me1xxx>-<description>.ipynb`, e.g. `3.1-me1tjr-data-exploration.ipynb`
 
@@ -80,7 +80,7 @@ Once the project has been approved the following should be filled in.
 ### [Feature Transformation](/docs/4.FeatureTransformation/README.md)
 
 - [ ] Are you creating features from the data? If yes, define feature sets in the [data overview](/docs/2.DataAcquisitionAndPreparation/Data%20Pipeline/DataOverview.md).
-- [ ] Develop [notebook code](/code/notebooks/4.FeatureTransformation) to create your features. Name each notebook with the following format:
+- [ ] Develop [notebook code](/code/notebooks/4.FeatureTransformation/4.1-me1xxx-feature-transformation-example.ipynb) to create your features. Name each notebook with the following format:
   
   `<step>-<me1xxx>-<description>.ipynb`, e.g. `4.3-me1tjr-statistical-feature-engineering.ipynb`
 
@@ -98,7 +98,7 @@ Once the project has been approved the following should be filled in.
 
 ### [Model Building](/docs/5.ModelBuilding/README.md)
 
-- [ ] Develop [notebook code](./code/notebooks/5.ModelBuilding) for model building. Name each notebook with the following format:
+- [ ] Develop [notebook code](./code/notebooks/5.ModelBuilding/5.1-me1xxx-model-building-example.ipynb) for model building. Name each notebook with the following format:
   
   `<step>-<me1xxx>-<description>.ipynb`, e.g. `5.6-me1tjr-svm-model-building.ipynb`
 
@@ -122,7 +122,7 @@ Once the project has been approved the following should be filled in.
 
 ### [Evaluation and Reporting](/docs/6.InterpretationAndReporting/README.md)
 
-- [ ] Develop [notebook code](./code/notebooks/6.EvaluationAndReporting) for evaluation and reporting. Name each notebook with the following format:
+- [ ] Develop [notebook code](./code/notebooks/6.EvaluationAndReporting/6.1-me1xxx-evaluation-example.ipynb) for evaluation and reporting. Name each notebook with the following format:
   
   `<step>-<me1xxx>-<description>.ipynb`, e.g. `6.1-me1tjr-results-reporting.ipynb`
 
@@ -145,7 +145,7 @@ Once the project has been approved the following should be filled in.
 
 ### [Deployment and Maintenance](/docs/7.DeploymentAndMaintenance/README.md)
 
-- [ ] Develop [notebook code](./code/notebooks/7.DeploymentAndMaintenance/). Name each notebook with the following format:
+- [ ] Develop [notebook code](./code/notebooks/7.DeploymentAndMaintenance/7.1-me1xxx-deployment-example.ipynb). Name each notebook with the following format:
   
   `<step>-<me1xxx>-<description>.ipynb`, e.g. `7.2-me1tjr-deployed-api-testing.ipynb`
 
