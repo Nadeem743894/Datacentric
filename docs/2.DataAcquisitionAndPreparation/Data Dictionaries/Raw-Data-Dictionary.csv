@@ -1,0 +1,30 @@
+Data Dictionary
+1. DataMessageGUID
+* Description: A general identifier or metadata associated with the dataset, potentially related to the time or event of data collection.
+* Type: String
+* Example Values: 51f2340e-918d-43fa-81b2-818a0f0ecce5
+* Notes: This column is not used in the dataset and for data analysis.
+2. SensorID
+* Description: A unique identifier for each sensor collecting data.
+* Type: Numeric
+* Example Values: 687746
+* Notes: The SensorID is crucial for identifying the source of each data entry.
+3. Sensor Name
+* Description: The name or type of the sensor.
+* Type: String
+* Example Values: B737MAX
+* Notes: Names like B737MAX suggest the type or model of the sensor being used. This is changed based on the machine name. 
+4. Date
+* Description: The date when the data was recorded.
+* Type: Date (MM/DD/YYYY)
+* Example Values: 07/24/2023, 07/25/2023
+* Notes: This is important for temporal analysis and tracking trends over time.
+5. Value
+* Description: The recorded measurement or value from the sensor.
+* Type: Numeric (possibly Float)
+* Example Values: 683664, 123.45 kWh
+6. Voltage (Assumed)
+* Description: Voltage readings from the sensor.
+* Type: Numeric (Float)
+* Example Values: 12.5 V
+* Notes: If present, this column provides electrical data specific to the sensor's readings.

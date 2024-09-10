@@ -1,10 +1,11 @@
 *This repository contains all the documents and code/data directories that we expect you to require through your data-driven project. The aim is to provide a template for documentation/code/data that includes all the working links to allow full transparency and traceability, and therefore improve the quality and trust in AMRC data-driven projects, as well as increasing the accessibility to data science tools and skills whilst maintaining best practice. The development of this Github site is the result of collaboration between the [core team](/docs/0.ProjectManagement/CoreDCMTeam.md) in IMG and TMG. The team will be able to provide further guidance to using the template if needed. The IMG data science team will be regularly updating the guidance and information on our [data science wiki page](https://amrcwikijs.shef.ac.uk/en/AMRCDS) with community feedback. TMG have also developed a wiki for information on [machining data-driven projects](https://amrcwikijs.shef.ac.uk/en/AMRC/TMG/Data_Centric_Manufacturing). If your own group has a relevant wiki page you can link to it [here](/link/to/your/wiki).*
 
-# PROJECT CODE NUMBER - PROJECT NAME
+# AS2382 - Assessing the energy usage of Boeings Flight Simulation Centers
 
-> Brief description of the project in a sentence or two.
->
-> Include a graphic for an overview of the project to help understand what the application is if possible. This should be broad concept only and not any specific details. GIF is best if possible.
+
+>This project focuses on reducing the carbon footprint of Boeing flight simulation centers by mapping energy usage, identifying areas for optimization, and exploring the integration of renewable energy solutions to enhance sustainability.
+
+> ![img.png](Logical_pipeline.png)
 
 ## Getting Started
 
@@ -14,45 +15,45 @@
 
 To tick off the boxes on this page as you progress through the workflow, replace [ ] with [x] (in the README.md source file) when a task has been completed.
 
-- [ ] In VS code, use `CTRL + SHIFT + P` to access the command pallette and search for `Markdown: Open Preview to Side` to view the formatted markdown pages.
-- [ ] Fill out the Project Code/Name/Description above as they become available.
-- [ ] Initialise the git repository. A beginners guide to using Github is given [here](https://docs.github.com/en/get-started/start-your-journey/hello-world) although please note the repository has already been created here for you. Training is also available for AMRC staff via the UoS Research Software Engineering group.
-- [ ] Build an appropriate [programming environment](/docs/Guidance/GettingStarted.md).
-- [ ] Open the [project workspace in VS code](/datascience-project-template.code-workspace).
+- [x] In VS code, use `CTRL + SHIFT + P` to access the command pallette and search for `Markdown: Open Preview to Side` to view the formatted markdown pages.
+- [x] Fill out the Project Code/Name/Description above as they become available.
+- [x] Initialise the git repository. A beginners guide to using Github is given [here](https://docs.github.com/en/get-started/start-your-journey/hello-world) although please note the repository has already been created here for you. Training is also available for AMRC staff via the UoS Research Software Engineering group.
+- [x] Build an appropriate [programming environment](/docs/Guidance/GettingStarted.md).
+- [x] Open the [project workspace in VS code](/datascience-project-template.code-workspace).
 
 ## The Workflow
 
 ### [The Business Case](/docs/1.BusinessCase/README.md)
 
-- [ ] Fill out the [project scoping](/docs/0.ProjectManagement/ProjectScoping.md) document as comprehensively as possible. Work with partners and seek guidance where necessary. This document will provide the foundation for the SoW, the project plan and the data strategy as well as providing the tailored project workflow. It will also provide the information required for the TMG Scoping gate.
+- [x] Fill out the [project scoping](/docs/0.ProjectManagement/ProjectScoping.md) document as comprehensively as possible. Work with partners and seek guidance where necessary. This document will provide the foundation for the SoW, the project plan and the data strategy as well as providing the tailored project workflow. It will also provide the information required for the TMG Scoping gate.
 Once the project has been approved the following should be filled in.
-- [ ] Fill out the [project plan](/docs/0.ProjectManagement/ProjectPlan.md). This documents who will work on the project and any other key information that is needed for the project to run smoothly. This will provide the information for the TMG Launch gate.
-- [ ] Fill out the [high-level business understanding](/docs/1.BusinessCase/High-levelBusinessCase.md). This should be suitable as a public description on the SoW.
-- [ ] Fill out the [detailed business understanding](/docs/1.BusinessCase/DetailedBusinessCase.md) with further information about the need for the project. This will be used to create the SoW and will also provide a solid foundation for an introduction in a report.
+- [x] Fill out the [project plan](/docs/0.ProjectManagement/ProjectPlan.md). This documents who will work on the project and any other key information that is needed for the project to run smoothly. This will provide the information for the TMG Launch gate.
+- [x] Fill out the [high-level business understanding](/docs/1.BusinessCase/High-levelBusinessCase.md). This should be suitable as a public description on the SoW.
+- [x] Fill out the [detailed business understanding](/docs/1.BusinessCase/DetailedBusinessCase.md) with further information about the need for the project. This will be used to create the SoW and will also provide a solid foundation for an introduction in a report.
 
-- [ ] Is the project viable? If not, complete the [closure form](/docs/0.ProjectManagement/ClosureReport.md).
-- [ ] If the project is viable and if required, complete the TMG Lockdown gate.
+- [] Is the project viable? If not, complete the [closure form](/docs/0.ProjectManagement/ClosureReport.md).
+- [x] If the project is viable and if required, complete the TMG Lockdown gate.
 
 ### [Data Acquisition and Preparation](/docs/2.DataAcquisitionAndPreparation/README.md)
 
-- [ ] Develop [notebook code](/code/notebooks/2.DataAcquisitionAndPreparation/2.1-me1xxx-data-acquisition-example.ipynb) to get started. Name each notebook with the following format:
+- [x] Develop [notebook code](/code/notebooks/2.DataAcquisitionAndPreparation/2.1-me1xxx-data-acquisition-example.ipynb) to get started. Name each notebook with the following format:
   
   `<step>-<me1xxx>-<description>.ipynb`, e.g. `2.1-me1tjr-data-cleaning.ipynb`
 
-- [ ] Copy and paste the information from the [project scoping](/docs/0.ProjectManagement/ProjectScoping.md) document into the [data strategy](/docs/2.DataAcquisitionAndPreparation/DataStrategy.md) and update where necessary. Do not edit the scoping document.
-- [ ] Ensure that the [data strategy](/docs/2.DataAcquisitionAndPreparation/DataStrategy.md) contains the complete list of expected data that will be collected and produced as part of this project.
-- [ ] If required, produce an [experimental design](/docs/2.DataAcquisitionAndPreparation/ExperimentalDesign.md).
-- [ ] Map the data flow in the [data pipeline](/docs/2.DataAcquisitionAndPreparation/Data%20Pipeline/DataPipeline.txt).
-- [ ] Initialise and use DVC with the [guidance](/docs/Guidance/DVC.md).
-- [ ] If there is no ontology-based reference library, you should create a common dictionary of terms and naming conventions to be followed throughout and populate the [data dictionary](/docs/2.DataAcquisitionAndPreparation/Data%20Dictionaries/README.md), otherwise link to the ontology.
-- [ ] If required, complete the TMG Readiness Gate.
-- [ ] Begin data collection.
-- [ ] Define raw data sources in the [data overview](/docs/2.DataAcquisitionAndPreparation/Data%20Pipeline/DataOverview.md).
-- [ ] For collection of large data sets you should choose a suitable point early on to check the data is being collected correctly. If necessary, complete the TMG Data Collection and Review gate.
-- [ ] Clean the data ready for initial exploration creating the [silver-interim data](/data/interim-silver/).
-- [ ] Define interim data sources in the [data overview](/docs/2.DataAcquisitionAndPreparation/Data%20Pipeline/DataOverview.md).
+- [x] Copy and paste the information from the [project scoping](/docs/0.ProjectManagement/ProjectScoping.md) document into the [data strategy](/docs/2.DataAcquisitionAndPreparation/DataStrategy.md) and update where necessary. Do not edit the scoping document.
+- [x] Ensure that the [data strategy](/docs/2.DataAcquisitionAndPreparation/DataStrategy.md) contains the complete list of expected data that will be collected and produced as part of this project.
+- [x] If required, produce an [experimental design](/docs/2.DataAcquisitionAndPreparation/ExperimentalDesign.md).
+- [x] Map the data flow in the [data pipeline](/docs/2.DataAcquisitionAndPreparation/Data%20Pipeline/DataPipeline.txt).
+- [x] Initialise and use DVC with the [guidance](/docs/Guidance/DVC.md).
+- [x] If there is no ontology-based reference library, you should create a common dictionary of terms and naming conventions to be followed throughout and populate the [data dictionary](/docs/2.DataAcquisitionAndPreparation/Data%20Dictionaries/README.md), otherwise link to the ontology.
+- [x] If required, complete the TMG Readiness Gate.
+- [x] Begin data collection.
+- [x] Define raw data sources in the [data overview](/docs/2.DataAcquisitionAndPreparation/Data%20Pipeline/DataOverview.md).
+- [x] For collection of large data sets you should choose a suitable point early on to check the data is being collected correctly. If necessary, complete the TMG Data Collection and Review gate.
+- [x] Clean the data ready for initial exploration creating the [silver-interim data](/data/interim-silver/).
+- [] Define interim data sources in the [data overview](/docs/2.DataAcquisitionAndPreparation/Data%20Pipeline/DataOverview.md).
 
-- [ ] Don't Repeat Yourself! Move reusable code into a callable module in [this directory](./code/src/DataAcquisition/).
+- [x] Don't Repeat Yourself! Move reusable code into a callable module in [this directory](./code/src/DataAcquisition/).
 
 #### Further guidance is available on the wiki, including: storage locations, design of experiments, naming conventions, representative data
 
@@ -61,14 +62,14 @@ Once the project has been approved the following should be filled in.
 
 ### [Data Exploration](/docs/3.DataExploration/README.md)
 
-- [ ] Develop [notebook code](/code/notebooks/3.DataExploration/3.1-me1xxx-data-exploration-example.ipynb) to carry out the data exploration. Name each notebook with the following format:
+- [ x] Develop [notebook code](/code/notebooks/3.DataExploration/3.1-me1xxx-data-exploration-example.ipynb) to carry out the data exploration. Name each notebook with the following format:
   
   `<step>-<me1xxx>-<description>.ipynb`, e.g. `3.1-me1tjr-data-exploration.ipynb`
 
-- [ ] Produce an [exploratory data report](/docs/3.DataExploration/DataSummaryTemplate.md) for each new dataset added to the project.
-- [ ] Review your [data strategy](/docs/2.DataAcquisitionAndPreparation/DataStrategy.md) and make changes where necessary.
+- [ x] Produce an [exploratory data report](/docs/3.DataExploration/DataSummaryTemplate.md) for each new dataset added to the project.
+- [ x] Review your [data strategy](/docs/2.DataAcquisitionAndPreparation/DataStrategy.md) and make changes where necessary.
 - [ ] Do you need to review your analysis plan?
-- [ ] Move reusable code into a callable module in [this directory](/code/src/DataExploration/).
+- [ x] Move reusable code into a callable module in [this directory](/code/src/DataExploration/).
 
 - [ ] Can the project continue? If not, complete the [closure form](/docs/0.ProjectManagement/ClosureReport.md).
 

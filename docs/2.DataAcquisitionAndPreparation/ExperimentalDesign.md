@@ -1,21 +1,30 @@
 ## Documentation of the experimental design. 
 
-Experimental design is a key step for machining projects but is also required in many other projects, especially when data collection is limited by costs and resource availability. Creating the experimental design is part of the mandatory *Readiness Gate* for TMG projects and should address the questions given [here](https://amrcwikijs.shef.ac.uk/en/AMRC/TMG/Data_Centric_Manufacturing/Experimental_Planning/Design_of_Experiments) and below. The answers to these questions should provide the basis for choosing the best experimental design for your needs. 
+1. Objectives of the Experiment:
 
-#### TMG Design of experiment checklist
-What are the objectives of the experiment?
-Do we want to identify a relationship between a response and a small number of factors (regression modelling)?
-Do we want to find the most important factors from a long list of possible factors (screening design)?
-Do we want to maximise/minimise a response for a number of factors (response surface methodology)?
-What levels of each factor should we use in the first-stage? Do we expect any higher-order interaction?
-What size effect do we expect to see for a given factor? This will help us decide how many replicates we need.
-Are there any so-called “nuisance factors” that may affect the response variable? If so, is it possible to use a blocked design?
-Are there any restrictions on run order that mean we cannot fully randomise the design?
+    * Identify Relationships: The goal is to identify relationships between energy usage and various factors like temperature, light levels, and equipment power consumption in flight simulation centers.
+    * Screening Design: This setup will be used to determine which factors (e.g., power, temperature) significantly influence energy efficiency.
+2. Factors and Levels:
 
+     * Factors: Current, temperature, light intensity, equipment runtime.
+     * Levels: Different values for temperature and lighting, varying power consumption levels of simulation equipment.
+     * Higher-Order Interaction: Anticipated between energy consumption and environmental factors (temperature and light).
+3. Size Effect and Replicates:
 
-### Additional checklist
-Are there resource limitations that need to be taken into account? 
-Where is the stopping point to check the experiment is running correctly? 
+     * The effect size is expected to be noticeable across different energy consumption patterns, requiring continuous monitoring with replicates to capture variability.
+4. Nuisance Factors and Blocked Design:
+
+    * External factors like facility usage schedules or maintenance might affect data consistency. A blocked design could be implemented to control for these nuisance factors.
+5. Randomization and Run Order:
+
+    * Due to practical constraints (e.g., set times for simulations), full randomization may not be possible. Data collection will be conducted in a semi-controlled manner.
+## Additional Checklist
+1.  Resource Limitations:
+
+    * Cost and resource availability for data sensors and personnel limit the scope. Monitoring will be conducted over an 8-week period, focusing on non-invasive methods.
+2. Stopping Point for Validation:
+
+    *Initial data collection will be reviewed weekly to ensure sensor accuracy and experiment correctness. If anomalies arise, adjustments will be made to the methodology.
 
 
 More general information on experimental design and further guidance on the above questions is given [here](https://amrcwikijs.shef.ac.uk/en/AMRCDS/Guidance/DataAcquisitionandPreparation/DesignOfExperiments). 

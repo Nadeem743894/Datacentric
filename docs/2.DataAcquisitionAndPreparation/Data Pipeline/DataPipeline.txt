@@ -3,4 +3,24 @@
 Describe the data pipeline and provide a logical diagram. List how frequently the data is moved - real time/stream, near real time, batched with frequency etc.
 
 
+Data Pipeline Description
+The data pipeline for this project involves capturing and transmitting current consumption data from a flight simulator using a Monnit three-phase current sensor. 
+The key steps in the pipeline are:
+
+1. Data Collection: The Monnit three-phase current sensor, rated for 500 Amps, is clamped onto the simulator’s distribution box to measure current. The sensor captures measurements every 0.067 minutes (about 4 seconds) and records maximum, minimum, average, and Amp-Hours (Ah) readings.
+
+2. Data Transmission: Every 10 minutes (heartbeat interval), the sensor communicates the collected data to the Monnit gateway. The gateway receives the sensor’s data, including current readings and status (ON/OFF).
+
+3. Data Storage: The gateway sends the data to the Monnit database, where it is stored for future retrieval. The sensor settings allow the data to be displayed and exported as an Excel file for analysis.
+
+4. Data Alerts: Thresholds are set for minimum and maximum current levels. If these thresholds are breached (e.g., simulator turning off or consuming excessive current), the system triggers alerts to notify relevant stakeholders.
+
+5. Data Access and Analysis: The recorded data can be downloaded from the Monnit database in Excel format. From there, visualization and pattern analysis can be performed using graphs to identify trends and anomalies in current consumption.
+
+
+## Data Movement Frequency
+1. Data Collection: Continuous, with readings every 0.067 minutes.
+2. Data Transmission to Gateway: Near real-time, every 10 minutes (heartbeat interval).
+3. Data Storage: Batched in 10-minute intervals to the Monnit database.
+4. Data Access: Batch retrieval via Excel file as needed for analysis.
  *Page created by LL - Feb 2024*

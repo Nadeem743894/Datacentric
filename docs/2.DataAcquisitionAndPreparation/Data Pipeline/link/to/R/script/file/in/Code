@@ -1,0 +1,50 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
+import matplotlib.dates as mdates
+import mplcursors
+import numpy as np
+import matplotlib.cm as cm
+
+
+plt.ion()
+from sklearn.cluster import KMeans
+import seaborn as sns
+import plotly.graph_objects as go
+from plotly import tools
+from plotly.subplots import make_subplots
+import plotly.offline as py
+
+# Configure display options
+pd.set_option('display.max_rows', None)     # To display all rows
+pd.set_option('display.max_columns', None)  # To display all columns
+df = pd.read_csv('B737MAX-8-M-03.csv')
+sim=df['Sensor Name'][0]
+#df.drop([:-4], axis=0, inplace=True)
+
+if sim=='B737MAX-8-M-03':
+    df=df[:-4]
+else:
+    df=df
+#new columns names based 'Raw Data' order
+col_name=['phase1_avg','phase1_max','phase1_min','phase1_duty','phase2_avg','phase2_max','phase2_min','phase2_duty','phase3_avg','phase3_max','phase3_min','phase3_duty','value_Ah','sensor_state']
+
+#split and convert it into list
+split_values = df['Raw Data'].str.split('|').tolist()
+
+# Create new columns in the DataFrame
+for i, col_values in enumerate(zip(*split_values)):
+    df[col_name[i]] = [float(val) for val in col_values]
+
+    
+df = df.rename(columns={'Date': 'Timestamp' }) 
+df[['Date', 'Time']] = df['Timestamp'].str.split(' ', 1, expand=True)    
+df['Timestamp'] = pd.to_datetime(df['Timestamp'])
+df['Date'] = pd.to_datetime(df['Date'])
+# Extract the number of seconds since midnight from the 'Time' column
+df['Time'] = pd.to_datetime(df['Time']).dt.hour * 3600 + \
+             pd.to_datetime(df['Time']).dt.minute * 60 #+ \
+             #pd.to_datetime(df['Time']).dt.second
+    
+# Display the updated DataFrame
+df.head()

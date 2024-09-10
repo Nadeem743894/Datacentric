@@ -21,6 +21,8 @@ For each data source, an individual report describing the data schema, the meani
 
 > If the raw data is not to be kept locally then replace destination location with the same link as the original location. There may not be an exploration report for the raw data but if any information on the dataset is available a link can be provided. 
 
+
+> Note: The data gathered from flight simulators and the temperature and light sensors were already in the processed form and therefor the categories such as Bronze and Silver data does not apply to the dataset. 
 ## Silver data - interim data
 
 * Processed Dataset 1 - [Give a brief summary of the interim data, including why the data was processed in this way.  More detailed information is available in the Interim Dataset 1 Report.]
@@ -34,6 +36,8 @@ For each data source, an individual report describing the data schema, the meani
 > The raw data location should match the destination location of the raw data. If a dataset is processed using input from more than one dataset use a comma to separate the links to them. 
 
 
+> Note: The data gathered from flight simulators and the temperature and light sensors were already in the processed form and therefor the categories such as Bronze and Silver data does not apply to the dataset. 
+
 ## Gold data - processed data/feature sets
 
 * Feature Set 1 - [Give a description of the processed feature set, such as the meaning of each feature.  More detailed information is available in the Feature Set 1 Report.]
@@ -41,7 +45,7 @@ For each data source, an individual report describing the data schema, the meani
 
 | Feature Set Name | Input Dataset(s) | Feature Store | Feature Engineering Tools/Scripts | Link to Report | Data Processed by | Access Restrictions |
 | ---:| ---: | ---: | ---: | ---: | ---: | ---: |
-| Feature Set 1 | [Interim Dataset Location](link/to/interim/data/storage) |  [Feature 1 Dataset Location](link/to/processed/data/storage) | [The script used to process the data can be found here](link/to/R/script/file/in/Code) | [Feature Set 1 Exploration Report](/docs/3.DataExploration/DataSummaryTemplate.md)|  Name of engineer | None or give details |
+| Feature Set 1 | [Interim Dataset Location](link/to/interim/data/storage) |  [Feature 1 Dataset Location](link/to/processed/data/storage) | [The script used to process the data can be found here](link/to/R/script/file/in/Code) | [Feature Set 1 Exploration Report](/docs/3.DataExploration/DataSummaryTemplate.md)|  Mohammad Nadeem Ahangar | None |
 | Feature Set 2 |[Interim Dataset Location](link/to/interim/data/storage) |  [Feature 1 Dataset Location](link/to/processed/data/storage) | [The script used to process the data can be found here](link/to/sql/script/file/in/Code) | [Feature Set 2 Exploration Report](/docs/3.DataExploration/DataSummaryTemplate.md)|  Name of engineer | None or give details |
 
 >  If a dataset is processed using input from more than one dataset use a comma to separate the links to them.
