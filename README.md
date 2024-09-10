@@ -68,10 +68,10 @@ Once the project has been approved the following should be filled in.
 
 - [ x] Produce an [exploratory data report](/docs/3.DataExploration/DataSummaryTemplate.md) for each new dataset added to the project.
 - [ x] Review your [data strategy](/docs/2.DataAcquisitionAndPreparation/DataStrategy.md) and make changes where necessary.
-- [ ] Do you need to review your analysis plan?
+- [ x] Do you need to review your analysis plan?
 - [ x] Move reusable code into a callable module in [this directory](/code/src/DataExploration/).
 
-- [ ] Can the project continue? If not, complete the [closure form](/docs/0.ProjectManagement/ClosureReport.md).
+- [ x] Can the project continue? If not, complete the [closure form](/docs/0.ProjectManagement/ClosureReport.md).
 
 #### Further guidance is available on the wiki, including: statistical summaries, EDA plots, correlation analysis, the EDA workflow, EDA questions
 
@@ -123,16 +123,16 @@ Once the project has been approved the following should be filled in.
 
 ### [Evaluation and Reporting](/docs/6.InterpretationAndReporting/README.md)
 
-- [ ] Develop [notebook code](./code/notebooks/6.EvaluationAndReporting/6.1-me1xxx-evaluation-example.ipynb) for evaluation and reporting. Name each notebook with the following format:
+- [x] Develop [notebook code](./code/notebooks/6.EvaluationAndReporting/6.1-me1xxx-evaluation-example.ipynb) for evaluation and reporting. Name each notebook with the following format:
   
   `<step>-<me1xxx>-<description>.ipynb`, e.g. `6.1-me1tjr-results-reporting.ipynb`
 
 - [x] Move reusable code into a callable module in [this directory](./code/src/EvaluationAndReporting/).
-- [ ] Identify stakeholders and the required reports and dashboards. These can be listed [here](/docs/6.InterpretationAndReporting/Stakeholders.md).
+- [x] Identify stakeholders and the required reports and dashboards. These can be listed [here](/docs/6.InterpretationAndReporting/Stakeholders.md).
 - [ ] Build a dashboard with the [plotly templates](./code/dashboard/) and [guidance](/docs/Guidance/Dashboarding.md).
-- [ ] Extract required content from [docs folder](/docs/) for your agreed reporting format (AMRC technical report, presentation etc.).
-- [ ] Review your [data strategy](/docs/2.DataAcquisitionAndPreparation/DataStrategy.md) and ensure it is an accurate reflection of the data used in the project.
-- [ ] Have you successfully met the business objectives? Document the [insights and actions](/docs/6.InterpretationAndReporting/ActionsAndInsights.md) that can result from this work.
+- [x] Extract required content from [docs folder](/docs/) for your agreed reporting format (AMRC technical report, presentation etc.).
+- [x] Review your [data strategy](/docs/2.DataAcquisitionAndPreparation/DataStrategy.md) and ensure it is an accurate reflection of the data used in the project.
+- [ x] Have you successfully met the business objectives? Document the [insights and actions](/docs/6.InterpretationAndReporting/ActionsAndInsights.md) that can result from this work.
 - [ ] What are the [lessons learned](/docs/6.InterpretationAndReporting/LessonsLearned.md) from this work.
 - [ ] If there is no deployment required, complete the [closure form](/docs/0.ProjectManagement/ClosureReport.md).
 - [ ] If required, complete the TMG Project Completion Gate.
