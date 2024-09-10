@@ -127,7 +127,7 @@ Once the project has been approved the following should be filled in.
   
   `<step>-<me1xxx>-<description>.ipynb`, e.g. `6.1-me1tjr-results-reporting.ipynb`
 
-- [ ] Move reusable code into a callable module in [this directory](./code/src/EvaluationAndReporting/).
+- [x] Move reusable code into a callable module in [this directory](./code/src/EvaluationAndReporting/).
 - [ ] Identify stakeholders and the required reports and dashboards. These can be listed [here](/docs/6.InterpretationAndReporting/Stakeholders.md).
 - [ ] Build a dashboard with the [plotly templates](./code/dashboard/) and [guidance](/docs/Guidance/Dashboarding.md).
 - [ ] Extract required content from [docs folder](/docs/) for your agreed reporting format (AMRC technical report, presentation etc.).
